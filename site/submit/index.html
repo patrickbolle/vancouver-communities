@@ -153,6 +153,7 @@ a:visited { color: #551a8b; }
   <div class="sidebar-footer">
     <a href="/submit/">+ Submit a group</a><br>
     <a href="#" onclick="goRandom()">🎲 Random</a><br>
+    <span id="total-views"></span><br>
     Updated January 2026<br>
     Created by <a href="https://bolle.co" target="_blank">Patrick Bolle</a>
   </div>
@@ -179,8 +180,22 @@ function goRandom() {
   const cat = categories[Math.floor(Math.random() * categories.length)];
   window.location.href = "/" + cat + "/";
 }
-// Visitor counter (using hits.seeyoufarm.com badge API)
-fetch("https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev&count_bg=%23555555&title_bg=%23555555&title=visitors&edge_flat=true", {mode: "no-cors"})
+// Fetch page stats from Umami via Worker
+fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
+  .then(r => r.json())
+  .then(data => {
+    const path = window.location.pathname;
+    const pageViews = data.pages[path] || 0;
+    const totalViews = data.total.pageviews || 0;
+    
+    // Update page counter
+    const pageCounter = document.getElementById("page-views");
+    if (pageCounter) pageCounter.textContent = pageViews.toLocaleString() + " views";
+    
+    // Update total counter in sidebar
+    const totalCounter = document.getElementById("total-views");
+    if (totalCounter) totalCounter.textContent = totalViews.toLocaleString() + " total views";
+  })
   .catch(() => {});
 </script>
 </body>

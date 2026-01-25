@@ -233,6 +233,7 @@ generate_sidebar() {
   echo '  <div class="sidebar-footer">'
   echo "    <a href=\"${base_path}submit/\">+ Submit a group</a><br>"
   echo "    <a href=\"#\" onclick=\"goRandom()\">🎲 Random</a><br>"
+  echo '    <span id="total-views"></span><br>'
   echo "    Updated ${BUILD_DATE_HUMAN}<br>"
   echo '    Created by <a href="https://bolle.co" target="_blank">Patrick Bolle</a>'
   echo '  </div>'
@@ -343,8 +344,22 @@ function goRandom() {
   const cat = categories[Math.floor(Math.random() * categories.length)];
   window.location.href = "/" + cat + "/";
 }
-// Visitor counter (using hits.seeyoufarm.com badge API)
-fetch("https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev&count_bg=%23555555&title_bg=%23555555&title=visitors&edge_flat=true", {mode: "no-cors"})
+// Fetch page stats from Umami via Worker
+fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
+  .then(r => r.json())
+  .then(data => {
+    const path = window.location.pathname;
+    const pageViews = data.pages[path] || 0;
+    const totalViews = data.total.pageviews || 0;
+    
+    // Update page counter
+    const pageCounter = document.getElementById("page-views");
+    if (pageCounter) pageCounter.textContent = pageViews.toLocaleString() + " views";
+    
+    // Update total counter in sidebar
+    const totalCounter = document.getElementById("total-views");
+    if (totalCounter) totalCounter.textContent = totalViews.toLocaleString() + " total views";
+  })
   .catch(() => {});
 </script>'
 
@@ -393,7 +408,7 @@ $(generate_sidebar "" "/")
     <p style="margin-top: 15px; color: #666;">← Pick a category to explore</p>
     <hr style="margin: 25px 0;">
     <p style="font-size: 0.9em; color: #666;">Created by <a href="https://bolle.co">Patrick Bolle</a> for the Vancouver community.</p>
-    <p style="margin-top: 15px;"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev%2F&count_bg=%23666666&title_bg=%23444444&icon=&title=visits&edge_flat=true" alt="page visits"></p>
+    <p style="margin-top: 15px; color: #666; font-size: 0.9em;" id="page-views"></p>
   </div>
 </main>
 ${SCRIPTS}
@@ -492,7 +507,7 @@ $(generate_sidebar "$slug" "/")
   <h1>${emoji} ${title}</h1>
 ${content}
   <hr style="margin: 25px 0;">
-  <p><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev%2F${slug}%2F&count_bg=%23666666&title_bg=%23444444&icon=&title=visits&edge_flat=true" alt="page visits"></p>
+  <p style="color: #666; font-size: 0.9em;" id="page-views"></p>
 </main>
 ${SCRIPTS}
 </body>
