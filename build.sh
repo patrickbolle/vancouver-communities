@@ -218,13 +218,9 @@ generate_sidebar() {
   echo '<nav class="sidebar">'
   echo '  <div class="sidebar-header">'
   echo "    <a href=\"${base_path}\" class=\"logo\">"
-  echo '      <span class="logo-icon">📍</span>'
-  echo '      <span class="logo-text">'
-  echo '        <strong>Vancouver</strong>'
-  echo '        <span>Community</span>'
-  echo '      </span>'
+  echo '      <span class="logo-mark">VAN</span>'
+  echo '      <span class="logo-text">Community<br>Directory</span>'
   echo '    </a>'
-  echo '    <p class="tagline">Find your people</p>'
   echo '  </div>'
   echo '  <ul>'
   
@@ -288,35 +284,25 @@ a:visited { color: #551a8b; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   color: inherit;
 }
 .logo:hover { text-decoration: none; }
-.logo-icon {
-  font-size: 1.8em;
+.logo-mark {
+  background: #222;
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   line-height: 1;
 }
 .logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-  font-size: 1.1em;
-}
-.logo-text strong {
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-.logo-text span {
-  font-weight: 400;
-  color: #555;
-}
-.tagline {
-  margin-top: 6px;
-  font-size: 0.8em;
-  color: #888;
-  font-style: italic;
-  margin-bottom: 8px;
+  font-size: 0.95em;
+  line-height: 1.25;
+  color: #333;
+  font-weight: 500;
 }
 .sidebar-header h1 { font-size: 1.1em; font-weight: normal; }
 .sidebar-header h1 a { color: inherit; }
@@ -636,8 +622,110 @@ $(generate_sidebar "$slug" "/")
   <h1>${emoji} ${title}</h1>
 ${content}
   <hr style="margin: 25px 0;">
-  <p style="color: #666; font-size: 0.9em;" id="page-views"></p>
+  <p style="color: #666; font-size: 0.9em;">
+    <span id="page-views"></span>
+    <span style="margin-left: 10px;">·</span>
+    <a href="#" onclick="openEditModal('${slug}'); return false;" style="margin-left: 10px;">✏️ Suggest Edit</a>
+  </p>
 </main>
+
+<!-- Edit Modal -->
+<div id="edit-modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; overflow: auto;">
+  <div style="background: #fff; max-width: 800px; margin: 40px auto; padding: 25px; border-radius: 8px; position: relative;">
+    <button onclick="closeEditModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">&times;</button>
+    <h2 style="margin-bottom: 15px;">Suggest Edit</h2>
+    <p style="margin-bottom: 15px; color: #666;">Edit the markdown below. Your changes will be submitted as a pull request for review.</p>
+    <form id="edit-form">
+      <div style="margin-bottom: 15px;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Edit Summary *</label>
+        <input type="text" name="summary" required style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit;" placeholder="Brief description of your changes">
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Content</label>
+        <textarea id="edit-content" name="content" rows="20" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: monospace; font-size: 13px;"></textarea>
+      </div>
+      <div style="margin-bottom: 15px;">
+        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Why are you suggesting this edit?</label>
+        <textarea name="reason" rows="2" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit;" placeholder="Optional: explain your changes"></textarea>
+      </div>
+      <input type="hidden" name="category" id="edit-category">
+      <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit;">Submit Edit</button>
+      <span id="edit-status" style="margin-left: 15px; color: #666;"></span>
+    </form>
+  </div>
+</div>
+
+<script>
+async function openEditModal(category) {
+  const modal = document.getElementById('edit-modal');
+  const content = document.getElementById('edit-content');
+  const categoryInput = document.getElementById('edit-category');
+  const status = document.getElementById('edit-status');
+  
+  modal.style.display = 'block';
+  content.value = 'Loading...';
+  categoryInput.value = category;
+  status.textContent = '';
+  
+  try {
+    const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/content/' + category);
+    const data = await res.json();
+    if (data.success) {
+      content.value = data.content;
+    } else {
+      content.value = 'Error loading content: ' + (data.error || 'Unknown error');
+    }
+  } catch (err) {
+    content.value = 'Error loading content: ' + err.message;
+  }
+}
+
+function closeEditModal() {
+  document.getElementById('edit-modal').style.display = 'none';
+}
+
+document.getElementById('edit-modal').addEventListener('click', (e) => {
+  if (e.target.id === 'edit-modal') closeEditModal();
+});
+
+document.getElementById('edit-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const status = document.getElementById('edit-status');
+  const btn = e.target.querySelector('button[type="submit"]');
+  
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+  status.textContent = '';
+  
+  const formData = new FormData(e.target);
+  const data = Object.fromEntries(formData);
+  
+  try {
+    const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/edit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    
+    const result = await res.json();
+    
+    if (result.success) {
+      status.style.color = '#2a7d2a';
+      status.textContent = '✓ ' + result.message;
+      setTimeout(() => closeEditModal(), 2000);
+    } else {
+      throw new Error(result.error || 'Submission failed');
+    }
+  } catch (err) {
+    status.style.color = '#c00';
+    status.textContent = 'Error: ' + err.message;
+  }
+  
+  btn.disabled = false;
+  btn.textContent = 'Submit Edit';
+});
+</script>
+
 ${SCRIPTS}
 </body>
 </html>

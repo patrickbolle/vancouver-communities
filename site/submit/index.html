@@ -47,35 +47,25 @@ a:visited { color: #551a8b; }
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   color: inherit;
 }
 .logo:hover { text-decoration: none; }
-.logo-icon {
-  font-size: 1.8em;
+.logo-mark {
+  background: #222;
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   line-height: 1;
 }
 .logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-  font-size: 1.1em;
-}
-.logo-text strong {
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-.logo-text span {
-  font-weight: 400;
-  color: #555;
-}
-.tagline {
-  margin-top: 6px;
-  font-size: 0.8em;
-  color: #888;
-  font-style: italic;
-  margin-bottom: 8px;
+  font-size: 0.95em;
+  line-height: 1.25;
+  color: #333;
+  font-weight: 500;
 }
 .sidebar-header h1 { font-size: 1.1em; font-weight: normal; }
 .sidebar-header h1 a { color: inherit; }
@@ -139,13 +129,9 @@ a:visited { color: #551a8b; }
 <nav class="sidebar">
   <div class="sidebar-header">
     <a href="/" class="logo">
-      <span class="logo-icon">📍</span>
-      <span class="logo-text">
-        <strong>Vancouver</strong>
-        <span>Community</span>
-      </span>
+      <span class="logo-mark">VAN</span>
+      <span class="logo-text">Community<br>Directory</span>
     </a>
-    <p class="tagline">Find your people</p>
   </div>
   <ul>
     <li><a href="/dinner-supper-clubs/"><span class="emoji">🍽️</span> Dinner & Supper Clubs</a></li>

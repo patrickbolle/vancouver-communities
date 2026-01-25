@@ -1,98 +1,176 @@
 # Vancouver Community Directory
 
-A comprehensive guide to groups, clubs, and events for connection, creativity, and community in Vancouver, BC.
+A comprehensive guide to groups, clubs, meetups, and events for connection and community in Vancouver, BC.
 
-## 🌐 [vancouvercommunity.org](https://vancouvercommunity.org)
+**Live site:** https://vancouvercommunity.org
+
+## Architecture
+
+```
+├── *.md                    # Source content (markdown files per category)
+├── build.sh               # Static site generator
+├── site/                  # Generated static site (deployed to Cloudflare)
+├── worker/                # Stats worker (Umami analytics proxy)
+└── worker-submit/         # Submission & edit API worker
+```
+
+## How It Works
+
+### Static Site Generation
+
+The site is built from markdown files using `build.sh`:
+
+```bash
+./build.sh
+```
+
+This generates a complete static site in `site/` with:
+- Individual pages for each category
+- Full sidebar navigation on every page
+- SEO metadata, sitemap, RSS feed
+- Mobile-responsive design
+
+### Cloudflare Workers
+
+Two workers power the dynamic features:
+
+#### 1. Main Site Worker (`wrangler.jsonc`)
+- Serves the static site from `site/` directory
+- Deployed to: `vancouver-communities.recipekit.workers.dev`
+
+#### 2. Submit/Edit API Worker (`worker-submit/`)
+- Handles community submissions and edit suggestions
+- Creates GitHub Pull Requests for review
+- Deployed to: `vancouver-community-submit.recipekit.workers.dev`
+
+**API Endpoints:**
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| `GET` | `/content/:category` | Fetch current markdown content for a category |
+| `POST` | `/submit` | Submit a new community/group (creates PR) |
+| `POST` | `/edit` | Suggest edits to existing content (creates PR) |
+
+**Submit payload:**
+```json
+{
+  "name": "Group Name",
+  "category": "run-clubs",
+  "description": "What the group does",
+  "vibe": "Optional atmosphere description",
+  "link": "https://example.com",
+  "location": "Optional location"
+}
+```
+
+**Edit payload:**
+```json
+{
+  "category": "run-clubs",
+  "content": "Full updated markdown content",
+  "summary": "Brief description of changes",
+  "reason": "Optional explanation"
+}
+```
+
+### GitHub Integration
+
+All submissions and edits create Pull Requests instead of issues, allowing:
+- One-click merge for approved content
+- Easy editing before merge
+- Full change history
+- No manual copy-paste from issues
+
+## Deployment
+
+### Prerequisites
+
+- [Cloudflare account](https://dash.cloudflare.com)
+- [Wrangler CLI](https://developers.cloudflare.com/workers/wrangler/)
+- GitHub personal access token with `repo` scope
+
+### Deploy Static Site
+
+```bash
+# Set credentials
+export CLOUDFLARE_API_TOKEN="your-token"
+export CLOUDFLARE_ACCOUNT_ID="your-account-id"
+
+# Build and deploy
+./build.sh
+npx wrangler deploy
+```
+
+### Deploy Submit Worker
+
+```bash
+cd worker-submit
+
+# Set the GitHub token as a secret (one-time)
+npx wrangler secret put GITHUB_TOKEN
+
+# Deploy
+npx wrangler deploy
+```
+
+### Environment Variables
+
+The submit worker requires:
+- `GITHUB_TOKEN` — GitHub PAT with repo write access (set via `wrangler secret`)
+
+## Content Format
+
+Each category is a markdown file following this format:
+
+```markdown
+# 🏃 Category Name
+
+## Group Name
+- **What:** Description of what the group does
+- **Vibe:** Atmosphere, who it's for
+- **Where:** Location (if applicable)
+- **Find it:** [website.com](https://website.com)
+
+## Another Group
+...
 
 ---
 
-## What is this?
+## Venues & Resources
 
-Vancouver can feel like a hard city to make friends and find community. This directory aims to change that by collecting all the social groups, clubs, meetups, and community events in one place.
+## Venue Name
+- **What:** Description
+- **Find it:** [link](url)
+```
 
-Whether you're looking for a dinner club with strangers, a chess night at a café, a vinyl listening bar, or a mushroom foraging tour — it's probably here.
+## Adding New Categories
 
-## Features
+1. Create `new-category.md` with content
+2. Add to `CATEGORY_FILES` in `worker-submit/index.js`
+3. Add to arrays in `build.sh`:
+   - `titles`
+   - `descriptions`
+   - `emojis`
+   - `categories_ordered`
+4. Rebuild and redeploy both the site and worker
 
-- **40+ categories** of community groups and venues
-- **SEO-optimized** with clean URLs for each category
-- **Mobile-friendly** minimal design
-- **Open source** — contribute via GitHub
-
-## Categories
-
-| Category | Description |
-|----------|-------------|
-| 🍽️ [Dinner / Supper Clubs](dinner-supper-clubs.md) | Eat with strangers, make friends |
-| 🤝 [Social / Friend Clubs](social-friend-clubs.md) | General friend-making groups |
-| 🏃 [Run Clubs](run-clubs.md) | Social running groups |
-| 🎲 [Board Games](board-games.md) | Game nights and cafés |
-| 🎨 [Creative / Art](creative-art.md) | Art collectives and creative communities |
-| 📷 [Photography](photography.md) | Photo walks and clubs |
-| 🎬 [Film / Cinema](film-cinema.md) | Film clubs and screenings |
-| ✍️ [Writing](writing.md) | Writers groups and workshops |
-| 🗣️ [Language Exchange](language-exchange.md) | Practice languages with locals |
-| 🥾 [Hiking / Outdoors](hiking-outdoors.md) | Hiking and outdoor groups |
-| 🚴 [Cycling](cycling.md) | Bike clubs and social rides |
-| 💃 [Dance](dance.md) | Salsa, bachata, and more |
-| 🎭 [Improv / Comedy](improv-comedy.md) | Improv classes and comedy |
-| 🎵 [Music / Open Mic](music-open-mic.md) | Jam sessions and open mics |
-| 🧗 [Climbing](climbing.md) | Climbing gyms and communities |
-| 🏓 [Pickleball](pickleball.md) | Pickleball clubs and courts |
-| 🏺 [Pottery / Ceramics](pottery-ceramics.md) | Clay studios and workshops |
-| 🧘 [Yoga / Wellness](yoga-wellness.md) | Free yoga and wellness events |
-| 🧊 [Sauna / Cold Plunge](sauna-cold-plunge.md) | Sauna clubs and cold plunge |
-| 🧘 [Mindfulness / Meditation](mindfulness-meditation.md) | Meditation groups |
-| 👔 [Men's Groups](mens-groups.md) | Men's circles and support |
-| 🔧 [Maker Spaces](maker-spaces.md) | Workshops and maker labs |
-| 🤔 [Philosophy / Intellectual](philosophy-intellectual.md) | Discussion groups |
-| 📚 [Book Clubs](book-clubs.md) | Reading groups |
-| 💼 [Tech / Startup](tech-startup.md) | Tech meetups and founders |
-| 💻 [Coworking](coworking.md) | Coworking spaces |
-| 🌿 [Volunteer](volunteer.md) | Volunteer opportunities |
-| 🎵 [Vinyl / Listening Bars](vinyl-listening-bars.md) | Record bars and listening parties |
-| ♟️ [Chess](chess.md) | Chess clubs and café meetups |
-| 🎧 [Underground DJ](underground-dj.md) | Pop-up parties and warehouse events |
-| 🎤 [Poetry / Spoken Word](poetry-spoken-word.md) | Poetry slams and open mics |
-| 🔮 [Tarot / Astrology](tarot-astrology.md) | Spiritual communities |
-| 🛍️ [Flea Markets / Vintage](flea-markets-vintage.md) | Markets and vintage events |
-| 🧠 [Pub Trivia](pub-trivia.md) | Trivia nights |
-| 📖 [Zine / Risograph](zine-risograph.md) | Zine making and riso printing |
-| 🔭 [Astronomy / Stargazing](astronomy-stargazing.md) | Star parties and astronomy clubs |
-| 🍄 [Foraging / Nature](foraging-nature.md) | Foraging tours and nature walks |
-| 🐦 [Birdwatching](birdwatching.md) | Birding groups and walks |
-| 🎤 [Karaoke](karaoke.md) | Karaoke nights |
-| 🔗 [Resources](resources.md) | Aggregators and directories |
-
-## Contributing
-
-Know a group that should be listed? Found outdated info?
-
-1. **[Submit via GitHub Issue](../../issues/new?template=submit-group.md)** 
-2. Or **submit a PR** editing the relevant category file
-
-Please include:
-- Group/event name
-- What it is
-- Where to find it (website, Instagram, Meetup, etc.)
-- Any relevant details (cost, schedule, vibe)
-
-## Development
+## Local Development
 
 ```bash
-# Edit markdown files in root
-# Rebuild HTML
+# Build site locally
 ./build.sh
 
-# Site outputs to site/
+# Serve locally (requires any static server)
+cd site && python -m http.server 8000
+
+# Test worker locally
+cd worker-submit && npx wrangler dev
 ```
 
 ## License
 
-This is a community resource. Use it, share it, improve it.
-
-[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) — No rights reserved.
+Content is community-contributed. Code is MIT.
 
 ---
 
-Created by [Patrick Bolle](https://bolle.co) • Made with ❤️ for Vancouver
+Created by [Patrick Bolle](https://bolle.co) for the Vancouver community.
