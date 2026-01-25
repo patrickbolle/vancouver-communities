@@ -24,6 +24,8 @@
       border-right: 1px solid #ddd;
       padding: 20px 0;
       background: #fafaf5;
+      display: flex;
+      flex-direction: column;
     }
     
     .sidebar h1 {
@@ -33,8 +35,18 @@
       margin-bottom: 10px;
     }
     
+    .sidebar h1 a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    .sidebar h1 a:hover {
+      color: #0066cc;
+    }
+    
     .sidebar ul {
       list-style: none;
+      flex: 1;
     }
     
     .sidebar li a {
@@ -60,6 +72,17 @@
       width: 24px;
     }
     
+    .footer {
+      padding: 15px;
+      border-top: 1px solid #ddd;
+      font-size: 0.8em;
+      color: #666;
+    }
+    
+    .footer a {
+      color: #666;
+    }
+    
     /* Content area */
     .content {
       flex: 1;
@@ -71,21 +94,6 @@
       width: 100%;
       height: 100%;
       border: none;
-    }
-    
-    .welcome {
-      padding: 40px;
-      max-width: 600px;
-    }
-    
-    .welcome h2 {
-      font-size: 1.3em;
-      margin-bottom: 15px;
-    }
-    
-    .welcome p {
-      line-height: 1.6;
-      color: #444;
     }
     
     /* Mobile */
@@ -109,7 +117,7 @@
 </head>
 <body>
   <nav class="sidebar">
-    <h1>📍 Vancouver Community</h1>
+    <h1><a href="#" onclick="resetHome(); return false;">📍 Vancouver Community</a></h1>
     <ul>
       <li><a href="dinner-supper-clubs.html" target="content"><span class="emoji">🍽️</span> Dinner & Supper Clubs</a></li>
       <li><a href="social-friend-clubs.html" target="content"><span class="emoji">🤝</span> Social & Friend Clubs</a></li>
@@ -152,6 +160,9 @@
       <li><a href="karaoke.html" target="content"><span class="emoji">🎤</span> Karaoke</a></li>
       <li><a href="resources.html" target="content"><span class="emoji">🔗</span> Resources</a></li>
     </ul>
+    <div class="footer">
+      Created by <a href="https://bolle.co" target="_blank">Patrick Bolle</a>
+    </div>
   </nav>
   
   <main class="content">
@@ -159,10 +170,10 @@
   </main>
   
   <script>
-    // Show welcome message if no content loaded
-    const iframe = document.querySelector('iframe');
-    iframe.srcdoc = `
-      <div style="padding: 40px; font-family: Georgia, serif; max-width: 500px;">
+    const welcomeHTML = `
+      <html>
+      <head><base target="_blank"></head>
+      <body style="padding: 40px; font-family: Georgia, serif; max-width: 500px; background: #fffef8;">
         <h2 style="margin-bottom: 15px;">Welcome 👋</h2>
         <p style="line-height: 1.6; color: #444;">
           Vancouver can feel like a hard city to make friends and find community. 
@@ -171,8 +182,16 @@
         <p style="line-height: 1.6; color: #444; margin-top: 15px;">
           ← Pick a category from the sidebar to explore.
         </p>
-      </div>
+      </body>
+      </html>
     `;
+    
+    function resetHome() {
+      document.querySelector('iframe').srcdoc = welcomeHTML;
+    }
+    
+    // Show welcome on load
+    resetHome();
   </script>
 </body>
 </html>
