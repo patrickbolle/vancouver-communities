@@ -67,3 +67,8 @@
 ## runclubs.ca
 - **What:** Directory of 60+ Vancouver run clubs compiled in one site
 - **Find it:** [runclubs.ca/vancouver](https://runclubs.ca/vancouver)
+
+## Test Club 2
+- **What:** Testing UTF-8 encoding
+- **Vibe:** Good vibes — with em dashes!
+- **Find it:** [example.com](https://example.com)
