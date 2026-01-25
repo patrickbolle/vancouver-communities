@@ -276,17 +276,16 @@ a:visited { color: #551a8b; }
 .sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
 
 .sidebar-header {
-  padding: 15px 15px 12px;
+  padding: 8px 15px 10px;
   border-bottom: 1px solid #ddd;
 }
 .logo {
   display: block;
   text-decoration: none;
   color: #222;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  font-size: 1.1em;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05em;
+  font-weight: normal;
 }
 .logo:hover { text-decoration: none; color: #000; }
 .sidebar-header h1 { font-size: 1.1em; font-weight: normal; }
@@ -557,10 +556,11 @@ echo "  Built: submit"
 
 # Build each category page
 for mdfile in ${SOURCE_DIR}*.md; do
-  [ "$mdfile" = "README.md" ] && continue
+  [[ "$mdfile" == *"README.md" ]] && continue
   [ ! -f "$mdfile" ] && continue
   
-  slug="${mdfile%.md}"
+  # Extract just the filename without path and extension
+  slug="$(basename "${mdfile%.md}")"
   title="${titles[$slug]:-$slug}"
   desc="${descriptions[$slug]:-}"
   emoji="${emojis[$slug]:-}"
