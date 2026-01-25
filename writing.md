@@ -29,3 +29,23 @@
 ## Thursdays Writing Collective / DTES Writers Collective
 - **What:** Creative writing in Downtown Eastside
 - **Find it:** [thursdayswritingcollective.ca](https://thursdayswritingcollective.ca/) / [dteswriters.org](https://dteswriters.org/)
+
+## Historic Joy Kogawa House Writing Sessions
+- **What:** In-person and Zoom writing sessions
+- **Vibe:** Beautiful heritage house, supportive community
+- **Find it:** [kogawahouse.com](https://kogawahouse.com/)
+
+## Power of the Pen Friday Writing Group
+- **What:** Online writing sessions 12:30-3:30pm
+- **Vibe:** 45-minute writing blocks with chat breaks
+- **Find it:** Meetup
+
+## Federation of BC Writers
+- **What:** Directory of writing groups across BC
+- **Vibe:** Resource hub for all writers
+- **Find it:** [bcwriters.ca](https://bcwriters.ca/)
+
+## VPL Writing Resources
+- **What:** Library resources for writers including group listings
+- **Vibe:** Free, accessible, comprehensive
+- **Find it:** [vpl.ca/guide/resources-writers](https://www.vpl.ca/guide/resources-writers/writing-community)

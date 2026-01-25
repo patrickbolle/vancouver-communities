@@ -33,3 +33,23 @@
 - **What:** Community centre pottery
 - **Where:** 4397 West 2nd Avenue
 - **Find it:** [westpointgrey.org](https://westpointgrey.org/program-facility/pottery-studio/)
+
+## Studio Fundamentals
+- **What:** Pottery classes and studio access
+- **Vibe:** Highly recommended by locals
+- **Find it:** Search "Studio Fundamentals Vancouver"
+
+## Trout Lake Community Centre Pottery
+- **What:** Community centre pottery classes
+- **Vibe:** Affordable, neighbourhood-based
+- **Find it:** Trout Lake Community Centre
+
+## City of Vancouver Pottery Programs
+- **What:** Various venues for drop-in pottery and classes
+- **Vibe:** Accessible, multiple locations
+- **Find it:** [vancouver.ca](https://vancouver.ca/parks-recreation-culture/pottery-ceramics.aspx)
+
+## Pottery Date Nights
+- **What:** Couples pottery experiences at various studios
+- **Vibe:** Romantic, beginner-friendly
+- **Find it:** Claymates, Hand Eye Ceramics offer these

@@ -24,3 +24,23 @@
 ## Street16
 - **What:** Street photography workshops and photo walks
 - **Find it:** Instagram / search
+
+## Metro Vancouver Photography, Travel & Connections
+- **What:** Photography outings plus travel discussions
+- **Vibe:** Amateur and professional welcome
+- **Find it:** [meetup.com/Photography-photowalks-virtual-anything-goes](https://meetup.com/Photography-photowalks-virtual-anything-goes)
+
+## Metro Vancouver Street Photography
+- **What:** Urban photography walks and exhibitions
+- **Vibe:** Capture the city's stories
+- **Find it:** Meetup
+
+## Gallery George Photography Events
+- **What:** Gallery hosting photography meetups and exhibitions
+- **Vibe:** Community hub for street photographers
+- **Find it:** Search "Gallery George Vancouver"
+
+## Capture Photography Festival
+- **What:** Annual photography festival with exhibitions and events
+- **Vibe:** International photographers, local venues
+- **Find it:** [capturephotofest.com](https://www.capturephotofest.com/)

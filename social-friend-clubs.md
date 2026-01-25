@@ -39,3 +39,28 @@
 - **What:** Games and socializing
 - **Vibe:** "Safe, comfortable space... not a dating meetup"
 - **Find it:** [meetup.com/game-of-boards-with-friendly-folks](https://meetup.com/game-of-boards-with-friendly-folks)
+
+## Common Ground (formerly Mix & Mingle)
+- **What:** Vancouver's most experiential social club
+- **Vibe:** Mission to foster lasting friendships
+- **Find it:** [joincommonground.com](https://joincommonground.com/)
+
+## Make Friends Over Brunch Vancouver
+- **What:** Brunch meetups to make new friends
+- **Vibe:** Low-pressure, delicious food
+- **Find it:** Meetup
+
+## Meatless Meetup
+- **What:** Social events for vegetarians/vegans
+- **Vibe:** Plant-based dining and socializing
+- **Find it:** Meetup
+
+## Kits Beach Evening Social
+- **What:** Casual beach hangouts
+- **Vibe:** Summer vibes, sunset views
+- **Find it:** Meetup
+
+## Foodees on Board
+- **What:** Food-focused social meetups
+- **Vibe:** Explore Vancouver's food scene together
+- **Find it:** Meetup

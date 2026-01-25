@@ -26,3 +26,23 @@
 - **What:** Philosophy practice
 - **When:** Every 2nd Tuesday (Fall & Winter)
 - **Find it:** Philosophy Now events page
+
+## Anime Philosophy Meetup Vancouver
+- **What:** Explore philosophical themes through anime
+- **Vibe:** Unique intersection of pop culture and deep thinking
+- **Find it:** Meetup
+
+## Vancouver Discussions Meetup
+- **What:** General intellectual discussions on varied topics
+- **Vibe:** Open-minded, curious participants
+- **Find it:** [meetup.com](https://www.meetup.com/find/ca--vancouver/philosophy/)
+
+## SFU Philosophy Café
+- **What:** Public philosophy discussions
+- **Vibe:** Academic but accessible
+- **Find it:** SFU events calendar
+
+## Socrates Café Vancouver
+- **What:** Open philosophical inquiry for everyone
+- **Vibe:** Socratic method, no expertise required
+- **Find it:** Check local listings

@@ -29,3 +29,23 @@
 ## 9CAT - Vancouver Tech Talents Networking
 - **What:** Developers, designers, engineers, entrepreneurs
 - **Find it:** [meetup.com/vancouver-internet-technology-talents-networking-9cat-net](https://meetup.com/vancouver-internet-technology-talents-networking-9cat-net)
+
+## Van Tech Meetup
+- **What:** Career advice, networking with tech professionals
+- **Vibe:** Learn from recruiters, job board execs
+- **Find it:** [meetup.com/tech-talent-meetup](https://meetup.com/tech-talent-meetup)
+
+## TiE Vancouver
+- **What:** Chapter of global entrepreneur network from Silicon Valley
+- **Vibe:** Angels, VCs, private equity, service providers
+- **Find it:** Search "TiE Vancouver"
+
+## Boast Capital Events
+- **What:** Brew & Bites networking events
+- **Vibe:** Stellar networking, partners with other tech groups
+- **Find it:** [boast.ai](https://boast.ai/)
+
+## Launch Academy
+- **What:** Startup accelerator with events and resources
+- **Vibe:** Educational, supportive of early-stage founders
+- **Find it:** [launchacademy.ca](https://www.launchacademy.ca/)

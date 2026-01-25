@@ -21,3 +21,23 @@
 - **What:** Literary and spoken word nonprofit
 - **Events:** Famous Last Words, Liars of Orpheus, The 17 Syllable Slam
 - **Find it:** Search
+
+## Verses Festival of Words
+- **What:** Canada's largest annual spoken word festival
+- **Vibe:** Multi-day event, workshops, performances
+- **Find it:** [vancouverpoetryhouse.com](https://www.vancouverpoetryhouse.com/)
+
+## WordPlay Poets
+- **What:** Outreach program with workshops and performances
+- **Vibe:** Schools and communities across BC
+- **Find it:** Vancouver Poetry House
+
+## Rio Theatre Poetry Events
+- **What:** Occasional poetry and spoken word nights
+- **Vibe:** Unique venue, community atmosphere
+- **Find it:** [riotheatre.ca](https://riotheatre.ca/)
+
+## Carnegie Centre Poetry
+- **What:** Downtown Eastside community poetry events
+- **Vibe:** Inclusive, community-focused
+- **Find it:** Carnegie Centre

@@ -40,7 +40,27 @@
 - **Vibe:** All paces welcome, often includes post-run stretching
 - **Find it:** Check local Lululemon store schedules
 
+## A Very Good Run Club
+- **What:** Smaller, intimate run club with solid community
+- **Vibe:** Regular runs, friendly atmosphere
+- **Find it:** Instagram
+
+## Kits Social Run Club
+- **What:** Social runs based in Kitsilano, started summer 2024
+- **Vibe:** Up-and-coming, community-focused
+- **Find it:** Instagram
+
+## M2M Running (Miles to Marathon)
+- **What:** Wednesday runs at 6:30pm, two locations
+- **Where:** Point Grey and Empire Track (PNE/Burnaby)
+- **Find it:** Instagram / running forums
+
+## November Project Vancouver
+- **What:** Free outdoor fitness community, includes running
+- **Vibe:** Early morning workouts, high energy
+- **Find it:** [november-project.com](https://november-project.com/)
+
 ---
 
 ## 📋 Directory
-- **runclubs.ca** — 24+ Vancouver run clubs compiled in one site: [runclubs.ca/vancouver](https://runclubs.ca/vancouver)
+- **runclubs.ca** — 60+ Vancouver run clubs compiled in one site: [runclubs.ca/vancouver](https://runclubs.ca/vancouver)

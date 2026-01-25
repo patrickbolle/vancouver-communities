@@ -233,7 +233,6 @@ generate_sidebar() {
   echo '  <div class="sidebar-footer">'
   echo "    <a href=\"${base_path}submit/\">+ Submit a group</a><br>"
   echo "    <a href=\"#\" onclick=\"goRandom()\">🎲 Random</a><br>"
-  echo '    <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev&count_bg=%23666666&title_bg=%23555555&icon=&title=visits&edge_flat=true" alt="visitor count" style="height: 16px; vertical-align: middle;"><br>'
   echo "    Updated ${BUILD_DATE_HUMAN}<br>"
   echo '    Created by <a href="https://bolle.co" target="_blank">Patrick Bolle</a>'
   echo '  </div>'
@@ -393,6 +392,7 @@ $(generate_sidebar "" "/")
     <p style="margin-top: 15px; color: #666;">← Pick a category to explore</p>
     <hr style="margin: 25px 0;">
     <p style="font-size: 0.9em; color: #666;">Created by <a href="https://bolle.co">Patrick Bolle</a> for the Vancouver community.</p>
+    <p style="margin-top: 15px;"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev%2F&count_bg=%23666666&title_bg=%23444444&icon=&title=visits&edge_flat=true" alt="page visits"></p>
   </div>
 </main>
 ${SCRIPTS}
@@ -488,6 +488,8 @@ $(generate_sidebar "$slug" "/")
 <main class="content">
   <h1>${emoji} ${title}</h1>
 ${content}
+  <hr style="margin: 25px 0;">
+  <p><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fvancouver-communities.pages.dev%2F${slug}%2F&count_bg=%23666666&title_bg=%23444444&icon=&title=visits&edge_flat=true" alt="page visits"></p>
 </main>
 ${SCRIPTS}
 </body>

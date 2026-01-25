@@ -27,3 +27,23 @@
 - **What:** Outdoor sauna and cold plunges
 - **Vibe:** "Meaningful connection through shared ritual of hot and cold"
 - **Find it:** [gatherwell.ca](https://www.gatherwell.ca)
+
+## Circle Wellness Wellpod
+- **What:** Mobile sauna and cold plunge experiences
+- **Vibe:** Pop-up wellness, unique locations
+- **Find it:** Search "Circle Wellness Vancouver"
+
+## Scandinave Spa Whistler
+- **What:** Nordic-inspired spa with saunas and cold plunges
+- **Vibe:** Day trip destination, silence policy
+- **Find it:** [scandinave.com](https://www.scandinave.com/whistler/)
+
+## Tality Community Runs + Sauna
+- **What:** Group runs followed by sauna sessions
+- **Vibe:** Combines fitness with thermal recovery
+- **Find it:** [talitywellness.ca](https://www.talitywellness.ca/)
+
+## Cold Plunge Vancouver (Facebook/Meetup)
+- **What:** Groups organizing ocean and lake cold plunges
+- **Vibe:** Free, outdoor, community-led
+- **Find it:** Facebook groups, Meetup

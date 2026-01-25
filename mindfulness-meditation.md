@@ -23,3 +23,24 @@
 - **What:** Weekly group meditation
 - **Where:** 173 West 6th Avenue
 - **Find it:** [vancouvermeditationgroup.org](https://vancouvermeditationgroup.org/)
+
+## BC Insight Meditation Society (BCIMS)
+- **What:** Buddhist meditation in Theravada tradition
+- **Vibe:** Connects meditation communities across BC
+- **Find it:** [bcims.org](https://www.bcims.org/)
+
+## Mountain Rain Zen Centre
+- **What:** Weekly silent sitting and walking meditation
+- **When:** Every Wednesday
+- **Where:** East Vancouver
+- **Find it:** Search "Mountain Rain Zen"
+
+## Spiritual Development & Mysticism Meetup
+- **What:** Spirit rituals, meditation, mystical experiences
+- **Vibe:** Varied practices, open to exploration
+- **Find it:** [meetup.com/SpiRitual-Artistry](https://www.meetup.com/SpiRitual-Artistry/)
+
+## Free Outdoor Meditation (Summer)
+- **What:** Drop-in meditation sessions in parks
+- **Vibe:** Accessible, beginner-friendly
+- **Find it:** Various — check community centre schedules

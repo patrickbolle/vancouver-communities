@@ -15,3 +15,28 @@
 ## VolunteerMatch
 - **What:** Search nonprofits and opportunities
 - **Find it:** [volunteermatch.org](https://www.volunteermatch.org/)
+
+## GoVolunteer
+- **What:** Connects volunteers with nonprofits across Western Canada
+- **Vibe:** Easy search, featured listings
+- **Find it:** [govolunteer.ca](https://govolunteer.ca/)
+
+## Stanley Park Ecology Society
+- **What:** Conservation volunteering in Stanley Park
+- **Vibe:** Nature restoration, education programs
+- **Find it:** [stanleyparkecology.ca](https://stanleyparkecology.ca/)
+
+## Vancouver Food Bank
+- **What:** Sort food, help with distributions
+- **Vibe:** Direct community impact
+- **Find it:** [foodbank.bc.ca](https://www.foodbank.bc.ca/)
+
+## Habitat for Humanity Vancouver
+- **What:** Build homes, work in ReStores
+- **Vibe:** Hands-on, make a difference
+- **Find it:** [habitatvancouver.ca](https://www.habitatvancouver.ca/)
+
+## SPCA Volunteer
+- **What:** Animal care, adoption events, education
+- **Vibe:** For animal lovers
+- **Find it:** [spca.bc.ca/volunteer](https://spca.bc.ca/volunteer/)
