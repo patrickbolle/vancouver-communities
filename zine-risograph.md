@@ -13,3 +13,23 @@
 ## Vancouver Art Book Fair
 - **What:** Annual celebration of books as art, zines to monographs
 - **Find it:** Search annually
+
+## Moniker Press Riso 101 Workshops
+- **What:** Online workshops for riso printing beginners
+- **Vibe:** $60 sliding scale, 3-3.5 hours, no prior knowledge needed
+- **Find it:** [monikerpress.ca/workshops](https://www.monikerpress.ca/workshops/)
+
+## Lucky's Comics & Gallery
+- **What:** Comics shop that often stocks local zines
+- **Vibe:** Support local zine makers
+- **Find it:** Main Street area
+
+## Pulp Fiction Books
+- **What:** Independent bookstore with zine section
+- **Vibe:** Curated selection of local and indie publications
+- **Find it:** Multiple Vancouver locations
+
+## Vancouver Zine Fair
+- **What:** Annual fair for zine makers and buyers
+- **Vibe:** Meet creators, discover new zines
+- **Find it:** Check local event listings annually
