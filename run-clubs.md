@@ -34,6 +34,12 @@
 - **What:** Weekly social runs
 - **Find it:** [joincommonground.com](https://joincommonground.com/)
 
+## Lululemon Run Club
+- **What:** Free weekly runs from Lululemon stores
+- **Where:** Various locations (Robson, Kits, etc.)
+- **Vibe:** All paces welcome, often includes post-run stretching
+- **Find it:** Check local Lululemon store schedules
+
 ---
 
 ## 📋 Directory
