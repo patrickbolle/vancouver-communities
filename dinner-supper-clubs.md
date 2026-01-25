@@ -1,7 +1,7 @@
-# 🍽️ Dinner / Supper Clubs
+# ð½ï¸ Dinner / Supper Clubs
 
 ## DayOfUs - Dinner with Strangers
-- **What:** Weekly curated dinners — you + 5 strangers at a surprise restaurant
+- **What:** Weekly curated dinners â you + 5 strangers at a surprise restaurant
 - **Vibe:** Algorithm-matched based on interests, casual, low-pressure
 - **Find it:** [Eventbrite](https://www.eventbrite.com/e/dinner-with-strangers-curated-dinner-meetup-in-vancouver-registration-1709285481889)
 
@@ -43,10 +43,16 @@
 ## Secret Suppers Vancouver
 - **What:** Hidden dining experiences in private homes
 - **Vibe:** Communal table, 10+ seats, top-secret chef
-- **Find it:** Various — check BC Living's list
+- **Find it:** Various â check BC Living's list
 
 ---
 
 ## Venues & Resources
 
 *This category is all community groups! Supper clubs are by definition social dining communities that bring strangers together around food.*
+
+## Test
+- **What:** test
+- **Vibe:** test
+- **Where:** test
+- **Notes:** test
