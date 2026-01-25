@@ -24,7 +24,7 @@
 
 ## The Grind Writers' Group
 - **What:** Writers of all levels and genres
-- **Find it:** Search / VPL resources
+- **Find it:** [VPL Writing Resources](https://www.vpl.ca/guide/resources-writers/writing-community)
 
 ## Thursdays Writing Collective / DTES Writers Collective
 - **What:** Creative writing in Downtown Eastside

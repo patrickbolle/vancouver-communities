@@ -8,7 +8,7 @@
 
 ## r/Vancouver4Friends
 - **What:** Reddit community for Vancouver friend-making
-- **Find it:** reddit.com/r/Vancouver4Friends
+- **Find it:** [reddit.com/r/Vancouver4Friends](https://www.reddit.com/r/Vancouver4Friends/)
 
 ## Mix & Mingle Vancouver
 - **What:** Blog/guide to Vancouver social clubs

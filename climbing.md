@@ -54,4 +54,4 @@
 ## SFU Climbing Wall
 - **What:** University climbing wall open to public
 - **Vibe:** Affordable, beginner-friendly
-- **Find it:** SFU Recreation
+- **Find it:** [sfu.ca/recreation/climbing](https://www.sfu.ca/recreation/climbing.html)

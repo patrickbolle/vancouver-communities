@@ -37,7 +37,7 @@
 - **What:** Men's groups directory
 - **Find it:** [mender.ca/groups](https://mender.ca/groups/)
 
-## Vancouver Men's Therapy Group
+## Vancouver Men's Therapy Groups
 - **What:** Professional facilitated group therapy
 - **Vibe:** Mental health focused, structured sessions
-- **Find it:** Various therapists offer these
+- **Find it:** [mender.ca/groups](https://mender.ca/groups/) | [ManKind Project BC](https://bc.canada.mkp.org/find-a-mens-group/)

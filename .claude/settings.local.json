@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_compound-engineering_pw__browser_navigate",
+      "mcp__plugin_compound-engineering_pw__browser_take_screenshot",
+      "mcp__plugin_compound-engineering_pw__browser_evaluate",
+      "Bash(bash:*)",
+      "Bash(zsh:*)",
+      "Bash(./build.sh)",
+      "Bash(git add:*)",
+      "Bash(gh repo edit:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "tally",
+    "mantle-core",
+    "mantle-growth"
+  ]
+}

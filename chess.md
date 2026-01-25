@@ -8,12 +8,12 @@
 ## Main Street Café Chess
 - **What:** Saturday chess meetups at Bean Around the World (Main & 10th)
 - **Vibe:** Casual, "18 players squeezed into the café"
-- **Find it:** [Daily Hive article](https://dailyhive.com/vancouver/vancouver_chess-meetups-main-street-cafe)
+- **Find it:** [Bean Around the World (Main & 10th)](https://batwcoffee.com/pages/bean-around-the-world-main-10th)
 
 ## Coco Rico Cafe Chess
 - **What:** Informal chess Friday/Saturday nights
-- **Where:** Robson Street
-- **Find it:** Just show up
+- **Where:** 1290 Robson Street
+- **Find it:** [cocoricocafe.ca](https://cocoricocafe.ca/) — just show up!
 
 ## Langley Chess Club
 - **What:** CFC rated games most Monday nights, blitz tournaments

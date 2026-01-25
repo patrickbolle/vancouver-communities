@@ -26,7 +26,7 @@
 ## Lam Jam Open Mic
 - **What:** Regular open mic nights at Pleasant Mountain Music
 - **Host:** Eddie Lam
-- **Find it:** [Eventbrite](https://eventbrite.com/o/eddie-lam-73855990373) (search "Lam Jam")
+- **Find it:** [eddielammusic.ca](https://www.eddielammusic.ca/) | [Eventbrite](https://www.eventbrite.com/o/eddie-lam-18552671942)
 
 ## Vancouver New Music
 - **What:** Experimental and new music events
@@ -39,17 +39,17 @@
 ## Commercial Drive Legion Jam Sessions
 - **What:** Weekly jam every Thursday 7pm-11pm
 - **Vibe:** Hosted by the Legionnaires, bring your instrument
-- **Find it:** Legion #179, Commercial Drive
+- **Find it:** [Facebook: Legion #179](https://www.facebook.com/Legion179/) | [BC Bands listing](https://bcbands.ca/venues/venue-commercial-drive-legion-179-vancouver/)
 
 ## Savoy Pub Open Mic
 - **What:** Regular open mic nights
 - **Vibe:** Pub atmosphere, supportive crowd
-- **Find it:** [openmicvancouver.net](https://www.openmicvancouver.net/)
+- **Find it:** [savoypub.ca](https://savoypub.ca/)
 
-## White Sails Open Mic
+## The ANZA Club Open Mic
 - **What:** Open mic with drink specials
-- **Vibe:** Win gift cards, $5 brews all night
-- **Find it:** Check their schedule
+- **Vibe:** Mount Pleasant venue, supportive crowd
+- **Find it:** [anzaclub.org](https://www.anzaclub.org/)
 
 ## Open Mic Vancouver (directory)
 - **What:** Directory of open mic nights across the city

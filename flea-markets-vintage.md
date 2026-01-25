@@ -21,23 +21,22 @@
 - **What:** Running since 1983
 - **Find it:** [Facebook](https://www.facebook.com/vancouverfleamarket/)
 
-## Chinatown Flea Market
-- **What:** Eclectic finds in historic Chinatown
-- **Vibe:** Unique treasures, cultural atmosphere
-- **Find it:** Chinatown area
-
-## Value Vintage Marketplace
-- **What:** Curated vintage clothing and collectibles
-- **Vibe:** Quality picks from multiple vendors
-- **Find it:** Yelp reviews
+## Chinatown Vintage
+- **What:** Non-profit thrift & vintage shop in Chinatown
+- **Vibe:** All proceeds support Chinatown Foundation
+- **Find it:** [@chinatownvintage](https://www.instagram.com/chinatownvintage/) | Wed-Sun, 12-5pm
 
 ## Mintage Vintage
-- **What:** Vintage mall with multiple vendors
-- **Vibe:** Retro fashion, collectibles, furniture
-- **Where:** Main Street
-- **Find it:** [mintage.ca](https://mintage.ca/)
+- **What:** Vancouver's first vintage collective (since 2005)
+- **Vibe:** Multiple locations, curated vintage from various eras
+- **Find it:** [mintagevintage.com](https://mintagevintage.com/) | Broadway & Commercial Dr locations
 
-## Fall for Local Markets
-- **What:** Seasonal pop-up markets featuring local makers
-- **Vibe:** Handmade, artisan, local focus
-- **Find it:** Various locations, check socials
+## Made in the 604 Markets
+- **What:** Pop-up markets featuring local makers
+- **Vibe:** Support local small businesses
+- **Find it:** [madeinthe604.ca/markets](https://www.madeinthe604.ca/markets)
+
+## Vancouver Pop-Ups
+- **What:** Pop-up markets all over the Lower Mainland
+- **Vibe:** Crafters, artisans, bakers in curated spaces
+- **Find it:** [vancouverpopups.ca](https://www.vancouverpopups.ca/)

@@ -34,7 +34,7 @@
 ## Ambleside Park Courts (West Van)
 - **What:** Four new courts opened September 2024
 - **Vibe:** Outdoor play, scenic location
-- **Find it:** Ambleside Park, West Vancouver
+- **Find it:** [westvancouver.ca](https://westvancouver.ca/parks-recreation/sports-recreation/pickleball) | Ambleside Park, West Vancouver
 
 ## Community Centre Drop-In Pickleball
 - **What:** Various community centres offer drop-in play

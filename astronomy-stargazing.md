@@ -16,7 +16,7 @@
 
 ## Whistler Astronomy Club
 - **What:** Dark sky stargazing near Whistler
-- **Find it:** Facebook group
+- **Find it:** [Facebook Group](https://www.facebook.com/groups/326912794079774/)
 
 ## Nahatlatch Valley Star Party
 - **What:** Annual multi-day stargazing event organized by RASC Vancouver
@@ -40,4 +40,4 @@
 ## Gordon Southam Observatory
 - **What:** Free public observing at Vanier Park (weather permitting)
 - **Vibe:** Casual drop-in stargazing, run by RASC volunteers
-- **Find it:** Vanier Park, check RASC schedule
+- **Find it:** [spacecentre.ca](https://www.spacecentre.ca/) | [RASC Vancouver](https://rasc-vancouver.com/)

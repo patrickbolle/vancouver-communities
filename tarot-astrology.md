@@ -36,4 +36,4 @@
 - **What:** Regular venue for tarot practice sessions
 - **Where:** 4124 Main St
 - **Vibe:** Cozy café setting, learn and practice
-- **Find it:** Vancouver Tarot Readers' Meetup
+- **Find it:** [Meetup: Vancouver Tarot Readers](https://www.meetup.com/Vancouver-Tarot-Readers-Meetup/)

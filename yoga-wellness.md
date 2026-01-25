@@ -15,7 +15,7 @@
 ## Free Outdoor Yoga (Parks)
 - **What:** Drop-in yoga in parks during summer
 - **Vibe:** Accessible, bring your own mat
-- **Find it:** Check community centre schedules
+- **Find it:** [vancouver.ca parks events](https://vancouver.ca/parks-recreation-culture/parks-events.aspx)
 
 ---
 

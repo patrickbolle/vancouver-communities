@@ -3,12 +3,12 @@
 ## Vancouver Art Book Fair
 - **What:** Annual celebration of books as art, zines to monographs
 - **Vibe:** Meet creators, connect with the zine community
-- **Find it:** Search annually
+- **Find it:** [vancouverartbookfair.com](https://vancouverartbookfair.com/)
 
-## Vancouver Zine Fair
-- **What:** Annual fair for zine makers and buyers
+## Zine Harvest
+- **What:** Semi-annual zine fair at Sun Wah Centre
 - **Vibe:** Meet creators, discover new zines
-- **Find it:** Check local event listings annually
+- **Find it:** [@zine.harvest](https://www.instagram.com/zine.harvest/)
 
 ---
 
@@ -29,12 +29,12 @@
 - **Vibe:** $60 sliding scale, 3-3.5 hours, no prior knowledge needed
 - **Find it:** [monikerpress.ca/workshops](https://www.monikerpress.ca/workshops/)
 
-## Lucky's Comics & Gallery
+## Lucky's Books and Comics
 - **What:** Comics shop that often stocks local zines
 - **Vibe:** Support local zine makers
-- **Find it:** Main Street area
+- **Find it:** [luckys.ca](https://luckys.ca/) | 3128 Main St
 
 ## Pulp Fiction Books
 - **What:** Independent bookstore with zine section
 - **Vibe:** Curated selection of local and indie publications
-- **Find it:** Multiple Vancouver locations
+- **Find it:** [pulpfictionbooksvancouver.com](http://pulpfictionbooksvancouver.com/) | Main St & Commercial Dr locations

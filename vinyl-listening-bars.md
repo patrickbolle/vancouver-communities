@@ -16,9 +16,9 @@
 - **Find it:** [Scout Magazine](https://scoutmagazine.ca/june-introduces-lala-a-new-vinyl-listening-bar/)
 
 ## Doze Hifi
-- **What:** Vinyl café with rotating vintage speakers
+- **What:** Travelling vinyl pop-up with rotating vintage speakers
 - **Vibe:** Saturdays disco/house, Sundays jazz/soul/funk
-- **Find it:** Search "Doze Hifi Vancouver"
+- **Find it:** [@dozehifi](https://www.instagram.com/dozehifi/)
 
 ## Red Cat Records
 - **What:** Independent record store on Main Street
@@ -28,7 +28,7 @@
 ## Zulu Records
 - **What:** Vancouver's legendary record store with listening stations
 - **Vibe:** In-house turntable refurbisher, huge selection
-- **Find it:** 1972 W 4th Ave, Kitsilano
+- **Find it:** [zulurecords.com](https://zulurecords.com/) | 1972 W 4th Ave, Kitsilano
 
 ## Audiopile
 - **What:** Record store with new and used vinyl
@@ -38,4 +38,4 @@
 ## Beat Street Records
 - **What:** DJ-focused record shop
 - **Vibe:** Electronic, hip-hop, house music
-- **Find it:** Gastown area
+- **Find it:** [beatstreet.ca](https://www.beatstreet.ca/) | 439 W Hastings St

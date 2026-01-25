@@ -52,7 +52,7 @@
 ## Cozy Art Meetup
 - **What:** Relaxed sketching/drawing in cafes downtown
 - **Vibe:** No pressure, chitchat, make friends
-- **Find it:** [Eventbrite](https://eventbrite.com/o/ania-salmina-73152543523) (search "Cozy Art Meetup")
+- **Find it:** [aniasalmina.com](https://www.aniasalmina.com/) | [Eventbrite](https://www.eventbrite.ca/o/ania-salmina-70459154583)
 
 ## Vancouver Outsider Arts Festival
 - **What:** Festival for artists facing social exclusion

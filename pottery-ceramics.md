@@ -59,4 +59,4 @@
 ## Pottery Date Nights
 - **What:** Couples pottery experiences at various studios
 - **Vibe:** Romantic, beginner-friendly
-- **Find it:** Claymates, Hand Eye Ceramics offer these
+- **Find it:** [Claymates](https://www.claymatesceramicsstudio.com/) | [Hand Eye Ceramics](https://www.handeyeceramics.com/)

@@ -20,15 +20,15 @@
 - **When:** 7:30pm
 - **Find it:** [eastsidecrafthouse.com](https://eastsidecrafthouse.com/saturday-night-trivia-vancouver)
 
-## Darbys Quiz Night
+## Darby's Quiz Night (Kitsilano)
 - **What:** Weekly trivia at 7:30pm
 - **Vibe:** Pub atmosphere, regular crowd
-- **Find it:** Darbys Gastown
+- **Find it:** [darbyspub.ca](https://darbyspub.ca/) | 2001 Macdonald St
 
 ## The Butcher & Bullock Trivia
 - **What:** Pub trivia with burger & beer specials
 - **Vibe:** $16 burger & beer, $5 Jameson
-- **Find it:** Downtown
+- **Find it:** 911 W Pender St, Downtown
 
 ## Storm Crow Alehouse Trivia
 - **What:** Geek-themed trivia nights
@@ -38,7 +38,7 @@
 ## Amazing Brentwood Tuesday Trivia
 - **What:** Free trivia covering geeky topics
 - **Vibe:** Film, TV, video games, science, teams up to 6
-- **Find it:** Amazing Brentwood food court
+- **Find it:** [theamazingbrentwood.com](https://theamazingbrentwood.com/) | Food court
 
 ---
 

@@ -50,7 +50,7 @@
 ## Make Friends Over Brunch Vancouver
 - **What:** Brunch meetups to make new friends
 - **Vibe:** Low-pressure, delicious food, small groups of 4-6 people
-- **Find it:** [groupvibe.com](https://groupvibe.com/) (tickets) or search Meetup
+- **Find it:** [groupvibe.com](https://groupvibe.com/)
 
 ## Meatless Meetup
 - **What:** Social events for vegetarians/vegans

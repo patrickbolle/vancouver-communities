@@ -8,12 +8,12 @@
 ## Repair Cafés Vancouver
 - **What:** Free community repair events
 - **Vibe:** Fix things instead of throwing them away, learn repair skills
-- **Find it:** Various locations, check Eventbrite
+- **Find it:** [spec.bc.ca/waste/repair-cafe](https://spec.bc.ca/waste/repair-cafe/) | [Facebook](https://www.facebook.com/mvrepaircafes/)
 
 ## Vancouver Tool Library
 - **What:** Borrow tools instead of buying
 - **Vibe:** Community resource, sustainable making
-- **Find it:** Search "Vancouver Tool Library"
+- **Find it:** [vancouvertoollibrary.com](https://vancouvertoollibrary.com/)
 
 ---
 
@@ -36,7 +36,7 @@
 - **Vibe:** Open to everyone, hands-on learning
 - **Find it:** [langara.ca/campus-facilities/makerspace](https://langara.ca/campus-facilities/makerspace/index.html)
 
-## Emily Carr University Maker Labs
+## Emily Carr University Digital Fabrication Lab
 - **What:** Access to fabrication tools for students and community
 - **Vibe:** Creative, art-focused making
-- **Find it:** Emily Carr University
+- **Find it:** [ecuad.ca/on-campus/shops-studios/digfab](https://www.ecuad.ca/on-campus/shops-studios/digfab)

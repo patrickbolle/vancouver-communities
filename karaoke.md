@@ -17,23 +17,23 @@
 ## Community Centre Lunchtime Karaoke
 - **What:** Daytime karaoke at community centres
 - **Vibe:** Casual, older crowd friendly
-- **Find it:** Check local community centres
+- **Find it:** [vancouver.ca recreation search](https://vancouver.ca/parks-recreation-culture/recreation-facilities.aspx)
 
 ## Celebrities Nightclub Sunday Karaoke
 - **What:** Vancouver's oldest gay bar hosts karaoke Sundays
 - **Vibe:** Fun, inclusive, great atmosphere
-- **Find it:** Davie Street
+- **Find it:** [celebritiesnightclub.com](https://www.celebritiesnightclub.com/) | 1022 Davie St
 
 ## SWITCH Karaoke
-- **What:** Daily karaoke 2pm-6pm, all-day Wednesdays
-- **Where:** Robson Plaza
-- **Cost:** $5/person, group rates available
-- **Find it:** Robson Street
+- **What:** Private karaoke suites, open daily
+- **Where:** 1339 Robson Street
+- **Cost:** Group rates available
+- **Find it:** [switch-vancouver.ca](https://switch-vancouver.ca/)
 
-## Partyworld Burnaby KTV
+## KTV Party World (Burnaby)
 - **What:** Private karaoke rooms, large song selection
 - **Vibe:** Vibrant, fun night out
-- **Find it:** 4361 Kingsway, Burnaby
+- **Find it:** [Yelp](https://www.yelp.ca/biz/ktv-party-world-burnaby) | 200-4361 Kingsway, Burnaby
 
 ## Union Latinos Karaoke Thursdays
 - **What:** Karaoke nights with Latin vibe

@@ -26,12 +26,12 @@
 ## Harbour Event Centre Shows
 - **What:** Regular DJ events at Harbour venue
 - **Vibe:** Major touring DJs, local support
-- **Find it:** Harbour Event Centre
+- **Find it:** [harbourconventioncentre.com](https://www.harbourconventioncentre.com/)
 
 ## The Birdhouse Events
 - **What:** Warehouse venue for electronic music
 - **Vibe:** Underground, quality sound systems
-- **Find it:** Check Public Disco and other promoters
+- **Find it:** [19hz.info](https://19hz.info/eventlisting_BC.php) for event listings
 
 ## 19hz.info
 - **What:** THE directory for electronic music events in BC
