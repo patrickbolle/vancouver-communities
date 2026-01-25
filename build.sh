@@ -366,6 +366,7 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
   <link rel="canonical" href="${SITE_URL}/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Vancouver Community Directory" href="/feed.xml">
+  <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
   ${STYLES}
   <script type="application/ld+json">
   {
@@ -412,6 +413,7 @@ cat > "$SITE_DIR/submit/index.html" << HTMLEOF
   <title>Submit a Group | Vancouver Community Directory</title>
   <meta name="description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
   ${STYLES}
 </head>
 <body>
@@ -467,6 +469,7 @@ for mdfile in *.md; do
   <link rel="canonical" href="${SITE_URL}/${slug}/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Vancouver Community Directory" href="/feed.xml">
+  <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
   ${STYLES}
   <script type="application/ld+json">
   {
