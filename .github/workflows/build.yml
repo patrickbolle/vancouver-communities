@@ -1,0 +1,29 @@
+name: Build Site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.md'
+      - 'build.sh'
+      - 'site/index.html'
+      - 'site/styles.css'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Build HTML from Markdown
+        run: |
+          chmod +x build.sh
+          ./build.sh
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add site/
+          git diff --staged --quiet || git commit -m "Rebuild site from markdown"
+          git push
