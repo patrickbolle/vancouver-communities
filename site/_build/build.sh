@@ -218,10 +218,7 @@ generate_sidebar() {
   
   echo '<nav class="sidebar">'
   echo '  <div class="sidebar-header">'
-  echo "    <a href=\"${base_path}\" class=\"logo\">"
-  echo '      <span class="logo-mark">VAN</span>'
-  echo '      <span class="logo-text">Community<br>Directory</span>'
-  echo '    </a>'
+  echo "    <a href=\"${base_path}\" class=\"logo\">Vancouver Community</a>"
   echo '  </div>'
   echo '  <ul>'
   
@@ -239,7 +236,7 @@ generate_sidebar() {
   echo "    <a href=\"#\" onclick=\"goRandom()\">🎲 Random</a><br>"
   echo '    <span id="total-views"></span><br>'
   echo "    Updated ${BUILD_DATE_HUMAN}<br>"
-  echo '    Created by <a href="https://bolle.co" target="_blank">Patrick Bolle</a>'
+  echo '    Created by <a href="https://bollenbach.ca" target="_blank">Patrick Bollenbach</a>'
   echo '  </div>'
   echo '</nav>'
 }
@@ -283,28 +280,15 @@ a:visited { color: #551a8b; }
   border-bottom: 1px solid #ddd;
 }
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: block;
   text-decoration: none;
-  color: inherit;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
-.logo:hover { text-decoration: none; }
-.logo-mark {
-  background: #222;
-  color: #fff;
-  padding: 6px 8px;
-  font-size: 0.85em;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  line-height: 1;
-}
-.logo-text {
-  font-size: 0.95em;
-  line-height: 1.25;
-  color: #333;
-  font-weight: 500;
-}
+.logo:hover { text-decoration: none; color: #000; }
 .sidebar-header h1 { font-size: 1.1em; font-weight: normal; }
 .sidebar-header h1 a { color: inherit; }
 .sidebar-header h1 a:hover { color: #0066cc; text-decoration: none; }
@@ -418,8 +402,8 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
     "description": "A comprehensive guide to groups, clubs, meetups, and events for connection and community in Vancouver, BC.",
     "publisher": {
       "@type": "Person",
-      "name": "Patrick Bolle",
-      "url": "https://bolle.co"
+      "name": "Patrick Bollenbach",
+      "url": "https://bollenbach.ca"
     }
   }
   </script>
@@ -433,7 +417,7 @@ $(generate_sidebar "" "/")
     <p>This directory collects social groups, clubs, meetups, and events in one place.</p>
     <p style="margin-top: 15px; color: #666;">← Pick a category to explore</p>
     <hr style="margin: 25px 0;">
-    <p style="font-size: 0.9em; color: #666;">Created by <a href="https://bolle.co">Patrick Bolle</a> for the Vancouver community.</p>
+    <p style="font-size: 0.9em; color: #666;">Created by <a href="https://bollenbach.ca">Patrick Bollenbach</a> for the Vancouver community.</p>
     <p style="margin-top: 15px; color: #666; font-size: 0.9em;" id="page-views"></p>
   </div>
 </main>

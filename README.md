@@ -546,4 +546,4 @@ A guide to groups, clubs, meetups, and events in Vancouver, BC.
 
 **Site code:** See `site/_build/` for the static site generator and Cloudflare Workers.
 
-Created by [Patrick Bolle](https://bolle.co)
+Created by [Patrick Bollenbach](https://bollenbach.ca)
