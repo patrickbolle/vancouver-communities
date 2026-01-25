@@ -474,19 +474,109 @@ cat > "$SITE_DIR/submit/index.html" << HTMLEOF
 $(generate_sidebar "submit" "/")
 <main class="content">
   <h1>Submit a Group</h1>
-  <p>Know a community, club, or meetup that should be listed? Submit it below!</p>
-  <p style="margin: 20px 0;">
-    <a href="https://github.com/patrickbolle/vancouver-communities/issues/new?template=submit-group.md&title=New+Group:+[Name]" target="_blank" style="background: #f0f0e8; padding: 10px 15px; border: 1px solid #ddd;">
-      Submit via GitHub →
-    </a>
-  </p>
-  <p style="color: #666; font-size: 0.9em;">
-    You'll need a GitHub account. Just fill in the template with the group name, description, and link.
-  </p>
-  <hr>
-  <p style="color: #666; font-size: 0.9em;">
-    Or email: <a href="mailto:hello@bolle.co?subject=Vancouver%20Community%20Submission">hello@bolle.co</a>
-  </p>
+  <p>Know a community, club, or meetup that should be listed? Fill out the form below.</p>
+  
+  <form id="submit-form" style="margin-top: 20px;">
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Group Name *</label>
+      <input type="text" name="name" required style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;">
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Category *</label>
+      <select name="category" required style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;">
+        <option value="">Select a category...</option>
+        <option value="Run Clubs">Run Clubs</option>
+        <option value="Social/Friend Clubs">Social/Friend Clubs</option>
+        <option value="Dinner/Supper Clubs">Dinner/Supper Clubs</option>
+        <option value="Board Games">Board Games</option>
+        <option value="Creative/Art">Creative/Art</option>
+        <option value="Photography">Photography</option>
+        <option value="Film/Cinema">Film/Cinema</option>
+        <option value="Writing">Writing</option>
+        <option value="Language Exchange">Language Exchange</option>
+        <option value="Hiking/Outdoors">Hiking/Outdoors</option>
+        <option value="Cycling">Cycling</option>
+        <option value="Dance">Dance</option>
+        <option value="Improv/Comedy">Improv/Comedy</option>
+        <option value="Music/Open Mic">Music/Open Mic</option>
+        <option value="Climbing">Climbing</option>
+        <option value="Yoga/Wellness">Yoga/Wellness</option>
+        <option value="Meditation">Meditation</option>
+        <option value="Book Clubs">Book Clubs</option>
+        <option value="Tech/Startup">Tech/Startup</option>
+        <option value="Volunteer">Volunteer</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">What is it? *</label>
+      <textarea name="description" required rows="3" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="What does this group do?"></textarea>
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Vibe/Atmosphere</label>
+      <input type="text" name="vibe" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="What's it like? Who's it for?">
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Website or Social Link</label>
+      <input type="url" name="link" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="https://...">
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Location (if applicable)</label>
+      <input type="text" name="location" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="Neighbourhood or address">
+    </div>
+    
+    <div style="margin-bottom: 20px;">
+      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Anything else?</label>
+      <textarea name="additional" rows="2" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="Cost, schedule, tips..."></textarea>
+    </div>
+    
+    <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit; font-size: inherit;">Submit</button>
+    <p id="form-status" style="margin-top: 10px; color: #666;"></p>
+  </form>
+  
+  <script>
+  document.getElementById('submit-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('form-status');
+    const btn = e.target.querySelector('button');
+    
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    status.textContent = '';
+    
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    
+    try {
+      const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      
+      const result = await res.json();
+      
+      if (result.success) {
+        status.style.color = '#2a7d2a';
+        status.textContent = '✓ ' + result.message;
+        e.target.reset();
+      } else {
+        throw new Error(result.error || 'Submission failed');
+      }
+    } catch (err) {
+      status.style.color = '#c00';
+      status.textContent = 'Error: ' + err.message;
+    }
+    
+    btn.disabled = false;
+    btn.textContent = 'Submit';
+  });
+  </script>
 </main>
 ${SCRIPTS}
 </body>
