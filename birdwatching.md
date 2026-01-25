@@ -38,11 +38,11 @@
 
 ## Venues & Resources
 
-### BC Bird Trail
+## BC Bird Trail
 - **What:** Trail and resources for birding across BC
 - **Find it:** [bcbirdtrail.ca](https://bcbirdtrail.ca/)
 
-### Birding BC Website
+## Birding BC Website
 - **What:** Hub for BC birding info, rare bird alerts, forums
 - **Vibe:** Resource for all skill levels
 - **Find it:** [birding.bc.ca](https://birding.bc.ca/)

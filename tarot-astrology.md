@@ -27,12 +27,12 @@
 
 ## Venues & Resources
 
-### Banyen Books & Sound
+## Banyen Books & Sound
 - **What:** Spiritual bookstore with workshops and events
 - **Vibe:** Hub for Vancouver's spiritual community
 - **Find it:** [banyen.com](https://www.banyen.com/)
 
-### Aperture Coffee Bar Tarot Meetups
+## Aperture Coffee Bar Tarot Meetups
 - **What:** Regular venue for tarot practice sessions
 - **Where:** 4124 Main St
 - **Vibe:** Cozy café setting, learn and practice

@@ -64,6 +64,6 @@
 
 ## Venues & Resources
 
-### runclubs.ca
+## runclubs.ca
 - **What:** Directory of 60+ Vancouver run clubs compiled in one site
 - **Find it:** [runclubs.ca/vancouver](https://runclubs.ca/vancouver)

@@ -62,7 +62,7 @@
 
 ## Venues & Spaces
 
-### The Arts Factory Society
+## The Arts Factory Society
 - **What:** Multidisciplinary arts facility — workshops, studio spaces, offices
 - **Where:** 281 Industrial Avenue
 - **Find it:** [artsfactorysociety.ca](https://artsfactorysociety.ca)

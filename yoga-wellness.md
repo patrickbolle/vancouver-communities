@@ -21,22 +21,22 @@
 
 ## Venues & Spaces
 
-### Modo Yoga Vancouver
+## Modo Yoga Vancouver
 - **What:** Eco-friendly hot yoga studios
 - **Vibe:** Inclusive community, physical and mental wellness
 - **Find it:** [modoyoga.com/east-vancouver](https://modoyoga.com/east-vancouver/)
 
-### Open Door Yoga
+## Open Door Yoga
 - **What:** Classes 7 days a week at 3 East Van locations
 - **Vibe:** Accessible, welcoming
 - **Find it:** [opendooryoga.bc.ca](https://opendooryoga.bc.ca/)
 
-### One Yoga Vancouver
+## One Yoga Vancouver
 - **What:** Community yoga studio
 - **Vibe:** Unlimited free passes for Indigenous People
 - **Find it:** [oneyogavan.com](https://www.oneyogavan.com/)
 
-### YYoga
+## YYoga
 - **What:** Multiple studios across Vancouver
 - **Vibe:** Variety of styles, strong community
 - **Find it:** [yyoga.ca](https://www.yyoga.ca/)

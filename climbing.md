@@ -28,30 +28,30 @@
 
 ## Venues & Spaces
 
-### The Hive
+## The Hive
 - **What:** Bouldering and climbing gym
 - **Vibe:** Inclusive community focus
 - **Find it:** [hiveclimbing.com](https://www.hiveclimbing.com/)
 
-### Progression Bouldering Gym
+## Progression Bouldering Gym
 - **What:** Climbing + café
 - **Find it:** [progressionbouldering.com](https://www.progressionbouldering.com/)
 
-### Climb Base5
+## Climb Base5
 - **What:** Indoor climbing, kid-friendly
 - **Vibe:** "Discover your extraordinary potential"
 - **Find it:** [climbbase5.com](https://climbbase5.com/)
 
-### Cliffhanger Climbing Gym
+## Cliffhanger Climbing Gym
 - **What:** Indoor climbing
 - **Find it:** [cliffhangerclimbing.com](https://cliffhangerclimbing.com/)
 
-### Project Climbing
+## Project Climbing
 - **What:** Bouldering gym with community focus
 - **Where:** North Vancouver
 - **Find it:** [projectclimbing.ca](https://www.projectclimbing.ca/)
 
-### SFU Climbing Wall
+## SFU Climbing Wall
 - **What:** University climbing wall open to public
 - **Vibe:** Affordable, beginner-friendly
 - **Find it:** SFU Recreation

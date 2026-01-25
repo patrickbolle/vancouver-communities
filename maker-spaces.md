@@ -19,24 +19,24 @@
 
 ## Venues & Spaces
 
-### MakerLabs
+## MakerLabs
 - **What:** 26,000 sq ft — wood shop, metal shop, ceramics, CNC, laser cutters, sewing
 - **Find it:** [makerlabs.com](https://www.makerlabs.com/)
 
-### Vancouver Community Laboratory (CoLab)
+## Vancouver Community Laboratory (CoLab)
 - **What:** Collaborative workshop — wood, metal, textiles
 - **Find it:** [vancommunitylab.com](https://vancommunitylab.com/)
 
-### Maker Cube (Langley)
+## Maker Cube (Langley)
 - **What:** Woodworking to 3D printing to pottery
 - **Find it:** [makercube.ca](https://makercube.ca/)
 
-### Langara Makerspace
+## Langara Makerspace
 - **What:** 3D printers, sewing machines, workshops
 - **Vibe:** Open to everyone, hands-on learning
 - **Find it:** [langara.ca/campus-facilities/makerspace](https://langara.ca/campus-facilities/makerspace/index.html)
 
-### Emily Carr University Maker Labs
+## Emily Carr University Maker Labs
 - **What:** Access to fabrication tools for students and community
 - **Vibe:** Creative, art-focused making
 - **Find it:** Emily Carr University

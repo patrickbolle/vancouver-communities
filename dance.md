@@ -22,36 +22,36 @@
 
 ## Venues & Spaces
 
-### SalsaStudio.net
+## SalsaStudio.net
 - **What:** Salsa and Bachata classes
 - **Where:** Downtown Vancouver
 - **Find it:** [salsastudio.net](https://www.salsastudio.net/)
 
-### BAZA Dance
+## BAZA Dance
 - **What:** Beginner Latin dance, GTK workshops
 - **Vibe:** No partner required
 - **Find it:** [bazadance.com](https://www.bazadance.com/)
 
-### Dance Vancouver Studio
+## Dance Vancouver Studio
 - **What:** Salsa, Bachata, Cumbia, Hip Hop, Hustle
 - **Where:** 1627 West Broadway
 - **Find it:** [dancevancouver.ca](https://www.dancevancouver.ca)
 
-### Baila! DanceToday
+## Baila! DanceToday
 - **What:** Latin dance classes
 - **Find it:** [dancetoday.fun](https://www.dancetoday.fun/)
 
-### Swing Soul Vancouver
+## Swing Soul Vancouver
 - **What:** Intro to West Coast Swing classes
 - **Vibe:** Beginner-friendly, strong foundation
 - **Find it:** [swingliteracy.com/swingsoul](https://www.swingliteracy.com/swingsoul/)
 
-### Bachata ME Thursdays
+## Bachata ME Thursdays
 - **What:** Bachata lessons and party all-in-one
 - **Vibe:** Weekly social dance night
 - **Find it:** [danceus.org](https://www.danceus.org/events/salsa/vancouver-bc-canada-salsa-calendar/)
 
-### Mangos Kitchen Bar Dance Nights
+## Mangos Kitchen Bar Dance Nights
 - **What:** Learn salsa, bachata, merengue at a Latin restaurant
 - **Vibe:** Casual, fun atmosphere
 - **Find it:** [mangosvancouver.com](https://www.mangosvancouver.com/)

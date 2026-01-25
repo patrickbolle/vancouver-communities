@@ -23,29 +23,29 @@
 
 ## Venues & Spaces
 
-### The Cinematheque
+## The Cinematheque
 - **What:** Art house cinema, curated screenings
 - **Find it:** [thecinematheque.ca](https://thecinematheque.ca/)
 
-### VIFF Centre
+## VIFF Centre
 - **What:** Vancouver International Film Festival venue, year-round programming
 - **Find it:** [viff.org](https://viff.org/)
 
-### Vancouver Public Library Film Screenings
+## Vancouver Public Library Film Screenings
 - **What:** Feature films and documentaries with discussions
 - **Find it:** [vpl.ca/program/film-screenings](https://www.vpl.ca/program/film-screenings)
 
-### Film Club at The Cinematheque
+## Film Club at The Cinematheque
 - **What:** Family-friendly movie matinees
 - **When:** Third Sunday of each month
 - **Find it:** [thecinematheque.ca/series/film-club](https://thecinematheque.ca/series/film-club)
 
-### VIFF Live
+## VIFF Live
 - **What:** Live performances intersecting cinema with music, comedy, podcasts
 - **Vibe:** Unique cinema-infused live shows
 - **Find it:** [viff.org](https://viff.org/)
 
-### Rio Theatre
+## Rio Theatre
 - **What:** Independent cinema with cult classics and special events
 - **Vibe:** Community hub, midnight movies, live events
 - **Find it:** [riotheatre.ca](https://riotheatre.ca/)

@@ -35,12 +35,12 @@
 
 ## Venues & Resources
 
-### Gallery George
+## Gallery George
 - **What:** Gallery that hosts photography events and exhibitions
 - **Vibe:** Community hub for street photographers
 - **Find it:** Search "Gallery George Vancouver"
 
-### Capture Photography Festival
+## Capture Photography Festival
 - **What:** Annual photography festival with exhibitions and events
 - **Vibe:** International photographers, local venues
 - **Find it:** [capturephotofest.com](https://www.capturephotofest.com/)

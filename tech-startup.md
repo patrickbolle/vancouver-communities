@@ -49,7 +49,7 @@
 
 ## Venues & Resources
 
-### Launch Academy
+## Launch Academy
 - **What:** Startup accelerator with events and resources
 - **Vibe:** Educational, supportive of early-stage founders
 - **Find it:** [launchacademy.ca](https://www.launchacademy.ca/)

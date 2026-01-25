@@ -37,12 +37,12 @@
 
 ## Venues & Spaces
 
-### Enabling Arts Poetry Open Mic
+## Enabling Arts Poetry Open Mic
 - **What:** Poetry night in supportive environment
 - **Where:** 343 Railway St (#104), Gastown
 - **Find it:** [readlocalbc.ca](https://www.readlocalbc.ca/)
 
-### Rio Theatre Poetry Events
+## Rio Theatre Poetry Events
 - **What:** Occasional poetry and spoken word nights
 - **Vibe:** Unique venue, community atmosphere
 - **Find it:** [riotheatre.ca](https://riotheatre.ca/)

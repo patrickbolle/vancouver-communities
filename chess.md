@@ -34,11 +34,11 @@
 
 ## Venues & Resources
 
-### BC Chess Federation Clubs
+## BC Chess Federation Clubs
 - **What:** Directory of formal chess clubs
 - **Find it:** [chess.bc.ca/clubs](https://www.chess.bc.ca/clubs.php)
 
-### Vancouver Chess School
+## Vancouver Chess School
 - **What:** Chess classes, tournaments, community programs
 - **Vibe:** Educational, youth and adult programs
 - **Find it:** [vanchess.ca](https://www.vanchess.ca/)
