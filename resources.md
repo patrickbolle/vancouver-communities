@@ -100,3 +100,108 @@
 ## Urban Rec Vancouver
 - **What:** Sport & social club leagues (dodgeball, volleyball, etc.)
 - **Find it:** [vancouver.urbanrec.ca](https://vancouver.urbanrec.ca)
+
+---
+
+## Facebook Groups
+
+## Vancouver Events
+- **What:** Markets, shows, classes, workshops, festivals
+- **Find it:** [facebook.com/groups/VANCOUVER-Events](https://www.facebook.com/share/g/1BhPHx9wiS/)
+
+## Vancouver Foodies Group
+- **What:** Honest reviews, drool-worthy photos, hidden gems
+- **Find it:** [facebook.com/groups/VancouverFoodies](https://www.facebook.com/share/g/16csYCJ5rP/)
+
+## Metro Vancouver Buy & Sell
+- **What:** Cleanest buy/sell group for furniture, bikes, electronics
+- **Find it:** [facebook.com/groups/MetroVancouverBuySell](https://www.facebook.com/share/g/19JQZMyZb4/)
+
+## Vancouver Housing Rentals
+- **What:** Rental listings, roommates, housing
+- **Find it:** [facebook.com/groups/VancouverHousingRentals](https://www.facebook.com/share/g/15qdwwZSp8/)
+
+## JOBS Vancouver BC
+- **What:** Part-time gigs, career moves, job postings
+- **Find it:** [facebook.com/groups/JOBSVancouverBC](https://www.facebook.com/share/g/1BhTD8BRYV/)
+
+## Newcomers in Vancouver
+- **What:** For people new to Vancouver
+- **Find it:** [facebook.com/groups/newcomersinvancouver](https://facebook.com/groups/newcomersinvancouver)
+
+## Irish and New in Vancouver
+- **What:** Newcomers finding housing, jobs, and friendships
+- **Find it:** [facebook.com/groups/IrishAndNewInVancouver](https://www.facebook.com/share/g/1EarYgsnbg/)
+
+## Take a Hike! Vancouver
+- **What:** Active hiking group with weekly hikes, all skill levels
+- **Find it:** [facebook.com/groups/97461647231](https://facebook.com/groups/97461647231)
+
+## Slow Hikers Vancouver
+- **What:** For hikers who take their time on trails
+- **Vibe:** Supportive, no-rush, "we'll wait for you"
+- **Find it:** [facebook.com/groups/2615875668725777](https://facebook.com/groups/2615875668725777)
+
+## BC Kids Hiking Club
+- **What:** Family-friendly hiking for parents with kids
+- **Find it:** [facebook.com/groups/689466651389187](https://facebook.com/groups/689466651389187)
+
+## Sunday Hike
+- **What:** Find hiking buddies for weekend adventures
+- **Find it:** [facebook.com/groups/SundayHike](https://www.facebook.com/share/g/1B7qbv3rbS/)
+
+## Vancouver Dog Owners
+- **What:** Off-leash friends, vet recommendations, lost dog alerts
+- **Find it:** [facebook.com/groups/VancouverDogOwners](https://www.facebook.com/share/g/19XEuNFE9g/)
+
+## VancouverMom.ca
+- **What:** Community of Vancouver parents
+- **Vibe:** Daycare tips, kid-friendly spots, parenting advice
+- **Find it:** [facebook.com/groups/VancouverMom](https://www.facebook.com/share/g/16t9da4owh/)
+
+## Gay Vancouver LIFE (Alphabet Family)
+- **What:** 2SLGBTQIA+ community space
+- **Vibe:** Connect, vent, celebrate, share resources
+- **Find it:** [facebook.com/groups/GayVancouverLIFE](https://www.facebook.com/share/g/1GcFJmjDy6/)
+
+---
+
+## Instagram Communities
+
+## @weshouldbefriendsvancouver
+- **What:** Chill meetups — picnics, plant swaps, game nights
+- **Size:** 33,000+ followers
+- **Find it:** [instagram.com/weshouldbefriendsvancouver](https://instagram.com/weshouldbefriendsvancouver)
+
+## @letsadventurevan
+- **What:** Weekly outdoor stranger meetups — hikes, cold plunges, sports
+- **Vibe:** Welcoming, low-key, builds real friendships
+- **Find it:** [instagram.com/letsadventurevan](https://instagram.com/letsadventurevan)
+
+## @van.thrive.club
+- **What:** Young entrepreneurs networking and events
+- **Find it:** [instagram.com/van.thrive.club](https://instagram.com/van.thrive.club)
+
+## @vancitybusinessbabes
+- **What:** Female entrepreneurs network
+- **Vibe:** Events, podcasts, education, connections
+- **Find it:** [instagram.com/vancitybusinessbabes](https://instagram.com/vancitybusinessbabes)
+
+## @slicevancouver
+- **What:** Artist community supporting 350+ local creatives
+- **Vibe:** Gift shop, gallery, coworking, workshops
+- **Find it:** [instagram.com/slicevancouver](https://instagram.com/slicevancouver)
+
+## @boredinvancouver
+- **What:** Fun, unique things to do in Vancouver
+- **Vibe:** "Keeping the vibe real"
+- **Find it:** [instagram.com/boredinvancouver](https://instagram.com/boredinvancouver)
+
+## @604now
+- **What:** Lifestyle, entertainment, what's happening
+- **Find it:** [instagram.com/604now](https://instagram.com/604now)
+
+## @dishedvancouver
+- **What:** Food and drink news and reviews
+- **Size:** 476,000+ followers
+- **Find it:** [instagram.com/dishedvancouver](https://instagram.com/dishedvancouver)

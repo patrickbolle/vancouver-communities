@@ -58,6 +58,26 @@
 - **Vibe:** Make new friends through outdoor activities
 - **Find it:** [meetup.com/y-adventure](https://meetup.com/y-adventure)
 
+## Take a Hike! Vancouver (Facebook)
+- **What:** One of the most active hiking groups, weekly hikes
+- **Vibe:** All skill levels, group chats for young adults and socializing
+- **Find it:** [facebook.com/groups/97461647231](https://facebook.com/groups/97461647231)
+
+## Slow Hikers Vancouver (Facebook)
+- **What:** For hikers who take twice the suggested time
+- **Vibe:** "We'll wait for you" — supportive, no-rush
+- **Find it:** [facebook.com/groups/2615875668725777](https://facebook.com/groups/2615875668725777)
+
+## BC Kids Hiking Club (Facebook)
+- **What:** Family hiking for parents with kids (ages 3+)
+- **Vibe:** Experience sharing, building trail-savvy kids
+- **Find it:** [facebook.com/groups/689466651389187](https://facebook.com/groups/689466651389187)
+
+## Let's Adventure Vancouver (Instagram)
+- **What:** Weekly outdoor stranger meetups
+- **Vibe:** Hikes, cold plunges, paddling — welcoming to all
+- **Find it:** [@letsadventurevan](https://instagram.com/letsadventurevan)
+
 ## Golden Age Hiking Club
 - **What:** Hiking for active seniors (55+)
 - **Vibe:** Social, moderate pace, scenic routes
