@@ -55,6 +55,23 @@
 - **Vibe:** 30K+ members across 40+ cities, networking while running
 - **Find it:** [lu.ma/foundersrc](https://lu.ma/foundersrc)
 
+## The Vancouver Running and Jogging Club
+- **What:** Runs for all ability levels
+- **Size:** 8,700+ members
+- **Vibe:** Encouraging new runners, supportive community
+- **Find it:** [meetup.com/vanrun](https://meetup.com/vanrun)
+
+## Kits Runners
+- **What:** Kitsilano-based running group
+- **Where:** Point Grey Park
+- **Vibe:** Community runs, marathon training
+- **Find it:** [meetup.com/kits-running-group](https://meetup.com/kits-running-group)
+
+## Vancouver Run, Grub and Chug Club
+- **What:** Social runs followed by food and drinks
+- **Vibe:** Fun-first, social running
+- **Find it:** [meetup.com/vancouver-run-grub-and-chug-club](https://meetup.com/vancouver-run-grub-and-chug-club)
+
 ## M2M Running (Miles to Marathon)
 - **What:** Wednesday runs at 6:30pm, two locations
 - **Where:** Point Grey and Empire Track (PNE/Burnaby)

@@ -40,6 +40,22 @@
 - **Vibe:** Accessible, beginner-friendly
 - **Find it:** [vancouver.ca/parks-recreation](https://vancouver.ca/parks-recreation-culture.aspx) | Community centre schedules
 
+## Inner Engineering Vancouver (Isha Yoga)
+- **What:** Free meditation classes, yoga programs, social gatherings
+- **Vibe:** Learn, relax, and have fun
+- **Find it:** [meetup.com/isha-yoga-vancouver-bc](https://meetup.com/isha-yoga-vancouver-bc)
+
+## Vancouver Meditation Community (Heartfulness)
+- **What:** Group meditation practice downtown
+- **Size:** 2,000+ members
+- **Where:** Friend's Quarters, 328 West Hastings St
+- **Find it:** [meetup.com/Vancouver-Heartfulness-Meditation](https://meetup.com/Vancouver-Heartfulness-Meditation)
+
+## BE Yoga and Meditation Vancouver
+- **What:** Meditation for fulfilled living
+- **Vibe:** Abundance, health, love, inner success
+- **Find it:** [meetup.com/be-yoga-meditation-vancouver](https://meetup.com/be-yoga-meditation-vancouver)
+
 ---
 
 ## Venues & Resources

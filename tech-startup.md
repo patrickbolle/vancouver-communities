@@ -10,6 +10,11 @@
 - **Vibe:** Collaboration, building relationships
 - **Find it:** [meetup.com/vantechfounders](https://meetup.com/vantechfounders)
 
+## Vancouver Founders' Club
+- **What:** Community for diverse entrepreneurial minds
+- **Vibe:** Spark ideas, build ventures, create connections
+- **Find it:** [meetup.com/vancouver-founders-club](https://meetup.com/vancouver-founders-club)
+
 ## Vancouver Entrepreneurs & Startup Network
 - **What:** Help entrepreneurs meet potential partners
 - **Find it:** [meetup.com/vancouver-entrepreneurs-network](https://meetup.com/vancouver-entrepreneurs-network)

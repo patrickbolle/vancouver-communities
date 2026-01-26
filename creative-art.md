@@ -70,6 +70,17 @@
 - **Vibe:** Creative tech intersection, community-driven
 - **Find it:** Events via [lu.ma/vancouver-ai](https://lu.ma/vancouver-ai)
 
+## The Artist's Way Vancouver
+- **What:** Discussion group for creative people
+- **Size:** 2,700+ members
+- **Vibe:** Supportive, encouraging, inspiring conversations
+- **Find it:** [meetup.com/vancouver-artists-way](https://meetup.com/vancouver-artists-way)
+
+## YVR Art Photography Workshops
+- **What:** Studio and location photo sessions with models
+- **Vibe:** Develop your artistic vision, non-judgmental
+- **Find it:** [meetup.com/Fine-Art-Photography-Sessions-with-Kate-Snig](https://meetup.com/Fine-Art-Photography-Sessions-with-Kate-Snig)
+
 ---
 
 ## Venues & Spaces
