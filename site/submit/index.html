@@ -5,15 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit a Group | Vancouver Community Directory</title>
   <meta name="description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
-  <meta property="og:title" content="Submit a Group | Vancouver Community Directory">
-  <meta property="og:description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://vancouvercommunity.org/submit/">
-  <meta property="og:image" content="https://vancouvercommunity.org/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Submit a Group | Vancouver Community Directory">
-  <meta name="twitter:description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
-  <meta name="twitter:image" content="https://vancouvercommunity.org/og-image.png">
   <link rel="canonical" href="https://vancouvercommunity.org/submit/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
@@ -59,7 +50,6 @@
     <li><a href="/underground-dj/"><span class="emoji">🎧</span> Underground DJ</a></li>
     <li><a href="/poetry-spoken-word/"><span class="emoji">🎤</span> Poetry & Spoken Word</a></li>
     <li><a href="/tarot-astrology/"><span class="emoji">🔮</span> Tarot & Astrology</a></li>
-    <li><a href="/flea-markets-vintage/"><span class="emoji">🛍️</span> Flea Markets & Vintage</a></li>
     <li><a href="/pub-trivia/"><span class="emoji">🧠</span> Pub Trivia</a></li>
     <li><a href="/zine-risograph/"><span class="emoji">📖</span> Zine & Risograph</a></li>
     <li><a href="/astronomy-stargazing/"><span class="emoji">🔭</span> Astronomy & Stargazing</a></li>
@@ -94,21 +84,6 @@
         <option value="Dinner/Supper Clubs">Dinner/Supper Clubs</option>
         <option value="Board Games">Board Games</option>
         <option value="Creative/Art">Creative/Art</option>
-        <option value="Photography">Photography</option>
-        <option value="Film/Cinema">Film/Cinema</option>
-        <option value="Writing">Writing</option>
-        <option value="Language Exchange">Language Exchange</option>
-        <option value="Hiking/Outdoors">Hiking/Outdoors</option>
-        <option value="Cycling">Cycling</option>
-        <option value="Dance">Dance</option>
-        <option value="Improv/Comedy">Improv/Comedy</option>
-        <option value="Music/Open Mic">Music/Open Mic</option>
-        <option value="Climbing">Climbing</option>
-        <option value="Yoga/Wellness">Yoga/Wellness</option>
-        <option value="Meditation">Meditation</option>
-        <option value="Book Clubs">Book Clubs</option>
-        <option value="Tech/Startup">Tech/Startup</option>
-        <option value="Volunteer">Volunteer</option>
         <option value="Other">Other</option>
       </select>
     </div>
@@ -119,23 +94,8 @@
     </div>
     
     <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Vibe/Atmosphere</label>
-      <input type="text" name="vibe" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="What's it like? Who's it for?">
-    </div>
-    
-    <div style="margin-bottom: 15px;">
       <label style="display: block; margin-bottom: 5px; font-weight: 500;">Website or Social Link</label>
       <input type="url" name="link" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="https://...">
-    </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Location (if applicable)</label>
-      <input type="text" name="location" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="Neighbourhood or address">
-    </div>
-    
-    <div style="margin-bottom: 20px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Anything else?</label>
-      <textarea name="additional" rows="2" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="Cost, schedule, tips..."></textarea>
     </div>
     
     <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit; font-size: inherit;">Submit</button>
@@ -147,23 +107,17 @@
     e.preventDefault();
     const status = document.getElementById('form-status');
     const btn = e.target.querySelector('button');
-    
     btn.disabled = true;
     btn.textContent = 'Submitting...';
-    status.textContent = '';
-    
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-    
     try {
       const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
-      
       const result = await res.json();
-      
       if (result.success) {
         status.style.color = '#2a7d2a';
         status.textContent = '✓ ' + result.message;
@@ -175,7 +129,6 @@
       status.style.color = '#c00';
       status.textContent = 'Error: ' + err.message;
     }
-    
     btn.disabled = false;
     btn.textContent = 'Submit';
   });
@@ -183,26 +136,23 @@
 </main>
 </div>
 <script>
-const categories = ["dinner-supper-clubs","social-friend-clubs","run-clubs","board-games","creative-art","photography","film-cinema","writing","language-exchange","hiking-outdoors","cycling","dance","improv-comedy","music-open-mic","climbing","pickleball","pottery-ceramics","yoga-wellness","sauna-cold-plunge","mindfulness-meditation","mens-groups","maker-spaces","philosophy-intellectual","book-clubs","tech-startup","coworking","volunteer","vinyl-listening-bars","chess","underground-dj","poetry-spoken-word","tarot-astrology","flea-markets-vintage","pub-trivia","zine-risograph","astronomy-stargazing","foraging-nature","birdwatching","karaoke","resources"];
+const categories = ["dinner-supper-clubs","social-friend-clubs","run-clubs","board-games","creative-art","photography","film-cinema","writing","language-exchange","hiking-outdoors","cycling","dance","improv-comedy","music-open-mic","climbing","pickleball","pottery-ceramics","yoga-wellness","sauna-cold-plunge","mindfulness-meditation","mens-groups","maker-spaces","philosophy-intellectual","book-clubs","tech-startup","coworking","volunteer","vinyl-listening-bars","chess","underground-dj","poetry-spoken-word","tarot-astrology","pub-trivia","zine-risograph","astronomy-stargazing","foraging-nature","birdwatching","karaoke","resources"];
 function goRandom() {
   const cat = categories[Math.floor(Math.random() * categories.length)];
   window.location.href = "/" + cat + "/";
 }
-// Fetch page stats from Umami via Worker
 fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
   .then(r => r.json())
   .then(data => {
     const path = window.location.pathname;
     const pageViews = data.pages[path] || 0;
     const totalViews = data.total.pageviews || 0;
-    
-    // Update page counter
     const pageCounter = document.getElementById("page-views");
     if (pageCounter) pageCounter.textContent = pageViews.toLocaleString() + " views";
-    
-    // Update total counter in sidebar
     const totalCounter = document.getElementById("total-views");
     if (totalCounter) totalCounter.textContent = totalViews.toLocaleString() + " total views";
+    const homepageTotal = document.getElementById("homepage-total-views");
+    if (homepageTotal) homepageTotal.textContent = totalViews.toLocaleString() + " views";
   })
   .catch(() => {});
 </script>

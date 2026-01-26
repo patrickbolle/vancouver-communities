@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build script: converts markdown files to HTML with full sidebar on every page
+# Build script: converts markdown files to HTML with proper structure for style.css
 
 set -e
 
@@ -43,7 +43,6 @@ declare -A titles=(
   ["underground-dj"]="Underground DJ"
   ["poetry-spoken-word"]="Poetry & Spoken Word"
   ["tarot-astrology"]="Tarot & Astrology"
-  ["flea-markets-vintage"]="Flea Markets & Vintage"
   ["pub-trivia"]="Pub Trivia"
   ["zine-risograph"]="Zine & Risograph"
   ["astronomy-stargazing"]="Astronomy & Stargazing"
@@ -86,7 +85,6 @@ declare -A descriptions=(
   ["underground-dj"]="Underground parties and DJ events in Vancouver. Warehouse raves and electronic music."
   ["poetry-spoken-word"]="Poetry slams and spoken word in Vancouver. Open mics and poetry nights."
   ["tarot-astrology"]="Tarot and astrology communities in Vancouver. Spiritual groups and readings."
-  ["flea-markets-vintage"]="Flea markets and vintage events in Vancouver. Thrift and collector communities."
   ["pub-trivia"]="Pub trivia nights in Vancouver. Test your knowledge and find your team."
   ["zine-risograph"]="Zine making and risograph printing in Vancouver. DIY publishing community."
   ["astronomy-stargazing"]="Astronomy clubs and stargazing in Vancouver. Star parties and telescope nights."
@@ -129,7 +127,6 @@ declare -A emojis=(
   ["underground-dj"]="🎧"
   ["poetry-spoken-word"]="🎤"
   ["tarot-astrology"]="🔮"
-  ["flea-markets-vintage"]="🛍️"
   ["pub-trivia"]="🧠"
   ["zine-risograph"]="📖"
   ["astronomy-stargazing"]="🔭"
@@ -173,7 +170,6 @@ categories_ordered=(
   "underground-dj"
   "poetry-spoken-word"
   "tarot-astrology"
-  "flea-markets-vintage"
   "pub-trivia"
   "zine-risograph"
   "astronomy-stargazing"
@@ -190,36 +186,46 @@ slugify() {
 
 # Convert markdown to HTML with anchor links on h2
 md_to_html() {
+  local in_list=false
   cat "$1" | \
     sed 's/^# \(.*\)//' | \
-    sed 's/^## \(.*\)/<h2 id="__ANCHOR__">\1<a href="#__ANCHOR__" class="anchor">#<\/a><\/h2>/' | \
-    sed 's/^### \(.*\)/<h3>\1<\/h3>/' | \
-    sed 's/\*\*\([^*]*\)\*\*/<strong>\1<\/strong>/g' | \
-    sed 's/\[\([^]]*\)\](\([^)]*\))/<a href="\2">\1<\/a>/g' | \
-    sed 's/^- \(.*\)/<li>\1<\/li>/' | \
-    sed 's/^---$/<hr>/' | \
-    grep -v '^$' | \
-    while IFS= read -r line; do
-      if [[ "$line" == *"__ANCHOR__"* ]]; then
-        # Extract the h2 text and create anchor
-        h2_text=$(echo "$line" | sed 's/.*<h2 id="__ANCHOR__">\([^<]*\)<a.*/\1/')
+    while IFS= read -r line || [[ -n "$line" ]]; do
+      # Handle h2
+      if [[ "$line" =~ ^##[[:space:]](.+)$ ]]; then
+        if $in_list; then echo "</ul>"; in_list=false; fi
+        h2_text="${BASH_REMATCH[1]}"
         anchor=$(slugify "$h2_text")
-        echo "$line" | sed "s/__ANCHOR__/$anchor/g"
-      else
-        echo "$line"
+        echo "<h2 id=\"$anchor\">$h2_text<a href=\"#$anchor\" class=\"anchor\">#</a></h2>"
+      # Handle h3
+      elif [[ "$line" =~ ^###[[:space:]](.+)$ ]]; then
+        if $in_list; then echo "</ul>"; in_list=false; fi
+        echo "<h3>${BASH_REMATCH[1]}</h3>"
+      # Handle list items
+      elif [[ "$line" =~ ^-[[:space:]](.+)$ ]]; then
+        if ! $in_list; then echo "<ul>"; in_list=true; fi
+        item="${BASH_REMATCH[1]}"
+        # Convert **bold**
+        item=$(echo "$item" | sed 's/\*\*\([^*]*\)\*\*/<strong>\1<\/strong>/g')
+        # Convert [text](url)
+        item=$(echo "$item" | sed 's/\[\([^]]*\)\](\([^)]*\))/<a href="\2">\1<\/a>/g')
+        echo "<li>$item</li>"
+      # Handle hr
+      elif [[ "$line" == "---" ]]; then
+        if $in_list; then echo "</ul>"; in_list=false; fi
+        echo "<hr>"
+      # Skip empty lines
+      elif [[ -z "$line" ]]; then
+        continue
       fi
     done
+  if $in_list; then echo "</ul>"; fi
 }
 
 # Generate sidebar HTML
 generate_sidebar() {
   local current_slug="$1"
-  local base_path="$2"
   
   echo '<nav class="sidebar">'
-  echo '  <div class="sidebar-header">'
-  echo "    <a href=\"${base_path}\" class=\"logo\">Vancouver Community</a>"
-  echo '  </div>'
   echo '  <ul>'
   
   for slug in "${categories_ordered[@]}"; do
@@ -227,13 +233,13 @@ generate_sidebar() {
     local emoji="${emojis[$slug]}"
     local active=""
     [ "$slug" = "$current_slug" ] && active=' class="active"'
-    echo "    <li><a href=\"${base_path}${slug}/\"${active}><span class=\"emoji\">${emoji}</span> ${title}</a></li>"
+    echo "    <li><a href=\"/${slug}/\"${active}><span class=\"emoji\">${emoji}</span> ${title}</a></li>"
   done
   
   echo '  </ul>'
   echo '  <div class="sidebar-footer">'
-  echo "    <a href=\"${base_path}submit/\">+ Submit a group</a><br>"
-  echo "    <a href=\"#\" onclick=\"goRandom()\">🎲 Random</a><br>"
+  echo '    <a href="/submit/">+ Submit a group</a><br>'
+  echo '    <a href="#" onclick="goRandom()">🎲 Random</a><br>'
   echo '    <span id="total-views"></span><br>'
   echo "    Updated ${BUILD_DATE_HUMAN}<br>"
   echo '    Created by <a href="https://bollenbach.ca" target="_blank">Patrick Bollenbach</a>'
@@ -241,136 +247,29 @@ generate_sidebar() {
   echo '</nav>'
 }
 
-# Common styles
-STYLES='<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body {
-  font-family: Georgia, "Times New Roman", serif;
-  background: #fffef8;
-  color: #222;
-  line-height: 1.5;
-  display: flex;
-  min-height: 100vh;
-}
-a { color: #0066cc; text-decoration: none; }
-a:hover { text-decoration: underline; }
-a:visited { color: #551a8b; }
-
-.sidebar {
-  width: 280px;
-  min-width: 280px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  overflow-y: auto;
-  border-right: 1px solid #ddd;
-  padding: 15px 0;
-  background: #fafaf5;
-  display: flex;
-  flex-direction: column;
-  scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
-}
-.sidebar::-webkit-scrollbar { width: 6px; }
-.sidebar::-webkit-scrollbar-track { background: transparent; }
-.sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
-
-.sidebar-header {
-  padding: 8px 15px 10px;
-  border-bottom: 1px solid #ddd;
-}
-.logo {
-  display: block;
-  text-decoration: none;
-  color: #222;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05em;
-  font-weight: normal;
-}
-.logo:hover { text-decoration: none; color: #000; }
-.sidebar-header h1 { font-size: 1.1em; font-weight: normal; }
-.sidebar-header h1 a { color: inherit; }
-.sidebar-header h1 a:hover { color: #0066cc; text-decoration: none; }
-
-.sidebar ul { list-style: none; flex: 1; }
-.sidebar li a {
-  display: block;
-  padding: 6px 15px;
-  font-size: 0.9em;
-  border-left: 3px solid transparent;
-  color: #222;
-}
-.sidebar li a:visited { color: #222; }
-.sidebar li a:hover { background: #f0f0e8; border-left-color: #0066cc; text-decoration: none; }
-.sidebar li a.active { background: #f0f0e8; border-left-color: #0066cc; }
-.emoji { display: inline-block; width: 22px; }
-.sidebar-footer {
-  padding: 12px 15px;
-  border-top: 1px solid #ddd;
-  font-size: 0.75em;
-  color: #666;
-  line-height: 1.8;
-}
-.sidebar-footer a { color: #666; }
-.counter { font-size: 0.9em; }
-
-.content {
-  flex: 1;
-  padding: 20px 30px;
-  max-width: 700px;
-  overflow-y: auto;
-}
-.content h1 { font-size: 1.4em; font-weight: normal; border-bottom: 1px solid #ddd; padding-bottom: 8px; margin-bottom: 15px; }
-.content h2 { font-size: 1.1em; font-weight: normal; margin-top: 20px; margin-bottom: 8px; color: #333; position: relative; }
-.content h2 .anchor { color: #ccc; font-size: 0.8em; margin-left: 5px; }
-.content h2 .anchor:hover { color: #0066cc; }
-.content li { margin: 5px 0; list-style: none; }
-.content hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
-.content a { color: #0066cc; }
-.content a:visited { color: #551a8b; }
-
-.welcome p { margin-bottom: 10px; color: #444; }
-
-@media (max-width: 700px) {
-  body { flex-direction: column; }
-  .sidebar {
-    width: 100%;
-    min-width: 100%;
-    height: auto;
-    max-height: 40vh;
-    position: relative;
-    border-right: none;
-    border-bottom: 1px solid #ddd;
-  }
-  .content { padding: 20px; }
-}
-</style>'
-
-# Random redirect and counter scripts
+# Common scripts
 SCRIPTS='<script>
 const categories = ['"$(printf '"%s",' "${categories_ordered[@]}" | sed 's/,$//')"'];
 function goRandom() {
   const cat = categories[Math.floor(Math.random() * categories.length)];
   window.location.href = "/" + cat + "/";
 }
-// Fetch page stats from Umami via Worker
 fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
   .then(r => r.json())
   .then(data => {
     const path = window.location.pathname;
     const pageViews = data.pages[path] || 0;
     const totalViews = data.total.pageviews || 0;
-    
-    // Update page counter
     const pageCounter = document.getElementById("page-views");
     if (pageCounter) pageCounter.textContent = pageViews.toLocaleString() + " views";
-    
-    // Update total counter in sidebar
     const totalCounter = document.getElementById("total-views");
     if (totalCounter) totalCounter.textContent = totalViews.toLocaleString() + " total views";
+    const homepageTotal = document.getElementById("homepage-total-views");
+    if (homepageTotal) homepageTotal.textContent = totalViews.toLocaleString() + " views";
   })
   .catch(() => {});
-</script>'
+</script>
+<script src="/_build/main.js"></script>'
 
 echo "Building site..."
 
@@ -381,17 +280,22 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vancouver Community Directory - Find Your People</title>
+  <title>Vancouver Community Directory - Local Groups, Clubs & Meetups</title>
   <meta name="description" content="A comprehensive guide to groups, clubs, meetups, and events for connection and community in Vancouver, BC.">
   <meta property="og:title" content="Vancouver Community Directory">
   <meta property="og:description" content="Find groups, clubs, meetups, and events for connection and community in Vancouver, BC.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE_URL}/">
+  <meta property="og:image" content="${SITE_URL}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vancouver Community Directory">
+  <meta name="twitter:description" content="Find groups, clubs, meetups, and events for connection and community in Vancouver, BC.">
+  <meta name="twitter:image" content="${SITE_URL}/og-image.png">
   <link rel="canonical" href="${SITE_URL}/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Vancouver Community Directory" href="/feed.xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
-  ${STYLES}
+  <link rel="stylesheet" href="/_build/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -399,6 +303,15 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
     "name": "Vancouver Community Directory",
     "url": "${SITE_URL}",
     "description": "A comprehensive guide to groups, clubs, meetups, and events for connection and community in Vancouver, BC.",
+    "areaServed": {
+      "@type": "City",
+      "name": "Vancouver",
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      }
+    },
     "publisher": {
       "@type": "Person",
       "name": "Patrick Bollenbach",
@@ -408,18 +321,26 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
   </script>
 </head>
 <body>
-$(generate_sidebar "" "/")
+<header class="site-header">
+  <a href="/" class="logo">Vancouver Community</a>
+  <h1 class="page-title">Find your community in Vancouver</h1>
+</header>
+<div class="main-container">
+$(generate_sidebar "")
 <main class="content">
-  <h1>Welcome 👋</h1>
   <div class="welcome">
-    <p>Vancouver can feel like a hard city to make friends and find community.</p>
-    <p>This directory collects social groups, clubs, meetups, and events in one place.</p>
-    <p style="margin-top: 15px; color: #666;">← Pick a category to explore</p>
+    <p>Vancouver can feel like a hard city to make friends. I built this directory to help.</p>
+    <p>It's a collection of social groups, clubs, meetups, and events across 40+ categories — <a href="/run-clubs/">run clubs</a>, <a href="/hiking-outdoors/">hiking groups</a>, <a href="/book-clubs/">book clubs</a>, <a href="/board-games/">board game nights</a>, <a href="/creative-art/">art communities</a>, and more.</p>
+    <p>This is a community project. If you know a group that should be listed, <a href="/submit/">add it</a>. If something's outdated, every page has a "suggest edit" link.</p>
+    <p style="margin-top: 20px;">
+      <a href="/submit/" style="margin-right: 15px;">+ Submit a group</a>
+      <a href="#" onclick="goRandom(); return false;">🎲 Random category</a>
+    </p>
     <hr style="margin: 25px 0;">
-    <p style="font-size: 0.9em; color: #666;">Created by <a href="https://bollenbach.ca">Patrick Bollenbach</a> for the Vancouver community.</p>
-    <p style="margin-top: 15px; color: #666; font-size: 0.9em;" id="page-views"></p>
+    <p style="font-size: 0.9em; color: #666;">Made by <a href="https://bollenbach.ca">Patrick Bollenbach</a> in Vancouver. <span id="homepage-total-views"></span></p>
   </div>
 </main>
+</div>
 ${SCRIPTS}
 </body>
 </html>
@@ -436,14 +357,19 @@ cat > "$SITE_DIR/submit/index.html" << HTMLEOF
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit a Group | Vancouver Community Directory</title>
   <meta name="description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
+  <link rel="canonical" href="${SITE_URL}/submit/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
-  ${STYLES}
+  <link rel="stylesheet" href="/_build/style.css">
 </head>
 <body>
-$(generate_sidebar "submit" "/")
+<header class="site-header">
+  <a href="/" class="logo">Vancouver Community</a>
+  <h1 class="page-title">Submit a Group</h1>
+</header>
+<div class="main-container">
+$(generate_sidebar "submit")
 <main class="content">
-  <h1>Submit a Group</h1>
   <p>Know a community, club, or meetup that should be listed? Fill out the form below.</p>
   
   <form id="submit-form" style="margin-top: 20px;">
@@ -461,21 +387,6 @@ $(generate_sidebar "submit" "/")
         <option value="Dinner/Supper Clubs">Dinner/Supper Clubs</option>
         <option value="Board Games">Board Games</option>
         <option value="Creative/Art">Creative/Art</option>
-        <option value="Photography">Photography</option>
-        <option value="Film/Cinema">Film/Cinema</option>
-        <option value="Writing">Writing</option>
-        <option value="Language Exchange">Language Exchange</option>
-        <option value="Hiking/Outdoors">Hiking/Outdoors</option>
-        <option value="Cycling">Cycling</option>
-        <option value="Dance">Dance</option>
-        <option value="Improv/Comedy">Improv/Comedy</option>
-        <option value="Music/Open Mic">Music/Open Mic</option>
-        <option value="Climbing">Climbing</option>
-        <option value="Yoga/Wellness">Yoga/Wellness</option>
-        <option value="Meditation">Meditation</option>
-        <option value="Book Clubs">Book Clubs</option>
-        <option value="Tech/Startup">Tech/Startup</option>
-        <option value="Volunteer">Volunteer</option>
         <option value="Other">Other</option>
       </select>
     </div>
@@ -486,23 +397,8 @@ $(generate_sidebar "submit" "/")
     </div>
     
     <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Vibe/Atmosphere</label>
-      <input type="text" name="vibe" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="What's it like? Who's it for?">
-    </div>
-    
-    <div style="margin-bottom: 15px;">
       <label style="display: block; margin-bottom: 5px; font-weight: 500;">Website or Social Link</label>
       <input type="url" name="link" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="https://...">
-    </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Location (if applicable)</label>
-      <input type="text" name="location" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="Neighbourhood or address">
-    </div>
-    
-    <div style="margin-bottom: 20px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Anything else?</label>
-      <textarea name="additional" rows="2" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="Cost, schedule, tips..."></textarea>
     </div>
     
     <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit; font-size: inherit;">Submit</button>
@@ -514,23 +410,17 @@ $(generate_sidebar "submit" "/")
     e.preventDefault();
     const status = document.getElementById('form-status');
     const btn = e.target.querySelector('button');
-    
     btn.disabled = true;
     btn.textContent = 'Submitting...';
-    status.textContent = '';
-    
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData);
-    
     try {
       const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
       });
-      
       const result = await res.json();
-      
       if (result.success) {
         status.style.color = '#2a7d2a';
         status.textContent = '✓ ' + result.message;
@@ -542,12 +432,12 @@ $(generate_sidebar "submit" "/")
       status.style.color = '#c00';
       status.textContent = 'Error: ' + err.message;
     }
-    
     btn.disabled = false;
     btn.textContent = 'Submit';
   });
   </script>
 </main>
+</div>
 ${SCRIPTS}
 </body>
 </html>
@@ -557,11 +447,13 @@ echo "  Built: submit"
 # Build each category page
 for mdfile in ${SOURCE_DIR}*.md; do
   [[ "$mdfile" == *"README.md" ]] && continue
+  [[ "$mdfile" == *"CONTRIBUTING.md" ]] && continue
   [ ! -f "$mdfile" ] && continue
   
-  # Extract just the filename without path and extension
   slug="$(basename "${mdfile%.md}")"
-  title="${titles[$slug]:-$slug}"
+  title="${titles[$slug]:-}"
+  [ -z "$title" ] && continue  # Skip if not a known category
+  
   desc="${descriptions[$slug]:-}"
   emoji="${emojis[$slug]:-}"
   
@@ -581,11 +473,16 @@ for mdfile in ${SOURCE_DIR}*.md; do
   <meta property="og:description" content="${desc}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="${SITE_URL}/${slug}/">
+  <meta property="og:image" content="${SITE_URL}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${title} in Vancouver">
+  <meta name="twitter:description" content="${desc}">
+  <meta name="twitter:image" content="${SITE_URL}/og-image.png">
   <link rel="canonical" href="${SITE_URL}/${slug}/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Vancouver Community Directory" href="/feed.xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
-  ${STYLES}
+  <link rel="stylesheet" href="/_build/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -593,6 +490,10 @@ for mdfile in ${SOURCE_DIR}*.md; do
     "name": "${title} in Vancouver",
     "description": "${desc}",
     "url": "${SITE_URL}/${slug}/",
+    "about": {
+      "@type": "Thing",
+      "name": "${title}"
+    },
     "isPartOf": {
       "@type": "WebSite",
       "name": "Vancouver Community Directory",
@@ -602,9 +503,13 @@ for mdfile in ${SOURCE_DIR}*.md; do
   </script>
 </head>
 <body>
-$(generate_sidebar "$slug" "/")
+<header class="site-header">
+  <a href="/" class="logo">Vancouver Community</a>
+  <h1 class="page-title">${emoji} ${title} in Vancouver</h1>
+</header>
+<div class="main-container">
+$(generate_sidebar "$slug")
 <main class="content">
-  <h1>${emoji} ${title}</h1>
 ${content}
   <hr style="margin: 25px 0;">
   <p style="color: #666; font-size: 0.9em;">
@@ -613,13 +518,14 @@ ${content}
     <a href="#" onclick="openEditModal('${slug}'); return false;" style="margin-left: 10px;">✏️ Suggest Edit</a>
   </p>
 </main>
+</div>
 
 <!-- Edit Modal -->
 <div id="edit-modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; overflow: auto;">
   <div style="background: #fff; max-width: 800px; margin: 40px auto; padding: 25px; border-radius: 8px; position: relative;">
     <button onclick="closeEditModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">&times;</button>
     <h2 style="margin-bottom: 15px;">Suggest Edit</h2>
-    <p style="margin-bottom: 15px; color: #666;">Edit the content below. Your changes will be reviewed and potentially approved by the maintainer.</p>
+    <p style="margin-bottom: 15px; color: #666;">Edit the content below. Your changes will be reviewed.</p>
     <form id="edit-form">
       <div style="margin-bottom: 15px;">
         <label style="display: block; margin-bottom: 5px; font-weight: 500;">Edit Summary *</label>
@@ -628,10 +534,6 @@ ${content}
       <div style="margin-bottom: 15px;">
         <label style="display: block; margin-bottom: 5px; font-weight: 500;">Content</label>
         <textarea id="edit-content" name="content" rows="20" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: monospace; font-size: 13px;"></textarea>
-      </div>
-      <div style="margin-bottom: 15px;">
-        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Why are you suggesting this edit?</label>
-        <textarea name="reason" rows="2" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit;" placeholder="Optional: explain your changes"></textarea>
       </div>
       <input type="hidden" name="category" id="edit-category">
       <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit;">Submit Edit</button>
@@ -642,70 +544,42 @@ ${content}
 
 <script>
 async function openEditModal(category) {
-  const modal = document.getElementById('edit-modal');
-  const content = document.getElementById('edit-content');
-  const categoryInput = document.getElementById('edit-category');
-  const status = document.getElementById('edit-status');
-  
-  modal.style.display = 'block';
-  content.value = 'Loading...';
-  categoryInput.value = category;
-  status.textContent = '';
-  
+  document.getElementById('edit-modal').style.display = 'block';
+  document.getElementById('edit-content').value = 'Loading...';
+  document.getElementById('edit-category').value = category;
   try {
     const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/content/' + category);
     const data = await res.json();
-    if (data.success) {
-      content.value = data.content;
-    } else {
-      content.value = 'Error loading content: ' + (data.error || 'Unknown error');
-    }
+    document.getElementById('edit-content').value = data.success ? data.content : 'Error loading content';
   } catch (err) {
-    content.value = 'Error loading content: ' + err.message;
+    document.getElementById('edit-content').value = 'Error loading content';
   }
 }
-
-function closeEditModal() {
-  document.getElementById('edit-modal').style.display = 'none';
-}
-
-document.getElementById('edit-modal').addEventListener('click', (e) => {
-  if (e.target.id === 'edit-modal') closeEditModal();
-});
-
+function closeEditModal() { document.getElementById('edit-modal').style.display = 'none'; }
+document.getElementById('edit-modal').addEventListener('click', (e) => { if (e.target.id === 'edit-modal') closeEditModal(); });
 document.getElementById('edit-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  const status = document.getElementById('edit-status');
   const btn = e.target.querySelector('button[type="submit"]');
-  
+  const status = document.getElementById('edit-status');
   btn.disabled = true;
   btn.textContent = 'Submitting...';
-  status.textContent = '';
-  
   const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData);
-  
   try {
     const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/edit', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
+      body: JSON.stringify(Object.fromEntries(formData))
     });
-    
     const result = await res.json();
-    
     if (result.success) {
       status.style.color = '#2a7d2a';
       status.textContent = '✓ ' + result.message;
-      setTimeout(() => closeEditModal(), 2000);
-    } else {
-      throw new Error(result.error || 'Submission failed');
-    }
+      setTimeout(closeEditModal, 2000);
+    } else throw new Error(result.error);
   } catch (err) {
     status.style.color = '#c00';
     status.textContent = 'Error: ' + err.message;
   }
-  
   btn.disabled = false;
   btn.textContent = 'Submit Edit';
 });

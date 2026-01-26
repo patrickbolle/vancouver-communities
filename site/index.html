@@ -83,7 +83,6 @@
     <li><a href="/underground-dj/"><span class="emoji">🎧</span> Underground DJ</a></li>
     <li><a href="/poetry-spoken-word/"><span class="emoji">🎤</span> Poetry & Spoken Word</a></li>
     <li><a href="/tarot-astrology/"><span class="emoji">🔮</span> Tarot & Astrology</a></li>
-    <li><a href="/flea-markets-vintage/"><span class="emoji">🛍️</span> Flea Markets & Vintage</a></li>
     <li><a href="/pub-trivia/"><span class="emoji">🧠</span> Pub Trivia</a></li>
     <li><a href="/zine-risograph/"><span class="emoji">📖</span> Zine & Risograph</a></li>
     <li><a href="/astronomy-stargazing/"><span class="emoji">🔭</span> Astronomy & Stargazing</a></li>
@@ -115,28 +114,21 @@
 </main>
 </div>
 <script>
-const categories = ["dinner-supper-clubs","social-friend-clubs","run-clubs","board-games","creative-art","photography","film-cinema","writing","language-exchange","hiking-outdoors","cycling","dance","improv-comedy","music-open-mic","climbing","pickleball","pottery-ceramics","yoga-wellness","sauna-cold-plunge","mindfulness-meditation","mens-groups","maker-spaces","philosophy-intellectual","book-clubs","tech-startup","coworking","volunteer","vinyl-listening-bars","chess","underground-dj","poetry-spoken-word","tarot-astrology","flea-markets-vintage","pub-trivia","zine-risograph","astronomy-stargazing","foraging-nature","birdwatching","karaoke","resources"];
+const categories = ["dinner-supper-clubs","social-friend-clubs","run-clubs","board-games","creative-art","photography","film-cinema","writing","language-exchange","hiking-outdoors","cycling","dance","improv-comedy","music-open-mic","climbing","pickleball","pottery-ceramics","yoga-wellness","sauna-cold-plunge","mindfulness-meditation","mens-groups","maker-spaces","philosophy-intellectual","book-clubs","tech-startup","coworking","volunteer","vinyl-listening-bars","chess","underground-dj","poetry-spoken-word","tarot-astrology","pub-trivia","zine-risograph","astronomy-stargazing","foraging-nature","birdwatching","karaoke","resources"];
 function goRandom() {
   const cat = categories[Math.floor(Math.random() * categories.length)];
   window.location.href = "/" + cat + "/";
 }
-// Fetch page stats from Umami via Worker
 fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
   .then(r => r.json())
   .then(data => {
     const path = window.location.pathname;
     const pageViews = data.pages[path] || 0;
     const totalViews = data.total.pageviews || 0;
-    
-    // Update page counter
     const pageCounter = document.getElementById("page-views");
     if (pageCounter) pageCounter.textContent = pageViews.toLocaleString() + " views";
-    
-    // Update total counter in sidebar
     const totalCounter = document.getElementById("total-views");
     if (totalCounter) totalCounter.textContent = totalViews.toLocaleString() + " total views";
-
-    // Update total counter on homepage
     const homepageTotal = document.getElementById("homepage-total-views");
     if (homepageTotal) homepageTotal.textContent = totalViews.toLocaleString() + " views";
   })

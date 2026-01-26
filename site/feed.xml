@@ -5,7 +5,7 @@
   <description>A comprehensive guide to groups, clubs, meetups, and events in Vancouver, BC.</description>
   <link>https://vancouvercommunity.org</link>
   <atom:link href="https://vancouvercommunity.org/feed.xml" rel="self" type="application/rss+xml"/>
-  <lastBuildDate>Sun, 25 Jan 2026 06:03:55 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 26 Jan 2026 22:48:26 +0000</lastBuildDate>
   <item>
     <title>Dinner & Supper Clubs</title>
     <description>Find dinner clubs and supper clubs in Vancouver. Meet new people over curated meals and social dining.</description>
@@ -197,12 +197,6 @@
     <description>Tarot and astrology communities in Vancouver. Spiritual groups and readings.</description>
     <link>https://vancouvercommunity.org/tarot-astrology/</link>
     <guid>https://vancouvercommunity.org/tarot-astrology/</guid>
-  </item>
-  <item>
-    <title>Flea Markets & Vintage</title>
-    <description>Flea markets and vintage events in Vancouver. Thrift and collector communities.</description>
-    <link>https://vancouvercommunity.org/flea-markets-vintage/</link>
-    <guid>https://vancouvercommunity.org/flea-markets-vintage/</guid>
   </item>
   <item>
     <title>Pub Trivia</title>
