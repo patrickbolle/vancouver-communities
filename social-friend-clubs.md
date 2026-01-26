@@ -67,6 +67,16 @@
 - **Vibe:** Explore Vancouver's food scene together
 - **Find it:** [meetup.com/foodees-on-board](https://meetup.com/foodees-on-board)
 
+## WNORTH
+- **What:** Women's leadership and networking events
+- **Vibe:** Award-winning membership network, summits, connect dinners
+- **Find it:** [lu.ma/wnorth](https://lu.ma/wnorth)
+
+## Ascent
+- **What:** Private social club for learning and playing poker
+- **Vibe:** Safe space for beginners, networking with like-minded people
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
 ---
 
 ## Venues & Resources

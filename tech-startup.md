@@ -70,6 +70,11 @@
 - **Vibe:** Technical deep-dives, passionate community
 - **Find it:** [lu.ma/cloudnativevan](https://lu.ma/cloudnativevan)
 
+## Vancouver Cloud Events
+- **What:** AWS, Azure, and GCP events aggregated in one place
+- **Vibe:** Cloud Summit, meetups across all major cloud platforms
+- **Find it:** [lu.ma/VancouverCloud](https://lu.ma/VancouverCloud)
+
 ## Novus
 - **What:** Community of founders and builders working on impactful projects
 - **Vibe:** High-caliber, impact-focused, scale-minded
@@ -82,8 +87,43 @@
 
 ## VanJS
 - **What:** Monthly JavaScript meetups with talks and networking
-- **Vibe:** Technical talks, friendly community
-- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+- **Vibe:** Technical talks, friendly community, front-end focused
+- **Find it:** [lu.ma/vanjs](https://lu.ma/vanjs)
+
+## Vancouver Linux Users Group (VanLUG)
+- **What:** Linux professionals, hobbyists, and fans across Greater Vancouver
+- **Vibe:** Non-profit, library-hosted sessions in Richmond, Burnaby, Surrey
+- **Find it:** [lu.ma/vanlug](https://lu.ma/vanlug)
+
+## VAM! (Vancouver AI Meetup)
+- **What:** AI reading groups, crash courses, show & tell demos
+- **Vibe:** Academic yet accessible, hands-on learning
+- **Find it:** [lu.ma/vam](https://lu.ma/vam)
+
+## Vancouver Tech Journal Events
+- **What:** #VTJTalks, industry socials, co-working sessions
+- **Vibe:** Premium networking, thought leadership, local tech journalism
+- **Find it:** [lu.ma/vantechjournal](https://lu.ma/vantechjournal)
+
+## Vancouver.dev
+- **What:** Developer community events and coffee chats
+- **Vibe:** Leading dev community in Vancouver
+- **Find it:** [lu.ma/vancouver.dev](https://lu.ma/vancouver.dev)
+
+## CS Dojo Vancouver
+- **What:** Tech & AI community events, conferences
+- **Vibe:** Premier tech community, YK Sugi's local chapter
+- **Find it:** [lu.ma/csdojo](https://lu.ma/csdojo)
+
+## White-Hat Security Community
+- **What:** Monthly coffee chats for cybersecurity professionals
+- **Vibe:** New security community, casual networking
+- **Find it:** [lu.ma/WhiteHatSecurityCommunityVancouver](https://lu.ma/WhiteHatSecurityCommunityVancouver)
+
+## Web Summit 2026 Vancouver Side Events
+- **What:** Community-run side events during Web Summit Vancouver
+- **Vibe:** Afterparties, networking, fringe events
+- **Find it:** [lu.ma/web-summit-vancouver-2026](https://lu.ma/web-summit-vancouver-2026)
 
 ## Women in Tech Canada | BC
 - **What:** Events for women at all stages of their tech careers
@@ -95,15 +135,20 @@
 - **Vibe:** Education-focused, welcoming to newcomers
 - **Find it:** [lu.ma/vanbitcoin](https://lu.ma/vanbitcoin)
 
-## DC604
+## DC604 (DEFCON Group Vancouver)
 - **What:** Monthly security/hacker meetups
-- **Vibe:** InfoSec community, DEF CON vibes
-- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+- **Vibe:** InfoSec community, DEF CON vibes, sells out fast
+- **Find it:** [lu.ma/dc604](https://lu.ma/dc604)
 
 ## DWeb Vancouver
 - **What:** Decentralized web community — local-first, IPFS, protocols
 - **Vibe:** Internet Archive Canada connection, builders exploring ownership
 - **Find it:** [dwebyvr.org](https://dwebyvr.org) | [lu.ma/LOCALHOST_vancouver](https://lu.ma/LOCALHOST_vancouver)
+
+## Fission
+- **What:** DWeb, IPFS, local-first, decentralized compute events
+- **Vibe:** Vancouver-based company, in-person and virtual events
+- **Find it:** [lu.ma/fission](https://lu.ma/fission)
 
 ## OffChain Vancouver
 - **What:** Web3/blockchain meetups, part of global OffChain network
