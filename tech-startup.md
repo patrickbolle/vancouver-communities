@@ -155,6 +155,31 @@
 - **Vibe:** Vancouver-based company, in-person and virtual events
 - **Find it:** [lu.ma/fission](https://lu.ma/fission)
 
+## New Ventures BC
+- **What:** Build in Public nights and startup support events
+- **Vibe:** Growing startups in BC, early-stage founders
+- **Find it:** [lu.ma/nvbc](https://lu.ma/nvbc)
+
+## Vancouver Founders (Luma)
+- **What:** Founder community calendar
+- **Vibe:** Startup networking events
+- **Find it:** [lu.ma/vancouverfounders](https://lu.ma/vancouverfounders)
+
+## VC Day Vancouver
+- **What:** Venture capital focused events
+- **Vibe:** Investor-founder connections
+- **Find it:** [lu.ma/VCDay_Vancouver](https://lu.ma/VCDay_Vancouver)
+
+## BrainStation Vancouver
+- **What:** Digital skills training and tech education events
+- **Vibe:** Workshops, bootcamps, industry events
+- **Find it:** [lu.ma/brainstation](https://lu.ma/brainstation)
+
+## BSides Vancouver
+- **What:** Annual cybersecurity conference
+- **Vibe:** Community-driven security event
+- **Find it:** [lu.ma/BsidesVancouver](https://lu.ma/BsidesVancouver)
+
 ---
 
 ## Venues & Resources
