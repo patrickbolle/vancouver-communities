@@ -50,6 +50,11 @@
 - **Vibe:** Up-and-coming, community-focused
 - **Find it:** [Instagram](https://instagram.com/kitssocialrunclub)
 
+## Founders Running Club (Vancouver)
+- **What:** Global 5-10K runs for founders, investors, operators
+- **Vibe:** 30K+ members across 40+ cities, networking while running
+- **Find it:** [lu.ma/foundersrc](https://lu.ma/foundersrc)
+
 ## M2M Running (Miles to Marathon)
 - **What:** Wednesday runs at 6:30pm, two locations
 - **Where:** Point Grey and Empire Track (PNE/Burnaby)

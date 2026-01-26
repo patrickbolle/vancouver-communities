@@ -22,6 +22,15 @@
 
 ## Event Calendars
 
+## Lu.ma Vancouver
+- **What:** Tech, startup, and creative community events aggregator
+- **Vibe:** Where Vancouver's builder community lives — subscribe for notifications
+- **Find it:** [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## Vancouver Tech Events (Lu.ma)
+- **What:** Curated IRL tech events with weekly email digest
+- **Find it:** [lu.ma/vancouvertech](https://lu.ma/vancouvertech)
+
 ## Georgia Straight Events
 - **What:** Local arts, culture, events coverage
 - **Find it:** [straight.com](https://www.straight.com/)

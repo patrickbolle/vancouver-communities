@@ -45,6 +45,106 @@
 - **Vibe:** Stellar networking, partners with other tech groups
 - **Find it:** [boast.ai](https://boast.ai/)
 
+## BC + AI Events
+- **What:** Vancouver AI gatherings and BC-wide AI community
+- **Vibe:** Multi-modal, multi-cultural, radically local, future-facing
+- **Find it:** [lu.ma/vancouver-ai](https://lu.ma/vancouver-ai)
+
+## Vancouver Tech Events (Luma)
+- **What:** Aggregator of IRL tech events in Vancouver
+- **Vibe:** Weekly email digest, submit your own events
+- **Find it:** [lu.ma/vancouvertech](https://lu.ma/vancouvertech)
+
+## Vancouver Developers
+- **What:** Weekly developer meetups for coding and networking
+- **Vibe:** Collaborative, skill-building, connect with talented people
+- **Find it:** [lu.ma/vancouver-developers](https://lu.ma/vancouver-developers)
+
+## Google Developer Community Vancouver
+- **What:** GDG Vancouver - official Google developer chapter
+- **Vibe:** Learning, innovating, uniting the tech community
+- **Find it:** [lu.ma/GDGvancouver](https://lu.ma/GDGvancouver)
+
+## Cloud Native Vancouver
+- **What:** Official CNCF chapter for Kubernetes, containers, cloud-native tech
+- **Vibe:** Technical deep-dives, passionate community
+- **Find it:** [lu.ma/cloudnativevan](https://lu.ma/cloudnativevan)
+
+## Novus
+- **What:** Community of founders and builders working on impactful projects
+- **Vibe:** High-caliber, impact-focused, scale-minded
+- **Find it:** [lu.ma/novus](https://lu.ma/novus)
+
+## ISACA Vancouver
+- **What:** IT security, governance, risk management professionals
+- **Vibe:** Professional development, certification-focused
+- **Find it:** [lu.ma/ISACA](https://lu.ma/ISACA)
+
+## VanJS
+- **What:** Monthly JavaScript meetups with talks and networking
+- **Vibe:** Technical talks, friendly community
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## Women in Tech Canada | BC
+- **What:** Events for women at all stages of their tech careers
+- **Vibe:** Inspiration, connection, career growth
+- **Find it:** [lu.ma/witcanada](https://lu.ma/witcanada)
+
+## Vancouver Bitcoin
+- **What:** Bitcoin meetups, seminars, and builder sessions
+- **Vibe:** Education-focused, welcoming to newcomers
+- **Find it:** [lu.ma/vanbitcoin](https://lu.ma/vanbitcoin)
+
+## DC604
+- **What:** Monthly security/hacker meetups
+- **Vibe:** InfoSec community, DEF CON vibes
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## DWeb Vancouver
+- **What:** Decentralized web community — local-first, IPFS, protocols
+- **Vibe:** Internet Archive Canada connection, builders exploring ownership
+- **Find it:** [dwebyvr.org](https://dwebyvr.org) | [lu.ma/LOCALHOST_vancouver](https://lu.ma/LOCALHOST_vancouver)
+
+## OffChain Vancouver
+- **What:** Web3/blockchain meetups, part of global OffChain network
+- **Vibe:** Free events, welcomes beginners and experts alike
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## Internet Archive Canada
+- **What:** Monthly community gatherings at The Permanent
+- **Vibe:** Tech, preservation, open knowledge
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## Learn Data Science (ML/DS Reading Group)
+- **What:** Weekly paper reading group at Northeastern Vancouver
+- **Vibe:** Academic yet accessible, hybrid online/in-person
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## Vancouver Low Key Data Happy Hour
+- **What:** Casual monthly gathering for data practitioners
+- **Vibe:** Low-key networking, no presentations
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## ADPList Vancouver
+- **What:** UX, product, and design community events
+- **Vibe:** Career growth, mentorship, AI discussions
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## Web Summit Vancouver Side Events
+- **What:** Community-run events during Web Summit Vancouver
+- **Vibe:** Founder/investor networking outside the main conference
+- **Find it:** [lu.ma/websummitvan](https://lu.ma/websummitvan) (when active)
+
+## Careerin Tech Society
+- **What:** Startup ecosystem panels, demo days, networking
+- **Vibe:** Vancouver tech community building, diverse programming
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
+## New Ventures BC
+- **What:** Build in Public nights and startup support events
+- **Vibe:** Early-stage founders, accountability, community
+- **Find it:** Events on [lu.ma/vancouver](https://lu.ma/vancouver)
+
 ---
 
 ## Venues & Resources
