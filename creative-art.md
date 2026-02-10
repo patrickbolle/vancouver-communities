@@ -89,3 +89,8 @@
 - **What:** Multidisciplinary arts facility — workshops, studio spaces, offices
 - **Where:** 281 Industrial Avenue
 - **Find it:** [artsfactorysociety.ca](https://artsfactorysociety.ca)
+
+## Flowy Spirit Counselling & Wellness
+- **What:** Navigate your healing journey in a space specifically designed for complex, relational, and developmental trauma. I create a safe, nurturing environment where we move at your pace to process the past and rebuild a sense of safety in your body and mind today.
+We also specialize in stress regulation, creativity as a tool of expression, explore emotions and insights about yourself.
+- **Find it:** [www.flowyspiritcounselling.com/](https://www.flowyspiritcounselling.com/)
