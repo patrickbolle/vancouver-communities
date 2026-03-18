@@ -106,7 +106,7 @@ function formatSubmissionEntry(data) {
 
 // GET /content/:category - Fetch current content for editing
 async function handleGetContent(category, env) {
-  const categoryKey = category.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  const categoryKey = category.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
   const fileName = CATEGORY_FILES[categoryKey];
   
   if (!fileName) {
@@ -146,12 +146,12 @@ async function handleSubmit(data, env) {
     }), { status: 400, headers: corsHeaders });
   }
 
-  const categoryKey = data.category.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  const categoryKey = data.category.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
   const fileName = CATEGORY_FILES[categoryKey];
-  
+
   if (!fileName) {
-    return new Response(JSON.stringify({ 
-      error: `Unknown category: ${data.category}` 
+    return new Response(JSON.stringify({
+      error: `Unknown category: ${data.category}`
     }), { status: 400, headers: corsHeaders });
   }
 
@@ -245,12 +245,12 @@ async function handleEdit(data, env) {
     }), { status: 400, headers: corsHeaders });
   }
 
-  const categoryKey = data.category.toLowerCase().replace(/[^a-z0-9-]/g, '-');
+  const categoryKey = data.category.toLowerCase().replace(/[^a-z0-9-]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
   const fileName = CATEGORY_FILES[categoryKey];
-  
+
   if (!fileName) {
-    return new Response(JSON.stringify({ 
-      error: `Unknown category: ${data.category}` 
+    return new Response(JSON.stringify({
+      error: `Unknown category: ${data.category}`
     }), { status: 400, headers: corsHeaders });
   }
 
