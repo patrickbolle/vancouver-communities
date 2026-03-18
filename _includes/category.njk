@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "partials/head.njk" %}
+  <title>{% if groupCount %}{{ groupCount }} {% endif %}{{ title }} in Vancouver (2026) | {{ site.title }}</title>
+  <meta name="description" content="{% if groupCount %}{{ groupCount }} {% endif %}{{ title | lower }} in Vancouver. {{ description }} Updated March 2026.">
+  <meta property="og:title" content="{% if groupCount %}{{ groupCount }} {% endif %}{{ title }} in Vancouver">
+  <meta property="og:description" content="{% if groupCount %}{{ groupCount }} {% endif %}{{ title | lower }} in Vancouver. {{ description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}/{{ page.fileSlug }}/">
+  <meta property="og:image" content="{{ site.url }}/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if groupCount %}{{ groupCount }} {% endif %}{{ title }} in Vancouver">
+  <meta name="twitter:description" content="{% if groupCount %}{{ groupCount }} {% endif %}{{ title | lower }} in Vancouver. {{ description }}">
+  <meta name="twitter:image" content="{{ site.url }}/og-image.png">
+  <link rel="canonical" href="{{ site.url }}/{{ page.fileSlug }}/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "{{ title }} in Vancouver",
+    "description": "{{ description }}",
+    "url": "{{ site.url }}/{{ page.fileSlug }}/",
+    {% if groupCount %}"numberOfItems": {{ groupCount }},{% endif %}
+    "about": {
+      "@type": "Thing",
+      "name": "{{ title }}"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "{{ site.title }}",
+      "url": "{{ site.url }}"
+    }{% if groupItems.length %},
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": {{ groupItems.length }},
+      "itemListElement": [
+        {%- for item in groupItems %}
+        {
+          "@type": "ListItem",
+          "position": {{ loop.index }},
+          "item": {
+            "@type": "Organization",
+            "name": "{{ item.name | replace('"', '\\"') }}"{% if item.description %},
+            "description": "{{ item.description | replace('"', '\\"') }}"{% endif %}{% if item.url %},
+            "url": "{{ item.url }}"{% endif %}{% if item.location %},
+            "location": {
+              "@type": "Place",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Vancouver",
+                "addressRegion": "BC",
+                "addressCountry": "CA"
+              },
+              "name": "{{ item.location | replace('"', '\\"') }}"
+            }{% endif %}
+          }
+        }{% if not loop.last %},{% endif %}
+        {%- endfor %}
+      ]
+    }{% endif %}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Vancouver Community Directory",
+        "item": "{{ site.url }}/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "{{ title }}",
+        "item": "{{ site.url }}/{{ page.fileSlug }}/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="category-page">
+<a href="#main-content" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <a href="/" class="logo">Vancouver Community</a>
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
+</header>
+<div class="main-container">
+{% set currentSlug = page.fileSlug %}
+{% include "partials/sidebar.njk" %}
+<main class="content" id="main-content">
+  <div class="category-hero">
+    <p class="page-tagline"><a href="/">Vancouver Community Directory</a> — find your people</p>
+    <h1 class="category-title">{{ title }} in Vancouver</h1>
+    <p class="category-desc">{{ description }}</p>
+    <div class="category-actions">
+      <a href="/submit/" class="cat-action">Know a group? Add it</a>
+      <a href="#" onclick="openEditModal('{{ page.fileSlug }}'); return false;" class="cat-action">Suggest an edit</a>
+      <span id="page-views" class="cat-views"></span>
+    </div>
+  </div>
+{{ content | stripH1 | safe }}
+</main>
+</div>
+
+<!-- Suggest Edit Modal -->
+<div id="edit-modal" class="edit-modal" role="dialog" aria-modal="true" aria-labelledby="edit-modal-title">
+  <div class="edit-modal-inner">
+    <button class="edit-modal-close" onclick="closeEditModal()" aria-label="Close">&times;</button>
+    <h2 id="edit-modal-title" class="edit-modal-title">Suggest an edit</h2>
+    <p class="edit-modal-desc">What needs to change? A closed group, wrong link, new info — anything helps.</p>
+    <form id="edit-form" class="form">
+      <div class="form-field">
+        <label class="form-label" for="edit-summary">What should change? *</label>
+        <textarea class="form-input" id="edit-summary" name="summary" required rows="4" placeholder="e.g. Social Run Club meets on Tuesdays now, not Wednesdays. New website: ..."></textarea>
+      </div>
+      <div class="form-field">
+        <label class="form-label" for="edit-name">Your name (optional)</label>
+        <input class="form-input" type="text" id="edit-name" name="name" placeholder="Patrick">
+      </div>
+      <input type="hidden" name="category" id="edit-category">
+      <button class="form-submit" type="submit">Send suggestion</button>
+      <span class="form-status" id="edit-status"></span>
+    </form>
+  </div>
+</div>
+
+<script>
+var _editOpener = null;
+function openEditModal(category) {
+  var modal = document.getElementById('edit-modal');
+  _editOpener = document.activeElement;
+  document.getElementById('edit-category').value = category;
+  modal.style.display = 'block';
+  var closeBtn = modal.querySelector('.edit-modal-close');
+  if (closeBtn) closeBtn.focus();
+}
+function closeEditModal() {
+  document.getElementById('edit-modal').style.display = 'none';
+  if (_editOpener) { _editOpener.focus(); _editOpener = null; }
+}
+document.getElementById('edit-modal').addEventListener('click', (e) => { if (e.target.id === 'edit-modal') closeEditModal(); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && document.getElementById('edit-modal').style.display === 'block') closeEditModal();
+});
+document.getElementById('edit-form').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type="submit"]');
+  const status = document.getElementById('edit-status');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  const formData = new FormData(e.target);
+  try {
+    const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/edit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(formData))
+    });
+    const result = await res.json();
+    if (result.success) {
+      status.className = 'form-status success';
+      status.textContent = '✓ Got it, thanks!';
+      e.target.reset();
+      setTimeout(closeEditModal, 2000);
+    } else throw new Error(result.error || 'Something went wrong');
+  } catch (err) {
+    status.className = 'form-status error';
+    status.textContent = 'Could not send — try emailing directly.';
+  }
+  btn.disabled = false;
+  btn.textContent = 'Send suggestion';
+});
+</script>
+
+{% include "partials/scripts.njk" %}
+</body>
+</html>

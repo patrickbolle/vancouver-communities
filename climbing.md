@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Climbing"
+description: "Vancouver climbing gyms and communities. Find climbing partners and bouldering meetups."
+emoji: "🧗"
+group: outdoor
+order: 4
+---
+
 # 🧗 Climbing
 
 ## Van Queer Climbers
@@ -6,8 +16,7 @@
 - **Find it:** [vanqueerclimbers.thinkific.com](https://vanqueerclimbers.thinkific.com/)
 
 ## Vancouver Climbers Association
-- **What:** Skills clinics, bouldering meet-ups, community climb days
-- **Vibe:** Transition from gym to crag safely
+- **What:** Skills clinics, bouldering meet-ups, community climb days. Transition from gym to crag safely
 - **Find it:** [vanclimbers.com](https://www.vanclimbers.com/)
 
 ## UBC Aviary
@@ -15,13 +24,11 @@
 - **Find it:** [ubc-aviary.com](https://ubc-aviary.com/)
 
 ## Alpine Club of Canada - Vancouver Section
-- **What:** 1500+ members, mountaineering, rock climbing, backcountry skiing
-- **Vibe:** Experienced community, trips and courses
+- **What:** 1500+ members, mountaineering, rock climbing, backcountry skiing. Experienced community, trips and courses
 - **Find it:** [accvancouver.ca](https://accvancouver.ca/)
 
 ## Vancouver Rock Climbing Group (Facebook)
-- **What:** Connect with local climbers, find partners
-- **Vibe:** Active community for indoor and outdoor climbing
+- **What:** Connect with local climbers, find partners. Active community for indoor and outdoor climbing
 - **Find it:** [Facebook Group](https://www.facebook.com/groups/vrcg.ca/)
 
 ---
@@ -29,8 +36,7 @@
 ## Venues & Spaces
 
 ## The Hive
-- **What:** Bouldering and climbing gym
-- **Vibe:** Inclusive community focus
+- **What:** Bouldering and climbing gym. Inclusive community focus
 - **Find it:** [hiveclimbing.com](https://www.hiveclimbing.com/)
 
 ## Progression Bouldering Gym
@@ -38,8 +44,7 @@
 - **Find it:** [progressionbouldering.com](https://www.progressionbouldering.com/)
 
 ## Climb Base5
-- **What:** Indoor climbing, kid-friendly
-- **Vibe:** "Discover your extraordinary potential"
+- **What:** Indoor climbing, kid-friendly. "Discover your extraordinary potential"
 - **Find it:** [climbbase5.com](https://climbbase5.com/)
 
 ## Cliffhanger Climbing Gym
@@ -52,6 +57,5 @@
 - **Find it:** [projectclimbing.ca](https://www.projectclimbing.ca/)
 
 ## SFU Climbing Wall
-- **What:** University climbing wall open to public
-- **Vibe:** Affordable, beginner-friendly
+- **What:** University climbing wall open to public. Affordable, beginner-friendly
 - **Find it:** [sfu.ca/recreation/climbing](https://www.sfu.ca/recreation/climbing.html)

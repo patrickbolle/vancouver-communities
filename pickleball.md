@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Pickleball"
+description: "Pickleball courts and clubs in Vancouver. Drop-in games and leagues."
+emoji: "🏓"
+group: outdoor
+order: 5
+---
+
 # 🏓 Pickleball
 
 ## Vancouver Pickleball Association
@@ -6,13 +16,11 @@
 - **Find it:** [vancouverpickleball.ca](https://vancouverpickleball.ca/)
 
 ## North Shore Pickleball Club
-- **What:** Active pickleball community on the North Shore
-- **Vibe:** All skill levels, regular play sessions, non-profit society
+- **What:** Active pickleball community on the North Shore. All skill levels, regular play sessions, non-profit society
 - **Find it:** [northshorepickleballclub.com](https://northshorepickleballclub.com/)
 
 ## Pickleball Leagues Vancouver
-- **What:** Organized league play through Vancouver Pickleball Association
-- **Vibe:** Competitive, structured, social
+- **What:** Organized league play through Vancouver Pickleball Association. Competitive, structured, social
 - **Find it:** [vancouverpickleball.ca](https://vancouverpickleball.ca/)
 
 ---
@@ -32,11 +40,9 @@
 - **Find it:** [nswc.ca/programs/pickleball](https://nswc.ca/programs/pickleball/)
 
 ## Ambleside Park Courts (West Van)
-- **What:** Four new courts opened September 2024
-- **Vibe:** Outdoor play, scenic location
+- **What:** Four new courts opened September 2024. Outdoor play, scenic location
 - **Find it:** [westvancouver.ca](https://westvancouver.ca/parks-recreation/sports-recreation/pickleball) | Ambleside Park, West Vancouver
 
 ## Community Centre Drop-In Pickleball
-- **What:** Various community centres offer drop-in play
-- **Vibe:** Affordable, social, all levels
+- **What:** Various community centres offer drop-in play. Affordable, social, all levels
 - **Find it:** [vancouver.ca](https://vancouver.ca/parks-recreation-culture/pickleball.aspx)

@@ -1,8 +1,17 @@
+---
+layout: category
+tags: category
+title: "Book Clubs"
+description: "Vancouver book clubs and reading groups. Find your literary community."
+emoji: "📚"
+group: intellectual
+order: 1
+---
+
 # 📚 Book Clubs & Reading
 
 ## Silent Book Club
-- **What:** People gather to read silently together, then chat
-- **Vibe:** Introverts unite, low-pressure social
+- **What:** People gather to read silently together, then chat. Introverts unite, low-pressure social
 - **Find it:** [silentbook.club](https://silentbook.club) (check for Vancouver chapter)
 
 ## Rebel Book Club Vancouver
@@ -11,8 +20,7 @@
 - **Find it:** [rebelbook.club/cities/vancouver](https://rebelbook.club/cities/vancouver)
 
 ## The Gloss Book Club
-- **What:** Global book club for women
-- **Vibe:** Same book globally, local meetups monthly
+- **What:** Global book club for women. Same book globally, local meetups monthly
 - **Find it:** [theglossbookclub.com/vancouver](https://theglossbookclub.com/vancouver)
 
 ## Vancouver Book Club (Meetup)
@@ -24,23 +32,19 @@
 - **Find it:** [vpl.bibliocommons.com](https://vpl.bibliocommons.com/v2/events)
 
 ## Read Whatever You Want Book Club
-- **What:** Read any book you want, discuss at meetups
-- **Vibe:** No assigned reading, come as you are
+- **What:** Read any book you want, discuss at meetups. No assigned reading, come as you are
 - **Find it:** [meetup.com/read-whatever-you-want-book-club](https://meetup.com/read-whatever-you-want-book-club)
 
 ## Vancouver Women Who Read
-- **What:** Anti-book club where members read their own thought-provoking choices
-- **Vibe:** Supportive community, monthly meetups
+- **What:** Anti-book club where members read their own thought-provoking choices. Supportive community, monthly meetups
 - **Find it:** [meetup.com/vancouver-women-who-read](https://meetup.com/vancouver-women-who-read)
 
 ## The Little Things Book and Movie Club
-- **What:** Books and their film adaptations
-- **Vibe:** Appreciating special moments in books/movies
+- **What:** Books and their film adaptations. Appreciating special moments in books/movies
 - **Find it:** [meetup.com/the-little-things-book-and-movie-club](https://meetup.com/the-little-things-book-and-movie-club)
 
 ## Vancouver Unconventional Books
-- **What:** Off-the-beaten-path book selections
-- **Vibe:** Literary, iconoclastic reads
+- **What:** Off-the-beaten-path book selections. Literary, iconoclastic reads
 - **Find it:** [meetup.com/vanunconventionalbooks](https://meetup.com/vanunconventionalbooks)
 
 ---

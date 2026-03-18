@@ -1,8 +1,17 @@
+---
+layout: category
+tags: category
+title: "Film & Cinema"
+description: "Vancouver film clubs and cinema events. Independent screenings and film societies."
+emoji: "🎬"
+group: creative
+order: 3
+---
+
 # 🎬 Film / Cinema
 
 ## Vancouver Cinema & Social Club
-- **What:** Movies plus hiking, walking tours, food, coffee
-- **Vibe:** "Not just about movies"
+- **What:** Movies plus hiking, walking tours, food, coffee. "Not just about movies"
 - **Find it:** [meetup.com/vancouver-cinema-club](https://meetup.com/vancouver-cinema-club)
 
 ## Celluloid Social Club
@@ -15,8 +24,7 @@
 - **Find it:** [ubcfilmsociety.ca](https://www.ubcfilmsociety.ca/)
 
 ## Vancouver Asian Film Festival (VAFF)
-- **What:** Canada's longest-running Asian film festival
-- **Vibe:** Year-round programs, November festival
+- **What:** Canada's longest-running Asian film festival. Year-round programs, November festival
 - **Find it:** [vaff.org](https://vaff.org/)
 
 ---
@@ -41,11 +49,9 @@
 - **Find it:** [thecinematheque.ca/series/film-club](https://thecinematheque.ca/series/film-club)
 
 ## VIFF Live
-- **What:** Live performances intersecting cinema with music, comedy, podcasts
-- **Vibe:** Unique cinema-infused live shows
+- **What:** Live performances intersecting cinema with music, comedy, podcasts. Unique cinema-infused live shows
 - **Find it:** [viff.org](https://viff.org/)
 
 ## Rio Theatre
-- **What:** Independent cinema with cult classics and special events
-- **Vibe:** Community hub, midnight movies, live events
+- **What:** Independent cinema with cult classics and special events. Community hub, midnight movies, live events
 - **Find it:** [riotheatre.ca](https://riotheatre.ca/)

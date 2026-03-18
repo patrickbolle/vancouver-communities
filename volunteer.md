@@ -1,8 +1,17 @@
+---
+layout: category
+tags: category
+title: "Volunteer"
+description: "Volunteer opportunities in Vancouver. Give back through community service."
+emoji: "🌿"
+group: work-tech
+order: 4
+---
+
 # 🌿 Volunteer
 
 ## Stanley Park Ecology Society
-- **What:** Conservation volunteering in Stanley Park
-- **Vibe:** Nature restoration, education programs, ongoing community
+- **What:** Conservation volunteering in Stanley Park. Nature restoration, education programs, ongoing community
 - **Find it:** [stanleyparkecology.ca](https://stanleyparkecology.ca/)
 
 ---
@@ -26,21 +35,17 @@
 - **Find it:** [volunteermatch.org](https://www.volunteermatch.org/)
 
 ## GoVolunteer
-- **What:** Connects volunteers with nonprofits across Western Canada
-- **Vibe:** Easy search, featured listings
+- **What:** Connects volunteers with nonprofits across Western Canada. Easy search, featured listings
 - **Find it:** [govolunteer.ca](https://govolunteer.ca/)
 
 ## Vancouver Food Bank
-- **What:** Sort food, help with distributions
-- **Vibe:** Direct community impact
+- **What:** Sort food, help with distributions. Direct community impact
 - **Find it:** [foodbank.bc.ca](https://www.foodbank.bc.ca/)
 
 ## Habitat for Humanity Vancouver
-- **What:** Build homes, work in ReStores
-- **Vibe:** Hands-on, make a difference
+- **What:** Build homes, work in ReStores. Hands-on, make a difference
 - **Find it:** [habitatvancouver.ca](https://www.habitatvancouver.ca/)
 
 ## SPCA Volunteer
-- **What:** Animal care, adoption events, education
-- **Vibe:** For animal lovers
+- **What:** Animal care, adoption events, education. For animal lovers
 - **Find it:** [spca.bc.ca/volunteer](https://spca.bc.ca/volunteer/)

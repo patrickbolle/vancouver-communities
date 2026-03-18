@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Astronomy & Stargazing"
+description: "Astronomy clubs and stargazing in Vancouver. Star parties and telescope nights."
+emoji: "🔭"
+group: mind-body
+order: 7
+---
+
 # 🔭 Astronomy / Stargazing
 
 ## RASC Vancouver (Royal Astronomical Society of Canada)
@@ -19,8 +29,7 @@
 - **Find it:** [Facebook Group](https://www.facebook.com/groups/326912794079774/)
 
 ## Nahatlatch Valley Star Party
-- **What:** Annual multi-day stargazing event organized by RASC Vancouver
-- **Vibe:** Dark sky site, camping, community astronomy
+- **What:** Annual multi-day stargazing event organized by RASC Vancouver. Dark sky site, camping, community astronomy
 - **Find it:** [rasc-vancouver.com](https://rasc-vancouver.com/)
 
 ---
@@ -28,16 +37,13 @@
 ## Venues & Spaces
 
 ## SFU Trottier Observatory
-- **What:** Public observing nights with high-powered telescopes
-- **Vibe:** Educational, open to the public on clear nights
+- **What:** Public observing nights with high-powered telescopes. Educational, open to the public on clear nights
 - **Find it:** [sfu.ca/science/trottier-observatory](https://www.sfu.ca/science/trottier-observatory.html)
 
 ## H.R. MacMillan Space Centre
-- **What:** Planetarium shows and special astronomy events
-- **Vibe:** Family-friendly, educational programs
+- **What:** Planetarium shows and special astronomy events. Family-friendly, educational programs
 - **Find it:** [spacecentre.ca](https://www.spacecentre.ca/)
 
 ## Gordon Southam Observatory
-- **What:** Free public observing at Vanier Park (weather permitting)
-- **Vibe:** Casual drop-in stargazing, run by RASC volunteers
+- **What:** Free public observing at Vanier Park (weather permitting). Casual drop-in stargazing, run by RASC volunteers
 - **Find it:** [spacecentre.ca](https://www.spacecentre.ca/) | [RASC Vancouver](https://rasc-vancouver.com/)

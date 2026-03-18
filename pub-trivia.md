@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Pub Trivia"
+description: "Pub trivia nights in Vancouver. Test your knowledge and find your team."
+emoji: "🧠"
+group: social
+order: 5
+---
+
 # 🧠 Pub Trivia
 
 *Note: This category is mostly venues and trivia hosts rather than community groups. The community forms around regular trivia teams at specific venues.*
@@ -7,8 +17,7 @@
 ## Venues & Spaces
 
 ## IQ 2000 Trivia
-- **What:** Vancouver's premier pub trivia host
-- **Vibe:** Theatrical, fun host
+- **What:** Vancouver's premier pub trivia host. Theatrical, fun host
 - **Find it:** [iq2000trivia.com](https://www.iq2000trivia.com/)
 
 ## Vancouver Trivia Party
@@ -21,23 +30,19 @@
 - **Find it:** [eastsidecrafthouse.com](https://eastsidecrafthouse.com/saturday-night-trivia-vancouver)
 
 ## Darby's Quiz Night (Kitsilano)
-- **What:** Weekly trivia at 7:30pm
-- **Vibe:** Pub atmosphere, regular crowd
+- **What:** Weekly trivia at 7:30pm. Pub atmosphere, regular crowd
 - **Find it:** [darbyspub.ca](https://darbyspub.ca/) | 2001 Macdonald St
 
 ## The Butcher & Bullock Trivia
-- **What:** Pub trivia with burger & beer specials
-- **Vibe:** $16 burger & beer, $5 Jameson
+- **What:** Pub trivia with burger & beer specials. $16 burger & beer, $5 Jameson
 - **Find it:** 911 W Pender St, Downtown
 
 ## Storm Crow Alehouse Trivia
-- **What:** Geek-themed trivia nights
-- **Vibe:** Sci-fi, fantasy, gaming topics
+- **What:** Geek-themed trivia nights. Sci-fi, fantasy, gaming topics
 - **Find it:** [stormcrowalehouse.com](https://www.stormcrowalehouse.com/)
 
 ## Amazing Brentwood Tuesday Trivia
-- **What:** Free trivia covering geeky topics
-- **Vibe:** Film, TV, video games, science, teams up to 6
+- **What:** Free trivia covering geeky topics. Film, TV, video games, science, teams up to 6
 - **Find it:** [theamazingbrentwood.com](https://theamazingbrentwood.com/) | Food court
 
 ---

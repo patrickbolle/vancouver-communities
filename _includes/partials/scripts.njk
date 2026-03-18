@@ -1,0 +1,22 @@
+<script>
+const categories = [{% for cat in collections.categories %}"{{ cat.fileSlug }}"{% if not loop.last %},{% endif %}{% endfor %}];
+function goRandom() {
+  const cat = categories[Math.floor(Math.random() * categories.length)];
+  window.location.href = "/" + cat + "/";
+}
+fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
+  .then(r => r.json())
+  .then(data => {
+    const path = window.location.pathname;
+    const pageViews = data.pages[path] || 0;
+    const totalViews = data.total.pageviews || 0;
+    const pageCounter = document.getElementById("page-views");
+    if (pageCounter) pageCounter.textContent = pageViews.toLocaleString() + " views";
+    const totalCounter = document.getElementById("total-views");
+    if (totalCounter) totalCounter.textContent = totalViews.toLocaleString() + " total views";
+    const homepageTotal = document.getElementById("homepage-total-views");
+    if (homepageTotal) homepageTotal.textContent = totalViews.toLocaleString() + " views";
+  })
+  .catch(() => {});
+</script>
+<script src="/_build/main.js"></script>

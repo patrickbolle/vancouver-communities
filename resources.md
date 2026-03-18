@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Resources"
+description: "Vancouver community resources and directories."
+emoji: "🔗"
+group: community
+order: 3
+---
+
 # 🔗 Resources & Aggregators
 
 *These are meta-resources — directories and aggregators to help you find communities and events across all categories.*
@@ -19,13 +29,11 @@
 - **Find it:** [meetup.com/cities/ca/bc/vancouver](https://meetup.com/cities/ca/bc/vancouver)
 
 ## Flock Social
-- **What:** Vancouver-based IRL communities and social events app
-- **Vibe:** Discover local clubs — supper clubs, mahjong nights, DJ sets
+- **What:** Vancouver-based IRL communities and social events app. Discover local clubs — supper clubs, mahjong nights, DJ sets
 - **Find it:** [flocksocial.app](https://flocksocial.app)
 
 ## Heylo
-- **What:** Community groups app (Meetup alternative)
-- **Vibe:** Run clubs, parent groups, social clubs
+- **What:** Community groups app (Meetup alternative). Run clubs, parent groups, social clubs
 - **Find it:** [heylo.com](https://heylo.com)
 
 ---
@@ -33,8 +41,7 @@
 ## Event Calendars
 
 ## Lu.ma Vancouver
-- **What:** Tech, startup, and creative community events aggregator
-- **Vibe:** Where Vancouver's builder community lives — subscribe for notifications
+- **What:** Tech, startup, and creative community events aggregator. Where Vancouver's builder community lives — subscribe for notifications
 - **Find it:** [lu.ma/vancouver](https://lu.ma/vancouver)
 
 ## Vancouver Tech Events (Lu.ma)
@@ -138,8 +145,7 @@
 - **Find it:** [facebook.com/groups/97461647231](https://facebook.com/groups/97461647231)
 
 ## Slow Hikers Vancouver
-- **What:** For hikers who take their time on trails
-- **Vibe:** Supportive, no-rush, "we'll wait for you"
+- **What:** For hikers who take their time on trails. Supportive, no-rush, "we'll wait for you"
 - **Find it:** [facebook.com/groups/2615875668725777](https://facebook.com/groups/2615875668725777)
 
 ## BC Kids Hiking Club
@@ -155,13 +161,11 @@
 - **Find it:** [facebook.com/groups/VancouverDogOwners](https://www.facebook.com/share/g/19XEuNFE9g/)
 
 ## VancouverMom.ca
-- **What:** Community of Vancouver parents
-- **Vibe:** Daycare tips, kid-friendly spots, parenting advice
+- **What:** Community of Vancouver parents. Daycare tips, kid-friendly spots, parenting advice
 - **Find it:** [facebook.com/groups/VancouverMom](https://www.facebook.com/share/g/16t9da4owh/)
 
 ## Gay Vancouver LIFE (Alphabet Family)
-- **What:** 2SLGBTQIA+ community space
-- **Vibe:** Connect, vent, celebrate, share resources
+- **What:** 2SLGBTQIA+ community space. Connect, vent, celebrate, share resources
 - **Find it:** [facebook.com/groups/GayVancouverLIFE](https://www.facebook.com/share/g/1GcFJmjDy6/)
 
 ---
@@ -174,8 +178,7 @@
 - **Find it:** [instagram.com/weshouldbefriendsvancouver](https://instagram.com/weshouldbefriendsvancouver)
 
 ## @letsadventurevan
-- **What:** Weekly outdoor stranger meetups — hikes, cold plunges, sports
-- **Vibe:** Welcoming, low-key, builds real friendships
+- **What:** Weekly outdoor stranger meetups — hikes, cold plunges, sports. Welcoming, low-key, builds real friendships
 - **Find it:** [instagram.com/letsadventurevan](https://instagram.com/letsadventurevan)
 
 ## @van.thrive.club
@@ -183,18 +186,15 @@
 - **Find it:** [instagram.com/van.thrive.club](https://instagram.com/van.thrive.club)
 
 ## @vancitybusinessbabes
-- **What:** Female entrepreneurs network
-- **Vibe:** Events, podcasts, education, connections
+- **What:** Female entrepreneurs network. Events, podcasts, education, connections
 - **Find it:** [instagram.com/vancitybusinessbabes](https://instagram.com/vancitybusinessbabes)
 
 ## @slicevancouver
-- **What:** Artist community supporting 350+ local creatives
-- **Vibe:** Gift shop, gallery, coworking, workshops
+- **What:** Artist community supporting 350+ local creatives. Gift shop, gallery, coworking, workshops
 - **Find it:** [instagram.com/slicevancouver](https://instagram.com/slicevancouver)
 
 ## @boredinvancouver
-- **What:** Fun, unique things to do in Vancouver
-- **Vibe:** "Keeping the vibe real"
+- **What:** Fun, unique things to do in Vancouver. "Keeping the vibe real"
 - **Find it:** [instagram.com/boredinvancouver](https://instagram.com/boredinvancouver)
 
 ## @604now

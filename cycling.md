@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Cycling"
+description: "Vancouver cycling clubs and group rides. Social rides and cycling communities."
+emoji: "🚴"
+group: outdoor
+order: 3
+---
+
 # 🚴 Cycling
 
 ## Gradient Cycling Club
@@ -10,8 +20,7 @@
 - **Find it:** [lotuscyclingclub.com](https://www.lotuscyclingclub.com/)
 
 ## The Last Drop Cycling Club
-- **What:** Road bike enthusiasts
-- **Vibe:** "For those who give it everything"
+- **What:** Road bike enthusiasts. "For those who give it everything"
 - **Find it:** [thelastdrop.cc](https://thelastdrop.cc/)
 
 ## Vancouver Bicycle Club
@@ -19,8 +28,7 @@
 - **Find it:** [vbc.bc.ca](https://vbc.bc.ca/)
 
 ## Out-n-About Cycling
-- **What:** Social cycling for adults
-- **Vibe:** Volunteer-run, exploring Metro Vancouver
+- **What:** Social cycling for adults. Volunteer-run, exploring Metro Vancouver
 - **Find it:** [meetup.com/out-and-about-cycling-in-metro-vancouver](https://meetup.com/out-and-about-cycling-in-metro-vancouver)
 
 ## Vancouver Velo Vets
@@ -32,28 +40,23 @@
 - **Find it:** [tccyclingclub.com](https://www.tccyclingclub.com/)
 
 ## Gravel Buddies
-- **What:** Gravel riding social group
-- **Vibe:** Women, gender-diverse and 2SLGBTQIA+ focused
+- **What:** Gravel riding social group. Women, gender-diverse and 2SLGBTQIA+ focused
 - **Find it:** [gravelbuddies.ca](https://gravelbuddies.ca/)
 
 ## Gastown Cycling Club
-- **What:** Race team and long-distance group rides (75-120km)
-- **Vibe:** March to October, varied locations
+- **What:** Race team and long-distance group rides (75-120km). March to October, varied locations
 - **Find it:** [gastowncycling.com](https://gastowncycling.com/) | [Instagram](https://instagram.com/gastowncycling)
 
 ## CoffeeOutside YVR
-- **What:** Inclusive Friday morning bike group
-- **Vibe:** Community-focused, bring your coffee
+- **What:** Inclusive Friday morning bike group. Community-focused, bring your coffee
 - **Find it:** [Instagram](https://instagram.com/coffeeoutsideyvr)
 
 ## Kits Social Run Club (also cycling)
-- **What:** Social rides in Kitsilano, started 2024
-- **Vibe:** Up-and-coming, friendly community
+- **What:** Social rides in Kitsilano, started 2024. Up-and-coming, friendly community
 - **Find it:** [Instagram](https://instagram.com/kitssocialrunclub)
 
 ## RUNVAN Club
-- **What:** Running and cycling community crews
-- **Vibe:** Inclusive, social media connected
+- **What:** Running and cycling community crews. Inclusive, social media connected
 - **Find it:** [runvan.org/crews](https://runvan.org/crews/)
 
 ---

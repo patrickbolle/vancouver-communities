@@ -2,242 +2,207 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vancouvercommunity.org/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/dinner-supper-clubs/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/social-friend-clubs/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/run-clubs/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/board-games/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/creative-art/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/photography/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/film-cinema/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/writing/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/language-exchange/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/hiking-outdoors/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/cycling/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/dance/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/improv-comedy/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/music-open-mic/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/climbing/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/pickleball/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/pottery-ceramics/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/yoga-wellness/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/sauna-cold-plunge/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/mindfulness-meditation/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/mens-groups/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/maker-spaces/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/philosophy-intellectual/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/book-clubs/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/tech-startup/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/social-friend-clubs/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/photography/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/hiking-outdoors/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/mindfulness-meditation/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/philosophy-intellectual/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/coworking/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/volunteer/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/vinyl-listening-bars/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/film-cinema/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/language-exchange/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/cycling/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/maker-spaces/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/chess/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/underground-dj/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/poetry-spoken-word/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/tarot-astrology/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/pub-trivia/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/zine-risograph/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/astronomy-stargazing/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/foraging-nature/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/birdwatching/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://vancouvercommunity.org/karaoke/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://vancouvercommunity.org/resources/</loc>
-    <lastmod>2026-01-26T22:48:20Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/board-games/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/writing/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/climbing/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/pottery-ceramics/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/volunteer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/karaoke/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/dance/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/improv-comedy/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/pickleball/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/poetry-spoken-word/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/pub-trivia/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/sauna-cold-plunge/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/underground-dj/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/zine-risograph/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/birdwatching/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/music-open-mic/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/astronomy-stargazing/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/tarot-astrology/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vancouvercommunity.org/submit/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

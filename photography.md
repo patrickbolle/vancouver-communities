@@ -1,8 +1,17 @@
+---
+layout: category
+tags: category
+title: "Photography"
+description: "Vancouver photography clubs and photo walks. Community shoots and photography meetups."
+emoji: "📷"
+group: creative
+order: 2
+---
+
 # 📷 Photography
 
 ## Vancouver Photowalks
-- **What:** Photography walks around the city
-- **Vibe:** Get together, talk photography, capture images
+- **What:** Photography walks around the city. Get together, talk photography, capture images
 - **Find it:** [meetup.com/vancouver-photowalks](https://meetup.com/vancouver-photowalks)
 
 ## Vancouver Street Photography Collective
@@ -18,18 +27,15 @@
 - **Find it:** [vancouverphotography.group](https://vancouverphotography.group/)
 
 ## Street16
-- **What:** Street photography workshops and photo walks
-- **Vibe:** Night, abstract, film photography skills
+- **What:** Street photography workshops and photo walks. Night, abstract, film photography skills
 - **Find it:** [street16photography.com](https://street16photography.com/)
 
 ## Metro Vancouver Photography, Travel & Connections
-- **What:** Photography outings plus travel discussions
-- **Vibe:** Amateur and professional welcome
+- **What:** Photography outings plus travel discussions. Amateur and professional welcome
 - **Find it:** [meetup.com/Photography-photowalks-virtual-anything-goes](https://meetup.com/Photography-photowalks-virtual-anything-goes)
 
 ## Metro Vancouver Street Photography
-- **What:** Urban photography walks and exhibitions
-- **Vibe:** Capture the city's stories
+- **What:** Urban photography walks and exhibitions. Capture the city's stories
 - **Find it:** [meetup.com/metro-vancouver-street-photography](https://meetup.com/metro-vancouver-street-photography)
 
 ---
@@ -37,12 +43,10 @@
 ## Venues & Resources
 
 ## Gallery George
-- **What:** Gallery that hosts photography events and exhibitions
+- **What:** Gallery that hosts photography events and exhibitions. Community hub for street photographers and local artists
 - **Where:** 140 West Hastings Street, Vancouver
-- **Vibe:** Community hub for street photographers and local artists
 - **Find it:** [thegallerygeorge.com](https://thegallerygeorge.com/) | [Instagram](https://instagram.com/thegallerygeorge)
 
 ## Capture Photography Festival
-- **What:** Annual photography festival with exhibitions and events
-- **Vibe:** International photographers, local venues
+- **What:** Annual photography festival with exhibitions and events. International photographers, local venues
 - **Find it:** [capturephotofest.com](https://www.capturephotofest.com/)

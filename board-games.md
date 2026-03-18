@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Board Games"
+description: "Board game cafes and game nights in Vancouver. Weekly meetups, gaming cafes, and tabletop communities."
+emoji: "🎲"
+group: intellectual
+order: 4
+---
+
 # 🎲 Board Games
 
 ## Vancouver Board Games
@@ -9,8 +19,7 @@
 - **Find it:** [meetup.com/board-games-social-westend-vancouver](https://meetup.com/board-games-social-westend-vancouver)
 
 ## Good Game - North Vancouver
-- **What:** Board gaming meetup with modern games provided
-- **Vibe:** Inclusive, fun
+- **What:** Board gaming meetup with modern games provided. Inclusive, fun
 - **Find it:** [meetup.com/good-game-north-vancouver](https://meetup.com/good-game-north-vancouver)
 
 ## Vancouver Social Deduction Gamers
@@ -24,7 +33,7 @@
 ## Hideout Cafe
 - **What:** Biweekly board game meetups
 - **Where:** 716 Carnarvon Street, New Westminster
-- **Note:** Spend $10 on food/drink
+- **Cost:** Spend $10 on food/drink
 - **Find it:** [thehideoutcafe.com](https://thehideoutcafe.com/)
 
 ## Mench Café
@@ -33,22 +42,14 @@
 - **Find it:** [menchcafe.com](https://menchcafe.com/)
 
 ## Pizzeria Ludica
-- **What:** Board game café with no play fee
-- **Vibe:** Order food/drinks, play from huge game library
+- **What:** Board game café with no play fee. Order food/drinks, play from huge game library
 - **Find it:** [pizzerialudica.com](https://pizzerialudica.com/)
 
-## The Raving Gamer ⚠️ CLOSED
-- **What:** Was a curated game selection with strategic and family titles
-- **Status:** Unfortunately ceased operations (previously in Langley)
-- **Find it:** ~~[theravinggamer.ca](https://theravinggamer.ca/)~~ (no longer operating)
-
 ## Storm Crow Alehouse
-- **What:** Geek-themed pub with board games available
-- **Vibe:** Nerdy atmosphere, good food and beer
+- **What:** Geek-themed pub with board games available. Nerdy atmosphere, good food and beer
 - **Find it:** [stormcrowalehouse.com](https://www.stormcrowalehouse.com/)
 
 ## Boardwalk Cafe and Games (Abbotsford)
-- **What:** 600+ tabletop games, worth the drive
-- **Vibe:** Massive selection, friendly staff
+- **What:** 600+ tabletop games, worth the drive. Massive selection, friendly staff
 - **Where:** Abbotsford, ~1 hour from Vancouver
 - **Find it:** [abbyboardwalk.com](https://abbyboardwalk.com/)

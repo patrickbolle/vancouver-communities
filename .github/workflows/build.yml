@@ -5,21 +5,31 @@ on:
     branches: [main]
     paths:
       - '*.md'
-      - 'build.sh'
-      - 'site/index.html'
-      - 'site/styles.css'
+      - '*.njk'
+      - '_includes/**'
+      - '_data/**'
+      - 'src/**'
+      - 'static/**'
+      - 'eleventy.config.js'
+      - 'package.json'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Build HTML from Markdown
-        run: |
-          chmod +x build.sh
-          ./build.sh
-      
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npx @11ty/eleventy
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"

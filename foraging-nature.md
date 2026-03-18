@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Foraging & Nature"
+description: "Foraging tours and nature walks in Vancouver. Learn wild foods."
+emoji: "🍄"
+group: mind-body
+order: 3
+---
+
 # 🍄 Foraging / Nature
 
 ## Nature Vancouver
@@ -5,8 +15,7 @@
 - **Find it:** [naturevancouver.ca](https://naturevancouver.ca/)
 
 ## BC Mushrooms
-- **What:** Mushroom identification, events, community
-- **Vibe:** Connect with local mycology enthusiasts
+- **What:** Mushroom identification, events, community. Connect with local mycology enthusiasts
 - **Find it:** [mushroomsofbc.com](https://mushroomsofbc.com/) | Facebook: "Vancouver Mycological Society"
 
 ---
@@ -14,8 +23,7 @@
 ## Venues & Resources
 
 ## Swallow Tail Foraging Tours
-- **What:** Wild plant and mushroom identification tours
-- **Vibe:** 2-hour rainforest walks, learn to forage
+- **What:** Wild plant and mushroom identification tours. 2-hour rainforest walks, learn to forage
 - **Cost:** ~$46/person
 - **Find it:** [swallowtail.ca](https://swallowtail.ca/)
 
@@ -24,16 +32,13 @@
 - **Find it:** [destinationvancouver.com/listings/a-taste-of-nature](https://www.destinationvancouver.com/listings/a-taste-of-nature/56116/)
 
 ## Deerholme Farm Forages
-- **What:** Wild food forages for mushrooms and plants
-- **Vibe:** Educational, hands-on, Vancouver Island day trips
+- **What:** Wild food forages for mushrooms and plants. Educational, hands-on, Vancouver Island day trips
 - **Find it:** [deerholme.com/foraging](https://www.deerholme.com/foraging/)
 
 ## Forest For Dinner
-- **What:** Spring and fall foraging tours on Vancouver Island
-- **Vibe:** Wild spring greens, mushroom hunting
+- **What:** Spring and fall foraging tours on Vancouver Island. Wild spring greens, mushroom hunting
 - **Find it:** [forestfordinner.ca](https://forestfordinner.ca/foraging-tours/)
 
 ## Breakaway Experiences Foraging Tour
-- **What:** 2-hour guided wild edibles identification tour
-- **Vibe:** Vancouver's rainforest, plants and mushrooms
+- **What:** 2-hour guided wild edibles identification tour. Vancouver's rainforest, plants and mushrooms
 - **Find it:** [breakawayexperiences.com](https://breakawayexperiences.com/wild-plant-and-mushroom-foraging-rainforest-tour)

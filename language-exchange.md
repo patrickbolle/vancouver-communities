@@ -1,8 +1,17 @@
+---
+layout: category
+tags: category
+title: "Language Exchange"
+description: "Language exchange meetups in Vancouver. Practice languages with native speakers."
+emoji: "🗣️"
+group: social
+order: 3
+---
+
 # 🗣️ Language Exchange
 
 ## Vancouver Chinese/English Language Exchange
-- **What:** Practice Chinese and English, make friends
-- **Vibe:** Casual
+- **What:** Practice Chinese and English, make friends. Casual
 - **Find it:** [meetup.com/vancouver-chinese-english-language-exchange](https://meetup.com/vancouver-chinese-english-language-exchange)
 
 ## Se Habla (English & Spanish)
@@ -27,18 +36,15 @@
 - **Find it:** [meetup.com/enkor-엔콜](https://meetup.com/enkor-%EC%97%94%EC%BD%9C/) (Enkor)
 
 ## Vancouver French Language Meetup
-- **What:** Practice French in a social setting
-- **Vibe:** Free since 2024, no subscription needed
+- **What:** Practice French in a social setting. Free since 2024, no subscription needed
 - **Find it:** [meetup.com/vancouver-french-meetup](https://meetup.com/vancouver-french-meetup)
 
 ## YATTA! Canada Japanese Exchange
-- **What:** Japanese language and cultural exchange
-- **Vibe:** Friendly, regular meetups
+- **What:** Japanese language and cultural exchange. Friendly, regular meetups
 - **Find it:** [meetup.com/yatta-canada](https://meetup.com/yatta-canada)
 
 ## An Effective Chit-chat Meeting
-- **What:** Casual conversation practice, English/Japanese focus
-- **Vibe:** Low-pressure, social, run by software engineer
+- **What:** Casual conversation practice, English/Japanese focus. Low-pressure, social, run by software engineer
 - **Find it:** [meetup.com/an-effective-language-practice-english-japanese](https://meetup.com/an-effective-language-practice-english-japanese)
 
 ---
@@ -46,6 +52,5 @@
 ## Venues & Resources
 
 ## My Language Exchange Vancouver
-- **What:** Online platform to find language partners
-- **Vibe:** One-on-one conversation meetups
+- **What:** Online platform to find language partners. One-on-one conversation meetups
 - **Find it:** [mylanguageexchange.com/city/Vancouver](https://www.mylanguageexchange.com/city/Vancouver__Canada.asp)

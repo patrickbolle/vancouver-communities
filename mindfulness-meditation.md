@@ -1,13 +1,21 @@
+---
+layout: category
+tags: category
+title: "Mindfulness & Meditation"
+description: "Meditation groups in Vancouver. Sitting groups and mindfulness meetups."
+emoji: "🪷"
+group: mind-body
+order: 2
+---
+
 # 🧘 Mindfulness / Meditation
 
 ## Mindfulness Practice Community of Vancouver
-- **What:** Community meditation, follows Thich Nhat Hanh teachings
-- **Vibe:** Sangha (community) focused
+- **What:** Community meditation, follows Thich Nhat Hanh teachings. Sangha (community) focused
 - **Find it:** [mindfulnessvancouver.org](http://mindfulnessvancouver.org) + [Meetup](https://www.meetup.com/mindfulness-practice-community-of-vancouver/)
 
 ## Vancouver Shambhala Centre
-- **What:** Buddhist meditation centre with community programs
-- **Vibe:** Warm approach, beginners welcome
+- **What:** Buddhist meditation centre with community programs. Warm approach, beginners welcome
 - **Find it:** [vancouver.shambhala.org](https://vancouver.shambhala.org)
 
 ## Mountain Rain Zen Centre
@@ -26,23 +34,19 @@
 - **Find it:** [vancouvermeditationgroup.org](https://vancouvermeditationgroup.org/)
 
 ## BC Insight Meditation Society (BCIMS)
-- **What:** Buddhist meditation in Theravada tradition
-- **Vibe:** Connects meditation communities across BC
+- **What:** Buddhist meditation in Theravada tradition. Connects meditation communities across BC
 - **Find it:** [bcims.org](https://www.bcims.org/)
 
 ## Spiritual Development & Mysticism Meetup
-- **What:** Spirit rituals, meditation, mystical experiences
-- **Vibe:** Varied practices, open to exploration
+- **What:** Spirit rituals, meditation, mystical experiences. Varied practices, open to exploration
 - **Find it:** [meetup.com/SpiRitual-Artistry](https://www.meetup.com/SpiRitual-Artistry/)
 
 ## Free Outdoor Meditation (Summer)
-- **What:** Drop-in meditation sessions in parks
-- **Vibe:** Accessible, beginner-friendly
+- **What:** Drop-in meditation sessions in parks. Accessible, beginner-friendly
 - **Find it:** [vancouver.ca/parks-recreation](https://vancouver.ca/parks-recreation-culture.aspx) | Community centre schedules
 
 ## Inner Engineering Vancouver (Isha Yoga)
-- **What:** Free meditation classes, yoga programs, social gatherings
-- **Vibe:** Learn, relax, and have fun
+- **What:** Free meditation classes, yoga programs, social gatherings. Learn, relax, and have fun
 - **Find it:** [meetup.com/isha-yoga-vancouver-bc](https://meetup.com/isha-yoga-vancouver-bc)
 
 ## Vancouver Meditation Community (Heartfulness)
@@ -52,8 +56,7 @@
 - **Find it:** [meetup.com/Vancouver-Heartfulness-Meditation](https://meetup.com/Vancouver-Heartfulness-Meditation)
 
 ## BE Yoga and Meditation Vancouver
-- **What:** Meditation for fulfilled living
-- **Vibe:** Abundance, health, love, inner success
+- **What:** Meditation for fulfilled living. Abundance, health, love, inner success
 - **Find it:** [meetup.com/be-yoga-meditation-vancouver](https://meetup.com/be-yoga-meditation-vancouver)
 
 ---

@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Pottery & Ceramics"
+description: "Pottery studios and ceramics classes in Vancouver. Wheel throwing and clay communities."
+emoji: "🏺"
+group: mind-body
+order: 4
+---
+
 # 🏺 Pottery / Ceramics
 
 *Note: This category is mostly venues/studios rather than community groups. The community forms around the classes and shared studio experiences.*
@@ -7,9 +17,8 @@
 ## Venues & Spaces
 
 ## Claymates Ceramics Studio
-- **What:** Classes, workshops, pottery date nights, memberships
+- **What:** Classes, workshops, pottery date nights, memberships. "For newcomers and clay enthusiasts"
 - **Where:** East Vancouver
-- **Vibe:** "For newcomers and clay enthusiasts"
 - **Find it:** [claymatesceramicsstudio.com](https://www.claymatesceramicsstudio.com/)
 
 ## Community Clay
@@ -41,22 +50,18 @@
 - **Find it:** [westpointgrey.org](https://westpointgrey.org/program-facility/pottery-studio/)
 
 ## Studio Fundamentals
-- **What:** Pottery classes and studio access
+- **What:** Pottery classes and studio access. Highly recommended by locals, beginner-friendly
 - **Where:** East Vancouver
-- **Vibe:** Highly recommended by locals, beginner-friendly
 - **Find it:** [studiofundamentals.com](https://studiofundamentals.com/)
 
 ## Trout Lake Community Centre Pottery
-- **What:** Community centre pottery classes
-- **Vibe:** Affordable, neighbourhood-based
+- **What:** Community centre pottery classes. Affordable, neighbourhood-based
 - **Find it:** [troutlakecc.com](https://troutlakecc.com/) | [City of Vancouver](https://vancouver.ca/parks-recreation-culture/trout-lake-community-centre.aspx)
 
 ## City of Vancouver Pottery Programs
-- **What:** Various venues for drop-in pottery and classes
-- **Vibe:** Accessible, multiple locations
+- **What:** Various venues for drop-in pottery and classes. Accessible, multiple locations
 - **Find it:** [vancouver.ca](https://vancouver.ca/parks-recreation-culture/pottery-ceramics.aspx)
 
 ## Pottery Date Nights
-- **What:** Couples pottery experiences at various studios
-- **Vibe:** Romantic, beginner-friendly
+- **What:** Couples pottery experiences at various studios. Romantic, beginner-friendly
 - **Find it:** [Claymates](https://www.claymatesceramicsstudio.com/) | [Hand Eye Ceramics](https://www.handeyeceramics.com/)

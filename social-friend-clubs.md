@@ -1,14 +1,21 @@
+---
+layout: category
+tags: category
+title: "Social & Friend Clubs"
+description: "Vancouver social clubs and friend-making groups. Connect through organized meetups and community events."
+emoji: "🤝"
+group: social
+order: 2
+---
+
 # 🤝 Social / Friend Clubs
 
 ## We Should Be Friends
-- **What:** Park hangs, pottery nights, spin classes, neighbourhood book clubs
-- **Vibe:** Explicitly focused on *lasting* friendships, not one-night connections
-- **Founded by:** Katrina Martin (started with viral 300-person Kits Beach hangout)
+- **What:** Park hangs, pottery nights, spin classes, neighbourhood book clubs — started with a viral 300-person Kits Beach hangout. Explicitly focused on *lasting* friendships, not one-night connections
 - **Find it:** [@weshouldbefriendsvancouver](https://instagram.com/weshouldbefriendsvancouver)
 
 ## Maude Sips
-- **What:** Wine + community events, mostly femme-focused
-- **Vibe:** "Wine as the medium, community as the message"
+- **What:** Wine + community events, mostly femme-focused. "Wine as the medium, community as the message"
 - **Size:** ~35 people per event
 - **Where:** Mount Pleasant, Kits venues
 - **Find it:** [maudesips.com](https://maudesips.com/) | [Instagram](https://instagram.com/maude.sips)
@@ -19,18 +26,15 @@
 - **Find it:** [meetup.com/vancouver-social-club](https://meetup.com/vancouver-social-club)
 
 ## Stellar Socials
-- **What:** Networking events, social activities
-- **Vibe:** Learning and exploring new interests together
+- **What:** Networking events, social activities. Learning and exploring new interests together
 - **Find it:** [meetup.com/stellar-socials-vancouver-meetup-group](https://meetup.com/stellar-socials-vancouver-meetup-group)
 
 ## Weird & Wonderful: A Neurodiverse Social Club
-- **What:** Social events for neurodivergent folks
-- **Vibe:** Positive, friendly space for magical and interesting people
+- **What:** Social events for neurodivergent folks. Positive, friendly space for magical and interesting people
 - **Find it:** [meetup.com/aspies-and-other-neurodivergents](https://meetup.com/aspies-and-other-neurodivergents)
 
 ## Black Women Connect Vancouver
-- **What:** Community events for Black women
-- **Vibe:** Inspire, empower, embrace diverse experiences
+- **What:** Community events for Black women. Inspire, empower, embrace diverse experiences
 - **Find it:** [blackwomenconnectvancouver.com](https://blackwomenconnectvancouver.com/) | [Instagram](https://instagram.com/blackwomenconnectvancouver)
 
 ## The Witching Hour
@@ -38,69 +42,56 @@
 - **Find it:** [Instagram @witchinghouryvr](https://instagram.com/witchinghouryvr)
 
 ## Shindigs & Board Games with Friendly Folks
-- **What:** Games and socializing
-- **Vibe:** "Safe, comfortable space... not a dating meetup"
+- **What:** Games and socializing. "Safe, comfortable space... not a dating meetup"
 - **Find it:** [meetup.com/game-of-boards-with-friendly-folks](https://meetup.com/game-of-boards-with-friendly-folks)
 
 ## Common Ground (formerly Mix & Mingle)
-- **What:** Vancouver's most experiential social club
-- **Vibe:** Mission to foster lasting friendships
+- **What:** Vancouver's most experiential social club. Mission to foster lasting friendships
 - **Find it:** [joincommonground.com](https://joincommonground.com/)
 
 ## Make Friends Over Brunch Vancouver
-- **What:** Brunch meetups to make new friends
-- **Vibe:** Low-pressure, delicious food, small groups of 4-6 people
+- **What:** Brunch meetups to make new friends. Low-pressure, delicious food, small groups of 4-6 people
 - **Find it:** [groupvibe.com](https://groupvibe.com/)
 
 ## Meatless Meetup
-- **What:** Social events for vegetarians/vegans
-- **Vibe:** Plant-based dining and socializing, 5400+ members
+- **What:** Social events for vegetarians/vegans. Plant-based dining and socializing, 5400+ members
 - **Find it:** [meetup.com/MeatlessMeetup](https://meetup.com/MeatlessMeetup)
 
 ## Kits Beach Evening Social
-- **What:** Casual beach/downtown hangouts
-- **Vibe:** Summer vibes, making new social connections
+- **What:** Casual beach/downtown hangouts. Summer vibes, making new social connections
 - **Find it:** [meetup.com/kits-beach-social-group](https://meetup.com/kits-beach-social-group)
 
 ## Foodees on Board
-- **What:** Food-focused social meetups
-- **Vibe:** Explore Vancouver's food scene together
+- **What:** Food-focused social meetups. Explore Vancouver's food scene together
 - **Find it:** [meetup.com/foodees-on-board](https://meetup.com/foodees-on-board)
 
 ## WNORTH
-- **What:** Women's leadership and networking events
-- **Vibe:** Award-winning membership network, summits, connect dinners
+- **What:** Women's leadership and networking events. Award-winning membership network, summits, connect dinners
 - **Find it:** [lu.ma/wnorth](https://lu.ma/wnorth)
 
 ## Ascent
-- **What:** Private social club for learning and playing poker
-- **Vibe:** Safe space for beginners, networking with like-minded people
+- **What:** Private social club for learning and playing poker. Safe space for beginners, networking with like-minded people
 - **Find it:** [lu.ma/ascent](https://lu.ma/ascent)
 
 ## Events & Adventures
-- **What:** Invitation-only singles social club with curated activities
-- **Vibe:** Meet people through fun group outings, pressure-free
+- **What:** Invitation-only singles social club with curated activities. Meet people through fun group outings, pressure-free
 - **Find it:** [eventsandadventures.com](https://eventsandadventures.com)
 
 ## Vancouver Widowed Social Group
-- **What:** Social group for widows and widowers in Greater Vancouver
-- **Vibe:** Friendly, welcoming, supportive community
+- **What:** Social group for widows and widowers in Greater Vancouver. Friendly, welcoming, supportive community
 - **Find it:** [heylo.com/g/vancouver-widowed](https://www.heylo.com/g/9e18daaa-3500-46ab-b754-195038213729)
 
 ## Vancouver Dodgeball League
-- **What:** Largest non-profit dodgeball organization in the world
+- **What:** Largest non-profit dodgeball organization in the world. Sport + social, post-game pub nights
 - **Size:** 260+ teams, 2,000+ players
-- **Vibe:** Sport + social, post-game pub nights
 - **Find it:** [vdldodgeball.ca](https://vdldodgeball.ca)
 
 ## Double Rainbow Dodgeball
-- **What:** Inclusive community dodgeball league
-- **Vibe:** 19+, LGBTQ+ friendly, drug & alcohol free
+- **What:** Inclusive community dodgeball league. 19+, LGBTQ+ friendly, drug & alcohol free
 - **Find it:** [doublerainbowdodgeball.ca](https://doublerainbowdodgeball.ca)
 
 ## English Bay Swim Club
-- **What:** LGBTQ+ swimming club
-- **Vibe:** Positive, inclusive space, especially trans-friendly
+- **What:** LGBTQ+ swimming club. Positive, inclusive space, especially trans-friendly
 - **Find it:** Search "English Bay Swim Club Vancouver"
 
 ---

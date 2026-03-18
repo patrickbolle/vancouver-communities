@@ -114,7 +114,7 @@ declare -A emojis=(
   ["pottery-ceramics"]="🏺"
   ["yoga-wellness"]="🧘"
   ["sauna-cold-plunge"]="🧊"
-  ["mindfulness-meditation"]="🧘"
+  ["mindfulness-meditation"]="🪷"
   ["mens-groups"]="👔"
   ["maker-spaces"]="🔧"
   ["philosophy-intellectual"]="🤔"
@@ -122,7 +122,7 @@ declare -A emojis=(
   ["tech-startup"]="💼"
   ["coworking"]="💻"
   ["volunteer"]="🌿"
-  ["vinyl-listening-bars"]="🎵"
+  ["vinyl-listening-bars"]="💿"
   ["chess"]="♟️"
   ["underground-dj"]="🎧"
   ["poetry-spoken-word"]="🎤"
@@ -132,9 +132,12 @@ declare -A emojis=(
   ["astronomy-stargazing"]="🔭"
   ["foraging-nature"]="🍄"
   ["birdwatching"]="🐦"
-  ["karaoke"]="🎤"
+  ["karaoke"]="🎙️"
   ["resources"]="🔗"
 )
+
+# Group counts per category (## headings before first ---)
+declare -A counts
 
 # Ordered list for sidebar
 categories_ordered=(
@@ -179,6 +182,35 @@ categories_ordered=(
   "resources"
 )
 
+# Homepage category groups (theme → space-separated slugs)
+groups_ordered=("outdoor" "social" "creative" "mind-body" "intellectual" "work-tech" "community")
+declare -A group_labels=(
+  ["outdoor"]="Outdoor &amp; Active"
+  ["social"]="Social"
+  ["creative"]="Creative"
+  ["mind-body"]="Mind &amp; Body"
+  ["intellectual"]="Intellectual"
+  ["work-tech"]="Work &amp; Tech"
+  ["community"]="Community"
+)
+group_outdoor="run-clubs hiking-outdoors cycling climbing pickleball sauna-cold-plunge"
+group_social="dinner-supper-clubs social-friend-clubs language-exchange pub-trivia karaoke underground-dj"
+group_creative="creative-art photography film-cinema writing poetry-spoken-word zine-risograph music-open-mic"
+group_mind_body="yoga-wellness mindfulness-meditation dance pottery-ceramics foraging-nature birdwatching astronomy-stargazing tarot-astrology"
+group_intellectual="book-clubs philosophy-intellectual chess board-games improv-comedy"
+group_work_tech="tech-startup coworking maker-spaces volunteer"
+group_community="mens-groups vinyl-listening-bars resources"
+
+# Compute group counts from markdown files
+for slug in "${categories_ordered[@]}"; do
+  mdfile="${SOURCE_DIR}${slug}.md"
+  if [ -f "$mdfile" ]; then
+    counts[$slug]=$(awk '/^---$/{exit} /^## /{n++} END{print n+0}' "$mdfile")
+  else
+    counts[$slug]=0
+  fi
+done
+
 # Convert group name to anchor slug
 slugify() {
   echo "$1" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]/-/g' | sed 's/--*/-/g' | sed 's/^-//' | sed 's/-$//'
@@ -204,9 +236,7 @@ md_to_html() {
       elif [[ "$line" =~ ^-[[:space:]](.+)$ ]]; then
         if ! $in_list; then echo "<ul>"; in_list=true; fi
         item="${BASH_REMATCH[1]}"
-        # Convert **bold**
         item=$(echo "$item" | sed 's/\*\*\([^*]*\)\*\*/<strong>\1<\/strong>/g')
-        # Convert [text](url)
         item=$(echo "$item" | sed 's/\[\([^]]*\)\](\([^)]*\))/<a href="\2">\1<\/a>/g')
         echo "<li>$item</li>"
       # Handle hr
@@ -221,19 +251,29 @@ md_to_html() {
   if $in_list; then echo "</ul>"; fi
 }
 
-# Generate sidebar HTML
+# Generate sidebar HTML (grouped)
 generate_sidebar() {
   local current_slug="$1"
-  
-  echo '<nav class="sidebar">'
+
+  echo '<nav class="sidebar" id="sidebar">'
+  echo '  <a href="/" class="sidebar-logo">Vancouver Community</a>'
   echo '  <ul>'
-  
-  for slug in "${categories_ordered[@]}"; do
-    local title="${titles[$slug]}"
-    local emoji="${emojis[$slug]}"
-    local active=""
-    [ "$slug" = "$current_slug" ] && active=' class="active"'
-    echo "    <li><a href=\"/${slug}/\"${active}><span class=\"emoji\">${emoji}</span> ${title}</a></li>"
+
+  for group in "${groups_ordered[@]}"; do
+    local label="${group_labels[$group]}"
+    local var_name="group_${group//-/_}"
+    local slugs="${!var_name}"
+    echo "    <li class=\"sidebar-group-label\">${label}</li>"
+    for slug in $slugs; do
+      local title="${titles[$slug]}"
+      local emoji="${emojis[$slug]}"
+      local count="${counts[$slug]}"
+      local active=""
+      [ "$slug" = "$current_slug" ] && active=' class="active"'
+      local count_html=""
+      [ "$count" -gt 0 ] 2>/dev/null && count_html="<span class=\"count\">${count}</span>"
+      echo "    <li><a href=\"/${slug}/\"${active}><span class=\"emoji\">${emoji}</span> ${title}${count_html}</a></li>"
+    done
   done
   
   echo '  </ul>'
@@ -242,7 +282,7 @@ generate_sidebar() {
   echo '    <a href="#" onclick="goRandom()">🎲 Random</a><br>'
   echo '    <span id="total-views"></span><br>'
   echo "    Updated ${BUILD_DATE_HUMAN}<br>"
-  echo '    Created by <a href="https://bollenbach.ca" target="_blank">Patrick Bollenbach</a>'
+  echo '    Created by <a href="https://bollenbach.ca" target="_blank" rel="noopener noreferrer">Patrick Bollenbach</a>'
   echo '  </div>'
   echo '</nav>'
 }
@@ -273,7 +313,13 @@ fetch("https://vancouver-communities-stats.recipekit.workers.dev/")
 
 echo "Building site..."
 
-# Build index (home page)
+# Compute total groups across all categories
+total_groups=0
+for slug in "${categories_ordered[@]}"; do
+  total_groups=$((total_groups + counts[$slug]))
+done
+
+# Build index (home page) — three-part: head, card loop, footer
 cat > "$SITE_DIR/index.html" << HTMLEOF
 <!DOCTYPE html>
 <html lang="en">
@@ -295,7 +341,7 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Vancouver Community Directory" href="/feed.xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
-  <link rel="stylesheet" href="/_build/style.css">
+  <link rel="stylesheet" href="/_build/style.css?v=1773792475">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -320,24 +366,66 @@ cat > "$SITE_DIR/index.html" << HTMLEOF
   }
   </script>
 </head>
-<body>
+<body class="homepage">
 <header class="site-header">
   <a href="/" class="logo">Vancouver Community</a>
-  <h1 class="page-title">Find your community in Vancouver</h1>
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
 </header>
 <div class="main-container">
 $(generate_sidebar "")
-<main class="content">
-  <div class="welcome">
-    <p>Vancouver can feel like a hard city to make friends. I built this directory to help.</p>
-    <p>It's a collection of social groups, clubs, meetups, and events across 40+ categories — <a href="/run-clubs/">run clubs</a>, <a href="/hiking-outdoors/">hiking groups</a>, <a href="/book-clubs/">book clubs</a>, <a href="/board-games/">board game nights</a>, <a href="/creative-art/">art communities</a>, and more.</p>
-    <p>This is a community project. If you know a group that should be listed, <a href="/submit/">add it</a>. If something's outdated, every page has a "suggest edit" link.</p>
-    <p style="margin-top: 20px;">
-      <a href="/submit/" style="margin-right: 15px;">+ Submit a group</a>
-      <a href="#" onclick="goRandom(); return false;">🎲 Random category</a>
-    </p>
-    <hr style="margin: 25px 0;">
-    <p style="font-size: 0.9em; color: #666;">Made by <a href="https://bollenbach.ca">Patrick Bollenbach</a> in Vancouver. <span id="homepage-total-views"></span></p>
+<main class="content content-wide">
+  <div class="homepage-header">
+    <div class="homepage-header-left">
+      <h1 class="homepage-lede">Vancouver can feel like a hard city to make friends in.</h1>
+      <p class="homepage-meta">${total_groups}+ groups, clubs &amp; meetups across ${#categories_ordered[@]} categories.
+        <a href="/submit/" class="homepage-action">+ Add a group</a>
+        <a href="#" onclick="goRandom(); return false;" class="homepage-action">Random</a>
+      </p>
+      <input type="search" class="search-input search-input--homepage" placeholder="Search categories..." aria-label="Search categories" id="homepage-search">
+    </div>
+    <aside class="homepage-about">
+      <p class="about-text">A community project by <a href="https://bollenbach.ca">Patrick Bollenbach</a>. Built because this city has way more going on than people realize.</p>
+      <div class="about-links">
+        <a href="https://cuento.app">cuento.app</a>
+        <a href="https://runclubs.ca/vancouver">runclubs.ca</a>
+        <a href="https://bollenbach.ca">bollenbach.ca</a>
+      </div>
+      <p class="about-stats"><span id="homepage-total-views"></span></p>
+    </aside>
+  </div>
+  <div class="homepage-groups" id="homepage-groups">
+HTMLEOF
+
+# Append grouped category lists
+for group in "${groups_ordered[@]}"; do
+  label="${group_labels[$group]}"
+  var_name="group_${group//-/_}"
+  slugs="${!var_name}"
+  cat >> "$SITE_DIR/index.html" << GROUPEOF
+    <div class="cat-group">
+      <p class="cat-group-heading">${label}</p>
+      <ul class="cat-group-list">
+GROUPEOF
+  for slug in $slugs; do
+    title="${titles[$slug]}"
+    emoji="${emojis[$slug]}"
+    count="${counts[$slug]}"
+    count_html=""
+    if [ "$count" -eq 1 ] 2>/dev/null; then
+      count_html="<span class=\"cat-count\">1</span>"
+    elif [ "$count" -gt 1 ] 2>/dev/null; then
+      count_html="<span class=\"cat-count\">${count}</span>"
+    fi
+    echo "      <li><a href=\"/${slug}/\"><span class=\"cat-emoji\">${emoji}</span><span class=\"cat-name\">${title}</span>${count_html}</a></li>" >> "$SITE_DIR/index.html"
+  done
+  cat >> "$SITE_DIR/index.html" << GROUPEOF
+      </ul>
+    </div>
+GROUPEOF
+done
+
+# Close groups + footer
+cat >> "$SITE_DIR/index.html" << HTMLEOF
   </div>
 </main>
 </div>
@@ -346,6 +434,13 @@ ${SCRIPTS}
 </html>
 HTMLEOF
 echo "  Built: index"
+
+# Generate category <option> list for submit form
+category_options=""
+for slug in "${categories_ordered[@]}"; do
+  t="${titles[$slug]}"
+  category_options="${category_options}        <option value=\"${t}\">${t}</option>"$'\n'
+done
 
 # Build submit page
 mkdir -p "$SITE_DIR/submit"
@@ -360,51 +455,43 @@ cat > "$SITE_DIR/submit/index.html" << HTMLEOF
   <link rel="canonical" href="${SITE_URL}/submit/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
-  <link rel="stylesheet" href="/_build/style.css">
+  <link rel="stylesheet" href="/_build/style.css?v=1773792475">
 </head>
 <body>
 <header class="site-header">
   <a href="/" class="logo">Vancouver Community</a>
   <h1 class="page-title">Submit a Group</h1>
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
 </header>
 <div class="main-container">
 $(generate_sidebar "submit")
 <main class="content">
   <p>Know a community, club, or meetup that should be listed? Fill out the form below.</p>
-  
-  <form id="submit-form" style="margin-top: 20px;">
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Group Name *</label>
-      <input type="text" name="name" required style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;">
+
+  <form id="submit-form" class="form">
+    <div class="form-field">
+      <label class="form-label" for="submit-name">Group Name *</label>
+      <input class="form-input" type="text" id="submit-name" name="name" required>
     </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Category *</label>
-      <select name="category" required style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;">
+    <div class="form-field">
+      <label class="form-label" for="submit-category">Category *</label>
+      <select class="form-input" id="submit-category" name="category" required>
         <option value="">Select a category...</option>
-        <option value="Run Clubs">Run Clubs</option>
-        <option value="Social/Friend Clubs">Social/Friend Clubs</option>
-        <option value="Dinner/Supper Clubs">Dinner/Supper Clubs</option>
-        <option value="Board Games">Board Games</option>
-        <option value="Creative/Art">Creative/Art</option>
-        <option value="Other">Other</option>
+${category_options}        <option value="Other">Other</option>
       </select>
     </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">What is it? *</label>
-      <textarea name="description" required rows="3" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="What does this group do?"></textarea>
+    <div class="form-field">
+      <label class="form-label" for="submit-description">What is it? *</label>
+      <textarea class="form-input" id="submit-description" name="description" required rows="3" placeholder="What does this group do?"></textarea>
     </div>
-    
-    <div style="margin-bottom: 15px;">
-      <label style="display: block; margin-bottom: 5px; font-weight: 500;">Website or Social Link</label>
-      <input type="url" name="link" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit; font-size: inherit;" placeholder="https://...">
+    <div class="form-field">
+      <label class="form-label" for="submit-link">Website or Social Link</label>
+      <input class="form-input" type="url" id="submit-link" name="link" placeholder="https://...">
     </div>
-    
-    <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit; font-size: inherit;">Submit</button>
-    <p id="form-status" style="margin-top: 10px; color: #666;"></p>
+    <button class="form-submit" type="submit">Submit</button>
+    <p class="form-status" id="form-status"></p>
   </form>
-  
+
   <script>
   document.getElementById('submit-form').addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -422,14 +509,14 @@ $(generate_sidebar "submit")
       });
       const result = await res.json();
       if (result.success) {
-        status.style.color = '#2a7d2a';
+        status.className = 'form-status success';
         status.textContent = '✓ ' + result.message;
         e.target.reset();
       } else {
         throw new Error(result.error || 'Submission failed');
       }
     } catch (err) {
-      status.style.color = '#c00';
+      status.className = 'form-status error';
       status.textContent = 'Error: ' + err.message;
     }
     btn.disabled = false;
@@ -453,12 +540,21 @@ for mdfile in ${SOURCE_DIR}*.md; do
   slug="$(basename "${mdfile%.md}")"
   title="${titles[$slug]:-}"
   [ -z "$title" ] && continue  # Skip if not a known category
-  
+
   desc="${descriptions[$slug]:-}"
   emoji="${emojis[$slug]:-}"
-  
+
+  # Count label for page title
+  count_val="${counts[$slug]:-0}"
+  count_label=""
+  if [ "$count_val" -eq 1 ] 2>/dev/null; then
+    count_label="<span class=\"header-count\">1 group</span>"
+  elif [ "$count_val" -gt 1 ] 2>/dev/null; then
+    count_label="<span class=\"header-count\">${count_val} groups</span>"
+  fi
+
   mkdir -p "$SITE_DIR/$slug"
-  
+
   content=$(md_to_html "$mdfile")
   
   cat > "$SITE_DIR/$slug/index.html" << HTMLEOF
@@ -482,7 +578,7 @@ for mdfile in ${SOURCE_DIR}*.md; do
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Vancouver Community Directory" href="/feed.xml">
   <script defer src="https://data.kwconcerts.ca/script.js" data-website-id="ce0a9531-1032-4e43-a3a6-5c93cf9513f6"></script>
-  <link rel="stylesheet" href="/_build/style.css">
+  <link rel="stylesheet" href="/_build/style.css?v=1773792475">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -502,67 +598,73 @@ for mdfile in ${SOURCE_DIR}*.md; do
   }
   </script>
 </head>
-<body>
+<body class="category-page">
 <header class="site-header">
   <a href="/" class="logo">Vancouver Community</a>
-  <h1 class="page-title">${emoji} ${title} in Vancouver</h1>
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
 </header>
 <div class="main-container">
 $(generate_sidebar "$slug")
 <main class="content">
+  <div class="category-hero">
+    <h1 class="category-title">${title} in Vancouver</h1>
+    <p class="category-desc">${desc}</p>
+    <div class="category-actions">
+      <a href="/submit/" class="cat-action">+ Submit a group</a>
+      <a href="#" onclick="openEditModal('${slug}'); return false;" class="cat-action">✏️ Suggest an edit</a>
+      <span id="page-views" class="cat-views"></span>
+    </div>
+  </div>
 ${content}
-  <hr style="margin: 25px 0;">
-  <p style="color: #666; font-size: 0.9em;">
-    <span id="page-views"></span>
-    <span style="margin-left: 10px;">·</span>
-    <a href="#" onclick="openEditModal('${slug}'); return false;" style="margin-left: 10px;">✏️ Suggest Edit</a>
-  </p>
 </main>
 </div>
 
-<!-- Edit Modal -->
-<div id="edit-modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; overflow: auto;">
-  <div style="background: #fff; max-width: 800px; margin: 40px auto; padding: 25px; border-radius: 8px; position: relative;">
-    <button onclick="closeEditModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">&times;</button>
-    <h2 style="margin-bottom: 15px;">Suggest Edit</h2>
-    <p style="margin-bottom: 15px; color: #666;">Edit the content below. Your changes will be reviewed.</p>
-    <form id="edit-form">
-      <div style="margin-bottom: 15px;">
-        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Edit Summary *</label>
-        <input type="text" name="summary" required style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: inherit;" placeholder="Brief description of your changes">
+<!-- Suggest Edit Modal -->
+<div id="edit-modal" class="edit-modal" role="dialog" aria-modal="true" aria-labelledby="edit-modal-title">
+  <div class="edit-modal-inner">
+    <button class="edit-modal-close" onclick="closeEditModal()" aria-label="Close">&times;</button>
+    <h2 id="edit-modal-title" class="edit-modal-title">Suggest an edit</h2>
+    <p class="edit-modal-desc">What needs to change? A closed group, wrong link, new info — anything helps.</p>
+    <form id="edit-form" class="form">
+      <div class="form-field">
+        <label class="form-label" for="edit-summary">What should change? *</label>
+        <textarea class="form-input" id="edit-summary" name="summary" required rows="4" placeholder="e.g. Social Run Club meets on Tuesdays now, not Wednesdays. New website: ..."></textarea>
       </div>
-      <div style="margin-bottom: 15px;">
-        <label style="display: block; margin-bottom: 5px; font-weight: 500;">Content</label>
-        <textarea id="edit-content" name="content" rows="20" style="width: 100%; padding: 8px; border: 1px solid #ddd; font-family: monospace; font-size: 13px;"></textarea>
+      <div class="form-field">
+        <label class="form-label" for="edit-name">Your name (optional)</label>
+        <input class="form-input" type="text" id="edit-name" name="name" placeholder="Patrick">
       </div>
       <input type="hidden" name="category" id="edit-category">
-      <button type="submit" style="background: #222; color: #fff; padding: 10px 20px; border: none; cursor: pointer; font-family: inherit;">Submit Edit</button>
-      <span id="edit-status" style="margin-left: 15px; color: #666;"></span>
+      <button class="form-submit" type="submit">Send suggestion</button>
+      <span class="form-status" id="edit-status"></span>
     </form>
   </div>
 </div>
 
 <script>
-async function openEditModal(category) {
-  document.getElementById('edit-modal').style.display = 'block';
-  document.getElementById('edit-content').value = 'Loading...';
+var _editOpener = null;
+function openEditModal(category) {
+  var modal = document.getElementById('edit-modal');
+  _editOpener = document.activeElement;
   document.getElementById('edit-category').value = category;
-  try {
-    const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/content/' + category);
-    const data = await res.json();
-    document.getElementById('edit-content').value = data.success ? data.content : 'Error loading content';
-  } catch (err) {
-    document.getElementById('edit-content').value = 'Error loading content';
-  }
+  modal.style.display = 'block';
+  var closeBtn = modal.querySelector('.edit-modal-close');
+  if (closeBtn) closeBtn.focus();
 }
-function closeEditModal() { document.getElementById('edit-modal').style.display = 'none'; }
+function closeEditModal() {
+  document.getElementById('edit-modal').style.display = 'none';
+  if (_editOpener) { _editOpener.focus(); _editOpener = null; }
+}
 document.getElementById('edit-modal').addEventListener('click', (e) => { if (e.target.id === 'edit-modal') closeEditModal(); });
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && document.getElementById('edit-modal').style.display === 'block') closeEditModal();
+});
 document.getElementById('edit-form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const btn = e.target.querySelector('button[type="submit"]');
   const status = document.getElementById('edit-status');
   btn.disabled = true;
-  btn.textContent = 'Submitting...';
+  btn.textContent = 'Sending...';
   const formData = new FormData(e.target);
   try {
     const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/edit', {
@@ -572,16 +674,17 @@ document.getElementById('edit-form').addEventListener('submit', async (e) => {
     });
     const result = await res.json();
     if (result.success) {
-      status.style.color = '#2a7d2a';
-      status.textContent = '✓ ' + result.message;
+      status.className = 'form-status success';
+      status.textContent = '✓ Got it, thanks!';
+      e.target.reset();
       setTimeout(closeEditModal, 2000);
-    } else throw new Error(result.error);
+    } else throw new Error(result.error || 'Something went wrong');
   } catch (err) {
-    status.style.color = '#c00';
-    status.textContent = 'Error: ' + err.message;
+    status.className = 'form-status error';
+    status.textContent = 'Could not send — try emailing directly.';
   }
   btn.disabled = false;
-  btn.textContent = 'Submit Edit';
+  btn.textContent = 'Send suggestion';
 });
 </script>
 

@@ -1,8 +1,17 @@
+---
+layout: category
+tags: category
+title: "Creative & Art"
+description: "Vancouver art collectives and creative communities. Studios, workshops, and groups for artists."
+emoji: "🎨"
+group: creative
+order: 1
+---
+
 # 🎨 Creative / Art Communities
 
 ## Draw Around Vancouver
-- **What:** Drawing circles, creative flow workshops, still life sessions, art therapy
-- **Vibe:** Slow, tea + community, alcohol-free options
+- **What:** Drawing circles, creative flow workshops, still life sessions, art therapy. Slow, tea + community, alcohol-free options
 - **Where:** Beaumont Studios
 - **Find it:** [drawaroundvancouver.com](https://drawaroundvancouver.com)
 
@@ -21,8 +30,7 @@
 - **Find it:** [vancouvercreativecollective.com](https://vancouvercreativecollective.com)
 
 ## Creative Pulse
-- **What:** Volunteer-run org for Vancouver creatives
-- **Vibe:** Summer socials, industry events
+- **What:** Volunteer-run org for Vancouver creatives. Summer socials, industry events
 - **Find it:** [creativepulse.co](https://creativepulse.co)
 
 ## CreativeMornings Vancouver
@@ -36,8 +44,7 @@
 - **Find it:** [cacv.ca](https://cacv.ca)
 
 ## Neurodivergent Artist Collective
-- **What:** For neurodivergent artists
-- **Hosted by:** Community Arts Council of Vancouver
+- **What:** For neurodivergent artists, run by the Community Arts Council of Vancouver
 - **Find it:** [cacv.ca/nac](https://cacv.ca/nac)
 
 ## Vancouver Creatives
@@ -45,40 +52,33 @@
 - **Find it:** [meetup.com/meaningfuldiscussions-vancouver](https://meetup.com/meaningfuldiscussions-vancouver)
 
 ## Urban Sketchers Vancouver
-- **What:** Outdoor sketching meetups around the city
-- **Vibe:** "We show the world, one drawing at a time"
+- **What:** Outdoor sketching meetups around the city. "We show the world, one drawing at a time"
 - **Find it:** [meetup.com/Vancouver-Urban-Sketchers](https://meetup.com/Vancouver-Urban-Sketchers)
 
 ## Cozy Art Meetup
-- **What:** Relaxed sketching/drawing in cafes downtown
-- **Vibe:** No pressure, chitchat, make friends
+- **What:** Relaxed sketching/drawing in cafes downtown. No pressure, chitchat, make friends
 - **Find it:** [aniasalmina.com](https://www.aniasalmina.com/) | [Eventbrite](https://www.eventbrite.ca/o/ania-salmina-70459154583)
 
 ## Vancouver Outsider Arts Festival
-- **What:** Festival for artists facing social exclusion
-- **Vibe:** 40+ visual artists, performances, workshops
+- **What:** Festival for artists facing social exclusion. 40+ visual artists, performances, workshops
 - **Find it:** [voaf.ca](https://voaf.ca/) | [CACV page](https://www.cacv.ca/programs/vancouver-outsider-arts-festival/)
 
 ## Atelier
-- **What:** Community for working on side projects together
-- **Vibe:** Embroidery, coding, music, building — anything goes
+- **What:** Community for working on side projects together. Embroidery, coding, music, building — anything goes
 - **When:** Sundays 12-3pm at UBC, Tuesdays 6-9pm in Vancouver
 - **Find it:** [lu.ma/atelier.place](https://lu.ma/atelier.place)
 
 ## AI Film Club
-- **What:** Monthly screenings exploring AI in film and VFX
-- **Vibe:** Creative tech intersection, community-driven
+- **What:** Monthly screenings exploring AI in film and VFX. Creative tech intersection, community-driven
 - **Find it:** Events via [lu.ma/vancouver-ai](https://lu.ma/vancouver-ai)
 
 ## The Artist's Way Vancouver
-- **What:** Discussion group for creative people
+- **What:** Discussion group for creative people. Supportive, encouraging, inspiring conversations
 - **Size:** 2,700+ members
-- **Vibe:** Supportive, encouraging, inspiring conversations
 - **Find it:** [meetup.com/vancouver-artists-way](https://meetup.com/vancouver-artists-way)
 
 ## YVR Art Photography Workshops
-- **What:** Studio and location photo sessions with models
-- **Vibe:** Develop your artistic vision, non-judgmental
+- **What:** Studio and location photo sessions with models. Develop your artistic vision, non-judgmental
 - **Find it:** [meetup.com/Fine-Art-Photography-Sessions-with-Kate-Snig](https://meetup.com/Fine-Art-Photography-Sessions-with-Kate-Snig)
 
 ---

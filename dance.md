@@ -1,3 +1,13 @@
+---
+layout: category
+tags: category
+title: "Dance"
+description: "Dance classes and social dancing in Vancouver. Salsa, bachata, swing, and more."
+emoji: "💃"
+group: mind-body
+order: 5
+---
+
 # 💃 Dance
 
 ## Sunday Afternoon Salsa at Robson Square
@@ -14,8 +24,7 @@
 - **Find it:** [salsavida.com](https://www.salsavida.com/)
 
 ## BC Swing Dance Club
-- **What:** West Coast Swing lessons, socials, conventions
-- **Vibe:** Active community, regional events
+- **What:** West Coast Swing lessons, socials, conventions. Active community, regional events
 - **Find it:** [bcswingdance.ca](https://bcswingdance.ca/)
 
 ---
@@ -28,8 +37,7 @@
 - **Find it:** [salsastudio.net](https://www.salsastudio.net/)
 
 ## BAZA Dance
-- **What:** Beginner Latin dance, GTK workshops
-- **Vibe:** No partner required
+- **What:** Beginner Latin dance, GTK workshops. No partner required
 - **Find it:** [bazadance.com](https://www.bazadance.com/)
 
 ## Dance Vancouver Studio
@@ -42,16 +50,13 @@
 - **Find it:** [dancetoday.fun](https://www.dancetoday.fun/)
 
 ## Swing Soul Vancouver
-- **What:** Intro to West Coast Swing classes
-- **Vibe:** Beginner-friendly, strong foundation
+- **What:** Intro to West Coast Swing classes. Beginner-friendly, strong foundation
 - **Find it:** [swingliteracy.com/swingsoul](https://www.swingliteracy.com/swingsoul/)
 
 ## Bachata ME Thursdays
-- **What:** Bachata lessons and party all-in-one
-- **Vibe:** Weekly social dance night
+- **What:** Bachata lessons and party all-in-one. Weekly social dance night
 - **Find it:** [danceus.org](https://www.danceus.org/events/salsa/vancouver-bc-canada-salsa-calendar/)
 
 ## Mangos Kitchen Bar Dance Nights
-- **What:** Learn salsa, bachata, merengue at a Latin restaurant
-- **Vibe:** Casual, fun atmosphere
+- **What:** Learn salsa, bachata, merengue at a Latin restaurant. Casual, fun atmosphere
 - **Find it:** [mangosvancouver.com](https://www.mangosvancouver.com/)

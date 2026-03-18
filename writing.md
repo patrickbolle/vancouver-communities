@@ -1,25 +1,31 @@
+---
+layout: category
+tags: category
+title: "Writing"
+description: "Vancouver writing groups and workshops. Critique circles and literary communities."
+emoji: "✍️"
+group: creative
+order: 4
+---
+
 # ✍️ Writing
 
 ## Vancouver Writers Group
-- **What:** Share fiction, non-fiction, comedy, scripts, poetry
-- **Vibe:** Supportive, sometimes social nights at bars
+- **What:** Share fiction, non-fiction, comedy, scripts, poetry. Supportive, sometimes social nights at bars
 - **Find it:** [meetup.com/vancouver-writers-group](https://meetup.com/vancouver-writers-group)
 
 ## Shut Up & Write! Vancouver
-- **What:** Quiet writing time followed by chat
+- **What:** Quiet writing time followed by chat. "Accepting, supportive, judgment-free"
 - **Where:** VPL Central, 8th Floor
 - **When:** 10am-1pm sessions
-- **Vibe:** "Accepting, supportive, judgment-free"
 - **Find it:** [meetup.com/shutupandwritevancouver](https://meetup.com/shutupandwritevancouver)
 
 ## Vancouver Genre Writers
-- **What:** Sci-fi, fantasy, horror writers
-- **Vibe:** "Let our geek flags fly"
+- **What:** Sci-fi, fantasy, horror writers. "Let our geek flags fly"
 - **Find it:** [vancouvergenrewriters.com](https://www.vancouvergenrewriters.com/)
 
 ## North Shore Writers' Association
-- **What:** Fellowship of writers at all stages
-- **Vibe:** Non-profit, teaching and community
+- **What:** Fellowship of writers at all stages. Non-profit, teaching and community
 - **Find it:** [nswriters.org](https://nswriters.org/)
 
 ## The Grind Writers' Group
@@ -31,25 +37,21 @@
 - **Find it:** [thursdayswritingcollective.ca](https://thursdayswritingcollective.ca/) / [dteswriters.org](https://dteswriters.org/)
 
 ## Historic Joy Kogawa House Writing Sessions
-- **What:** In-person and Zoom writing sessions
-- **Vibe:** Beautiful heritage house, supportive community
+- **What:** In-person and Zoom writing sessions. Beautiful heritage house, supportive community
 - **Find it:** [kogawahouse.com](https://kogawahouse.com/)
 
 ## Power of the Pen Friday Writing Group
-- **What:** Online writing sessions 12:30-3:30pm
-- **Vibe:** 45-minute writing blocks with chat breaks
-- **Note:** The Meetup version is Vancouver, WA — check local VPL resources for Vancouver, BC alternatives
+- **What:** Online writing sessions 12:30-3:30pm — 45-minute writing blocks with chat breaks
+- **Find it:** [VPL Writing Resources](https://www.vpl.ca/guide/resources-writers/writing-community)
 
 ---
 
 ## Venues & Resources
 
 ## Federation of BC Writers
-- **What:** Directory of writing groups across BC
-- **Vibe:** Resource hub for all writers
+- **What:** Directory of writing groups across BC. Resource hub for all writers
 - **Find it:** [bcwriters.ca](https://bcwriters.ca/)
 
 ## VPL Writing Resources
-- **What:** Library resources for writers including group listings
-- **Vibe:** Free, accessible, comprehensive
+- **What:** Library resources for writers including group listings. Free, accessible, comprehensive
 - **Find it:** [vpl.ca/guide/resources-writers](https://www.vpl.ca/guide/resources-writers/writing-community)

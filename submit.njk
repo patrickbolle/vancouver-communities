@@ -1,0 +1,89 @@
+---
+layout: false
+permalink: /submit/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "partials/head.njk" %}
+  <title>Submit a Group | {{ site.title }}</title>
+  <meta name="description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
+  <link rel="canonical" href="{{ site.url }}/submit/">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <a href="/" class="logo">Vancouver Community</a>
+  <h1 class="page-title">Submit a Group</h1>
+  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
+</header>
+<div class="main-container">
+{% set currentSlug = "submit" %}
+{% include "partials/sidebar.njk" %}
+<main class="content" id="main-content">
+  <h1 class="category-title">Submit a Group</h1>
+  <p class="category-desc">Know a community, club, or meetup in Vancouver that should be listed here? This directory is community-built — your suggestion helps everyone.</p>
+
+  <form id="submit-form" class="form">
+    <div class="form-field">
+      <label class="form-label" for="submit-name">Group Name *</label>
+      <input class="form-input" type="text" id="submit-name" name="name" required>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="submit-category">Category *</label>
+      <select class="form-input" id="submit-category" name="category" required>
+        <option value="">Select a category...</option>
+        {%- for cat in collections.categories %}
+        <option value="{{ cat.data.title }}">{{ cat.data.title }}</option>
+        {%- endfor %}
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="submit-description">What is it? *</label>
+      <textarea class="form-input" id="submit-description" name="description" required rows="3" placeholder="What does this group do?"></textarea>
+    </div>
+    <div class="form-field">
+      <label class="form-label" for="submit-link">Website or Social Link</label>
+      <input class="form-input" type="url" id="submit-link" name="link" placeholder="https://...">
+    </div>
+    <button class="form-submit" type="submit">Submit</button>
+    <p class="form-status" id="form-status"></p>
+  </form>
+
+  <script>
+  document.getElementById('submit-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const status = document.getElementById('form-status');
+    const btn = e.target.querySelector('button');
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+    try {
+      const res = await fetch('https://vancouver-community-submit.recipekit.workers.dev/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const result = await res.json();
+      if (result.success) {
+        status.className = 'form-status success';
+        status.textContent = '✓ ' + result.message;
+        e.target.reset();
+      } else {
+        throw new Error(result.error || 'Submission failed');
+      }
+    } catch (err) {
+      status.className = 'form-status error';
+      status.textContent = 'Error: ' + err.message;
+    }
+    btn.disabled = false;
+    btn.textContent = 'Submit';
+  });
+  </script>
+</main>
+</div>
+{% include "partials/scripts.njk" %}
+</body>
+</html>

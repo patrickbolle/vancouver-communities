@@ -1,13 +1,21 @@
+---
+layout: category
+tags: category
+title: "Underground DJ"
+description: "Underground parties and DJ events in Vancouver. Warehouse raves and electronic music."
+emoji: "🎧"
+group: social
+order: 6
+---
+
 # 🎧 Underground / Pop-Up DJ Events
 
 ## Vancouver Renegade Underground DJs
-- **What:** Free pop-up events around town
-- **Vibe:** "Help less wealthy ravers experience festival vibes"
+- **What:** Free pop-up events around town. "Help less wealthy ravers experience festival vibes"
 - **Find it:** [Facebook](https://www.facebook.com/vruDJs/)
 
 ## Vancouver Rave Community (Instagram)
-- **What:** Community page for local rave scene
-- **Vibe:** Event announcements, scene updates
+- **What:** Community page for local rave scene. Event announcements, scene updates
 - **Find it:** [@vanravecommunity](https://instagram.com/vanravecommunity)
 
 ---
@@ -24,13 +32,11 @@
 - **Find it:** [villagestudios.life](https://www.villagestudios.life/events)
 
 ## Harbour Event Centre Shows
-- **What:** Regular DJ events at Harbour venue
-- **Vibe:** Major touring DJs, local support
+- **What:** Regular DJ events at Harbour venue. Major touring DJs, local support
 - **Find it:** [harbourconventioncentre.com](https://www.harbourconventioncentre.com/)
 
 ## The Birdhouse Events
-- **What:** Warehouse venue for electronic music
-- **Vibe:** Underground, quality sound systems
+- **What:** Warehouse venue for electronic music. Underground, quality sound systems
 - **Find it:** [19hz.info](https://19hz.info/eventlisting_BC.php) for event listings
 
 ## 19hz.info
@@ -42,6 +48,5 @@
 - **Find it:** [edmtrain.com/vancouver-bc](https://edmtrain.com/vancouver-bc)
 
 ## EDM Canada Vancouver
-- **What:** Event listings and scene coverage
-- **Vibe:** Major shows and local events
+- **What:** Event listings and scene coverage. Major shows and local events
 - **Find it:** [edmcanada.com/vancouver](https://www.edmcanada.com/vancouver)
