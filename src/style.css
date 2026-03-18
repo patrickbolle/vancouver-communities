@@ -125,20 +125,22 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   top: 0;
   background: var(--sidebar-bg);
   display: grid;
-  grid-template-rows: auto 1fr auto auto;
+  grid-template-rows: 1fr auto auto;
   overflow: hidden;
 }
 
-/* Logo */
+/* Logo — scrolls with nav list */
+.sidebar-logo-item { list-style: none; }
 .sidebar-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 28px 22px 24px;
+  padding: 20px 22px 16px;
   color: #fff;
   text-decoration: none;
   border-bottom: 1px solid var(--sidebar-border);
+  margin-bottom: 2px;
 }
 .sidebar-logo:hover { opacity: 0.85; text-decoration: none; }
 .sidebar-logo:visited { color: #fff; }
@@ -176,14 +178,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 /* Group labels */
 .sidebar-group-label {
   list-style: none;
-  padding: 18px 22px 5px;
+  padding: 14px 22px 4px;
   font-size: 0.68em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: rgba(255,255,255,0.55);
 }
-.sidebar-group-label:first-child { padding-top: 10px; }
+.sidebar-group-label:first-child { padding-top: 6px; }
 
 /* Nav links */
 .sidebar li a {
@@ -374,21 +376,29 @@ h1.homepage-lede,
   margin-bottom: 8px;
 }
 .builder-avatar {
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: var(--border);
+  background: url('/patrick.jpg') center 20% / cover;
   flex-shrink: 0;
-  /* Replace with: background-image: url('/patrick.jpg'); background-size: cover; */
 }
 .builder-card strong {
+  display: block;
   color: var(--text);
   font-weight: 600;
   font-size: 0.95em;
+  line-height: 1.2;
+}
+.builder-card strong a { color: var(--text); }
+.builder-card strong a:hover { color: var(--accent); }
+.builder-subtitle {
+  display: block;
+  font-size: 0.78em;
+  color: var(--text-muted);
 }
 .builder-bio {
   font-size: 0.85em;
-  color: var(--text-muted);
+  color: var(--text-secondary);
   line-height: 1.5;
   margin-bottom: 0;
 }
@@ -404,17 +414,23 @@ h1.homepage-lede,
   gap: 4px;
 }
 .builder-links-label {
-  font-size: 0.72em;
+  font-size: 0.7em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--text-muted);
-  margin-bottom: 2px;
+}
+.builder-link-item {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+.builder-link-item a { font-weight: 500; }
+.builder-link-desc {
+  color: var(--text-muted);
+  font-size: 0.92em;
 }
 .builder-links a {
-  font-weight: 500;
-  font-size: 0.88em;
-  line-height: 1.3;
+  font-size: 1em;
 }
 
 /* Search */
@@ -804,6 +820,11 @@ textarea.form-input { resize: vertical; }
   .content { padding: 36px 40px 64px; }
   .homepage-hero { margin: -36px -40px 0; padding: 32px 40px 22px; margin-bottom: 32px; }
   .category-hero { margin: -36px -40px 32px; padding: 32px 40px 24px; }
+
+  /* Stack hero intro so builder card doesn't squeeze the H1 */
+  .homepage-intro { flex-direction: column; gap: 24px; }
+  .builder-card { width: 100%; }
+  .builder-links { flex-direction: row; gap: 16px; }
 }
 
 @media (max-width: 700px) {
@@ -850,12 +871,21 @@ textarea.form-input { resize: vertical; }
 
   .content { padding: 28px 20px 56px; }
   .homepage-hero { margin: -28px -20px 0; padding: 28px 20px 24px; margin-bottom: 28px; }
+  .category-hero { margin: -28px -20px 28px; padding: 28px 20px 24px; }
   .homepage-groups { grid-template-columns: 1fr; row-gap: 32px; }
-  .homepage-intro { flex-direction: column; gap: 24px; }
-  .builder-card { width: 100%; }
-  .builder-links { flex-direction: row; }
   .homepage-lede, h1.homepage-lede { font-size: 1.5em; }
   .category-title { font-size: 1.6em; }
 
-  .sidebar li a { padding: 9px 22px; }
+  /* Larger touch targets for sidebar links on mobile */
+  .sidebar li a { padding: 11px 22px; min-height: 44px; }
+
+  /* Ensure long URLs don't overflow on mobile */
+  .content li { word-break: break-word; }
+  .content li a { word-break: break-all; }
+
+  /* Edit modal: full-width on mobile */
+  .edit-modal-inner { margin: 20px 12px; padding: 24px 20px; }
+
+  /* Search input full width on mobile */
+  .search-input { max-width: 100%; }
 }
