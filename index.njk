@@ -80,21 +80,21 @@ permalink: /
       <div class="homepage-intro-text">
         <h1 class="homepage-lede">Find your people in Vancouver.</h1>
         <p class="homepage-desc">{{ totalGroups }}+ groups, clubs, and meetups across {{ collections.categories.length }} categories — run clubs, supper clubs, philosophy circles, maker spaces. Real communities run by real people, all in one place. Just browse and show up.</p>
-        <p class="homepage-meta"><a href="/submit/">Know a group? Add it</a> <span class="meta-sep">&middot;</span> <a href="#" class="meta-secondary" onclick="goRandom(); return false;">Surprise me</a></p>
+        <p class="homepage-meta"><a href="/submit/" data-umami-event="click-submit-cta" data-umami-event-source="homepage">Know a group? Add it</a> <span class="meta-sep">&middot;</span> <a href="#" class="meta-secondary" onclick="goRandom(); return false;" data-umami-event="click-surprise" data-umami-event-source="homepage">Surprise me</a></p>
       </div>
       <div class="builder-card">
         <div class="builder-header">
           <div class="builder-avatar" aria-hidden="true"></div>
           <div>
-            <strong><a href="https://bollenbach.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer">Patrick Bollenbach</a></strong>
+            <strong><a href="https://bollenbach.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer" data-umami-event="click-bollenbach" data-umami-event-source="builder-card">Patrick Bollenbach</a></strong>
             <span class="builder-subtitle">bollenbach.ca</span>
           </div>
         </div>
-        <p class="builder-bio">I build communities and software tools in Vancouver. <a href="mailto:vancouver@bolle.co">Get in touch</a>.</p>
+        <p class="builder-bio">I build communities and software tools in Vancouver. <a href="mailto:vancouver@bolle.co" data-umami-event="click-contact-email">Get in touch</a>.</p>
         <div class="builder-links">
           <span class="builder-links-label">Other projects</span>
-          <div class="builder-link-item"><a href="https://runclubs.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer">runclubs.ca</a> <span class="builder-link-desc">— Canada's biggest run club directory</span></div>
-          <div class="builder-link-item"><a href="https://cuento.app?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer">cuento.app</a> <span class="builder-link-desc">— Get matched into a neighbourhood book club</span></div>
+          <div class="builder-link-item"><a href="https://runclubs.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer" data-umami-event="click-runclubs" data-umami-event-source="builder-card">runclubs.ca</a> <span class="builder-link-desc">— Canada's biggest run club directory</span></div>
+          <div class="builder-link-item"><a href="https://cuento.app?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer" data-umami-event="click-cuento" data-umami-event-source="builder-card">cuento.app</a> <span class="builder-link-desc">— Get matched into a neighbourhood book club</span></div>
         </div>
       </div>
     </div>
@@ -113,7 +113,7 @@ permalink: /
       <ul class="cat-group-list">
         {%- for cat in collections.categories %}
         {%- if cat.data.group == group.key %}
-        <li><a href="/{{ cat.fileSlug }}/"><span class="cat-emoji">{{ cat.data.emoji }}</span><span class="cat-name">{{ cat.data.title }}</span>{% if cat.data.groupCount > 0 %}<span class="cat-count">{{ cat.data.groupCount }}</span>{% endif %}</a></li>
+        <li><a href="/{{ cat.fileSlug }}/" data-umami-event="click-category" data-umami-event-category="{{ cat.fileSlug }}"><span class="cat-emoji">{{ cat.data.emoji }}</span><span class="cat-name">{{ cat.data.title }}</span>{% if cat.data.groupCount > 0 %}<span class="cat-count">{{ cat.data.groupCount }}</span>{% endif %}</a></li>
         {%- endif %}
         {%- endfor %}
       </ul>

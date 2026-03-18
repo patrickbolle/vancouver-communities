@@ -45,9 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Homepage search — filter grouped category list
   var homepageSearch = document.getElementById('homepage-search');
+  var _searchTimer = null;
   if (homepageSearch) {
     homepageSearch.addEventListener('input', function() {
       var q = this.value.toLowerCase();
+      // Track search with debounce
+      clearTimeout(_searchTimer);
+      if (q.length >= 2) {
+        _searchTimer = setTimeout(function() {
+          if (typeof umami !== 'undefined') umami.track('search', { query: q });
+        }, 800);
+      }
       document.querySelectorAll('.cat-group').forEach(function(group) {
         var anyVisible = false;
         group.querySelectorAll('li').forEach(function(li) {

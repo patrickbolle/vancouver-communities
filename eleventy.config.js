@@ -28,6 +28,12 @@ module.exports = function (eleventyConfig) {
       if (href && href.startsWith("http")) {
         tokens[idx].attrSet("target", "_blank");
         tokens[idx].attrSet("rel", "noopener noreferrer");
+        // Umami event tracking for all outbound links
+        try {
+          const domain = new URL(href).hostname.replace("www.", "");
+          tokens[idx].attrSet("data-umami-event", "outbound-link");
+          tokens[idx].attrSet("data-umami-event-url", domain);
+        } catch (e) {}
       }
       return defaultRender(tokens, idx, options, env, self);
     };

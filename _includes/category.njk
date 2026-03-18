@@ -96,8 +96,8 @@
     <h1 class="category-title">{{ title }} in Vancouver</h1>
     <p class="category-desc">{{ description }}</p>
     <div class="category-actions">
-      <a href="/submit/" class="cat-action">Know a group? Add it</a>
-      <a href="#" onclick="openEditModal('{{ page.fileSlug }}'); return false;" class="cat-action">Suggest an edit</a>
+      <a href="/submit/" class="cat-action" data-umami-event="click-submit-cta" data-umami-event-source="{{ page.fileSlug }}">Know a group? Add it</a>
+      <a href="#" onclick="openEditModal('{{ page.fileSlug }}'); return false;" class="cat-action" data-umami-event="click-suggest-edit" data-umami-event-category="{{ page.fileSlug }}">Suggest an edit</a>
       <span id="page-views" class="cat-views"></span>
     </div>
   </div>
@@ -162,6 +162,7 @@ document.getElementById('edit-form').addEventListener('submit', async (e) => {
     if (result.success) {
       status.className = 'form-status success';
       status.textContent = '✓ Got it, thanks!';
+      if (typeof umami !== 'undefined') umami.track('submit-edit', { category: document.getElementById('edit-category').value });
       e.target.reset();
       setTimeout(closeEditModal, 2000);
     } else throw new Error(result.error || 'Something went wrong');
