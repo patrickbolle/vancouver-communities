@@ -1,2 +1,9 @@
 site/
 node_modules/
+.playwright-mcp/
+
+# Screenshots and images (except static assets)
+*.png
+*.jpg
+*.jpeg
+!static/**
