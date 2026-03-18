@@ -13,6 +13,9 @@ on:
       - 'eleventy.config.js'
       - 'package.json'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -8,7 +8,19 @@
       "Bash(zsh:*)",
       "Bash(./build.sh)",
       "Bash(git add:*)",
-      "Bash(gh repo edit:*)"
+      "Bash(gh repo edit:*)",
+      "mcp__plugin_compound-engineering_pw__browser_resize",
+      "WebFetch(domain:lu.ma)",
+      "WebFetch(domain:luma.com)",
+      "Bash(grep -rn \"Founded by:\\\\|Hosted by:\\\\|Host:\\\\|Status:\\\\|Note:\\\\|Events:\\\\|Cost:\\\\|Workshops:\" /Users/patrick/Projects/vancouver-communities/*.md)",
+      "Bash(grep -rn \"Find it.*instagram\" /Users/patrick/Projects/vancouver-communities/*.md)",
+      "Skill(update-config)",
+      "mcp__chrome-devtools__navigate_page",
+      "Bash(npx:*)",
+      "mcp__chrome-devtools__list_pages",
+      "WebFetch(domain:cuento.app)",
+      "Bash(curl -s http://localhost:8082)",
+      "WebFetch(domain:bollenbach.ca)"
     ]
   },
   "enableAllProjectMcpServers": true,
