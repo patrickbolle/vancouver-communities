@@ -867,7 +867,7 @@ textarea.form-input { resize: vertical; }
     display: none;
   }
   .sidebar.open { display: grid; }
-  .sidebar-logo { display: none; }
+  .sidebar-logo-item { display: none; }
 
   .content { padding: 28px 20px 56px; }
   .homepage-hero { margin: -28px -20px 0; padding: 28px 20px 24px; margin-bottom: 28px; }
