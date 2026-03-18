@@ -45,10 +45,6 @@ order: 4
 - **What:** Board game café with no play fee. Order food/drinks, play from huge game library
 - **Find it:** [pizzerialudica.com](https://pizzerialudica.com/)
 
-## Storm Crow Alehouse
-- **What:** Geek-themed pub with board games available. Nerdy atmosphere, good food and beer
-- **Find it:** [stormcrowalehouse.com](https://www.stormcrowalehouse.com/)
-
 ## Boardwalk Cafe and Games (Abbotsford)
 - **What:** 600+ tabletop games, worth the drive. Massive selection, friendly staff
 - **Where:** Abbotsford, ~1 hour from Vancouver
