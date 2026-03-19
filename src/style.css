@@ -1044,6 +1044,10 @@ textarea.form-input { resize: vertical; }
   .category-hero { margin: -28px -20px 28px; padding: 28px 20px 24px; }
   .homepage-groups { grid-template-columns: 1fr; row-gap: 32px; }
   .homepage-lede, h1.homepage-lede { font-size: 1.5em; }
+
+  /* Minimal builder card on mobile */
+  .builder-card { padding: 14px 16px; }
+  .builder-bio { display: none; }
   .category-title { font-size: 1.6em; }
 
   /* Larger touch targets for sidebar links on mobile */
