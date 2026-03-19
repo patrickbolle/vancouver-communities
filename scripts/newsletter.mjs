@@ -147,16 +147,40 @@ function buildEmail(adds, spotlight) {
       </p>`;
   }
 
-  return buildBody(sections);
+  return wrapEmail(sections);
 }
 
-function buildBody(sections) {
-  return `<p style="margin:0 0 20px;color:#2C2925;font-family:Georgia,serif;font-size:15px;line-height:1.7;">The directory got a few updates this week. Here's what's new and something you might not have seen yet.</p>
-${sections}
-<hr style="border:none;border-top:1px solid #E8E3DC;margin:28px 0;">
-<p style="text-align:center;margin:0;">
-  <a href="${SITE_URL}" style="display:inline-block;background-color:#A85A46;color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:bold;font-family:Georgia,serif;">Browse the directory</a>
-</p>`;
+function wrapEmail(sections) {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background-color:#FAF8F5;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#2C2925;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FAF8F5;">
+<tr><td align="center" style="padding:32px 16px;">
+<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+
+<tr><td style="padding-bottom:20px;border-bottom:1px solid #E8E3DC;">
+  <a href="${SITE_URL}" style="font-family:Georgia,serif;font-size:15px;color:#706B65;text-decoration:none;letter-spacing:0.5px;text-transform:uppercase;">Vancouver Community Directory</a>
+</td></tr>
+
+<tr><td style="padding:24px 0;">
+  <p style="margin:0 0 24px;color:#2C2925;font-family:Georgia,serif;font-size:16px;line-height:1.7;">The directory got a few updates this week. Here's what's new and something you might not have seen yet.</p>
+  ${sections}
+  <hr style="border:none;border-top:1px solid #E8E3DC;margin:32px 0 24px;">
+  <p style="text-align:center;margin:0;">
+    <a href="${SITE_URL}" style="display:inline-block;background-color:#A85A46;color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:bold;font-family:Georgia,serif;font-size:15px;">Browse the directory</a>
+  </p>
+</td></tr>
+
+<tr><td style="padding-top:20px;border-top:1px solid #E8E3DC;text-align:center;color:#706B65;font-size:13px;font-family:Georgia,serif;">
+  <p style="margin:0;">Made with care for this city.</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>`;
 }
 
 // ── Main ───────────────────────────────────────────────────────
