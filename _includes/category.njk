@@ -137,9 +137,11 @@
 
 <script>
 var _editOpener = null;
+var _editOpenedAt = 0;
 function openEditModal(category) {
   var modal = document.getElementById('edit-modal');
   _editOpener = document.activeElement;
+  _editOpenedAt = Date.now();
   document.getElementById('edit-category').value = category;
   modal.style.display = 'block';
   var closeBtn = modal.querySelector('.edit-modal-close');
@@ -149,7 +151,7 @@ function closeEditModal() {
   document.getElementById('edit-modal').style.display = 'none';
   if (_editOpener) { _editOpener.focus(); _editOpener = null; }
 }
-document.getElementById('edit-modal').addEventListener('click', (e) => { if (e.target.id === 'edit-modal') closeEditModal(); });
+document.getElementById('edit-modal').addEventListener('click', (e) => { if (e.target.id === 'edit-modal' && Date.now() - _editOpenedAt > 300) closeEditModal(); });
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && document.getElementById('edit-modal').style.display === 'block') closeEditModal();
 });
