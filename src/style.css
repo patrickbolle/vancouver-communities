@@ -318,6 +318,10 @@ h1.homepage-lede,
   line-height: 1.65;
   margin-bottom: 14px;
 }
+.homepage-desc-secondary {
+  color: var(--text-muted);
+  font-size: 0.88em;
+}
 .homepage-meta {
   font-size: 0.9em;
   color: var(--text-muted);
