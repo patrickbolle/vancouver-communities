@@ -21,7 +21,7 @@ order: 5
 - **What:** Free outdoor Latin dance
 - **When:** Every Friday, 7-9pm (lesson at 7pm)
 - **Where:** Sun Hop Park
-- **Find it:** [salsavida.com](https://www.salsavida.com/)
+- **Find it:** [ruedadance.org](https://ruedadance.org/)
 
 ## BC Swing Dance Club
 - **What:** West Coast Swing lessons, socials, conventions. Active community, regional events
