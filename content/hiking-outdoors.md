@@ -92,3 +92,7 @@ order: 2
 ## outdoorvancouver.ca Directory
 - **What:** Comprehensive list of outdoor clubs in the region
 - **Find it:** [outdoorvancouver.ca/resources/outdoor-clubs](https://www.outdoorvancouver.ca/resources/outdoor-clubs/)
+
+## Pitch n Putt Player's Club
+- **What:** We host a PnP tournament every other week in Vancouver, $5 buy in with cash prizes. Come on out!
+- **Find it:** [www.instagram.com/pitchnputtplayersclub/](https://www.instagram.com/pitchnputtplayersclub/)
