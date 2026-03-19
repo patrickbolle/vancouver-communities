@@ -106,81 +106,37 @@ function buildEmail(adds, spotlight) {
 
   // New additions
   if (adds.length > 0) {
-    const items = adds
-      .map(
-        (a) =>
-          `<tr>
-            <td style="padding:14px 0;border-bottom:1px solid #E8E3DC;">
-              <a href="${SITE_URL}/${a.category}#${anchorSlug(a.group)}" style="color:#2C2925;text-decoration:none;font-family:Georgia,serif;font-size:17px;">${a.group}</a>
-              ${a.description ? `<br><span style="color:#524D48;font-size:14px;line-height:1.5;">${a.description}</span>` : ""}
-              <br><span style="color:#706B65;font-size:13px;">${prettyCategory(a.category)}</span>
-            </td>
-          </tr>`
-      )
-      .join("");
-    sections += `
-      <h2 style="font-family:Georgia,serif;color:#2C2925;font-size:18px;margin:24px 0 8px;font-weight:normal;">Just added</h2>
-      <p style="color:#706B65;margin:0 0 12px;font-size:14px;">New to the directory this week.</p>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${items}</table>`;
+    sections += `## Just added\n\n`;
+    for (const a of adds) {
+      const url = `${SITE_URL}/${a.category}#${anchorSlug(a.group)}`;
+      sections += `**[${a.group}](${url})**`;
+      if (a.description) sections += `\n${a.description}`;
+      sections += `\n*${prettyCategory(a.category)}*\n\n`;
+    }
   }
 
   // Spotlight (always included)
   if (spotlight && spotlight.groups.length > 0) {
-    const items = spotlight.groups
-      .map(
-        (g) =>
-          `<tr>
-            <td style="padding:14px 0;border-bottom:1px solid #E8E3DC;">
-              <a href="${SITE_URL}/${spotlight.slug}#${anchorSlug(g.name)}" style="color:#2C2925;text-decoration:none;font-family:Georgia,serif;font-size:16px;">${g.name}</a>
-              <br><span style="color:#524D48;font-size:14px;line-height:1.5;">${g.description}</span>
-            </td>
-          </tr>`
-      )
-      .join("");
-
-    sections += `
-      <h2 style="font-family:Georgia,serif;color:#2C2925;font-size:18px;margin:32px 0 8px;font-weight:normal;">${spotlight.emoji} ${spotlight.title}</h2>
-      <p style="color:#706B65;margin:0 0 12px;font-size:14px;">In case you missed it — a few groups worth knowing about.</p>
-      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">${items}</table>
-      <p style="margin-top:16px;">
-        <a href="${SITE_URL}/${spotlight.slug}" style="color:#A85A46;font-size:14px;">All ${spotlight.title} &rarr;</a>
-      </p>`;
+    sections += `## ${spotlight.emoji} ${spotlight.title}\n\n`;
+    sections += `In case you missed it — a few groups worth knowing about.\n\n`;
+    for (const g of spotlight.groups) {
+      const url = `${SITE_URL}/${spotlight.slug}#${anchorSlug(g.name)}`;
+      sections += `**[${g.name}](${url})**\n${g.description}\n\n`;
+    }
+    sections += `[All ${spotlight.title} →](${SITE_URL}/${spotlight.slug})\n\n`;
   }
 
-  return wrapEmail(sections);
+  return buildBody(sections);
 }
 
-function wrapEmail(sections) {
-  return `<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
-<body style="margin:0;padding:0;background-color:#FAF8F5;font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#2C2925;">
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#FAF8F5;">
-<tr><td align="center" style="padding:32px 16px;">
-<table role="presentation" width="560" cellpadding="0" cellspacing="0" style="max-width:560px;width:100%;">
+function buildBody(sections) {
+  return `The directory got a few updates this week. Here's what's new and something you might not have seen yet.
 
-<tr><td style="padding-bottom:20px;border-bottom:1px solid #E8E3DC;">
-  <a href="${SITE_URL}" style="font-family:Georgia,serif;font-size:15px;color:#706B65;text-decoration:none;letter-spacing:0.5px;text-transform:uppercase;">Vancouver Community Directory</a>
-</td></tr>
+${sections}
 
-<tr><td style="padding:24px 0;">
-  <p style="margin:0 0 24px;color:#2C2925;font-family:Georgia,serif;font-size:16px;line-height:1.7;">The directory got a few updates this week. Here's what's new and something you might not have seen yet.</p>
-  ${sections}
-  <hr style="border:none;border-top:1px solid #E8E3DC;margin:32px 0 24px;">
-  <p style="text-align:center;margin:0;">
-    <a href="${SITE_URL}" style="display:inline-block;background-color:#A85A46;color:#FFFFFF;padding:12px 28px;border-radius:6px;text-decoration:none;font-weight:bold;font-family:Georgia,serif;font-size:15px;">Browse the directory</a>
-  </p>
-</td></tr>
+---
 
-<tr><td style="padding-top:20px;border-top:1px solid #E8E3DC;text-align:center;color:#706B65;font-size:13px;font-family:Georgia,serif;">
-  <p style="margin:0;">Made with care for this city.</p>
-</td></tr>
-
-</table>
-</td></tr>
-</table>
-</body>
-</html>`;
+[Browse the directory](${SITE_URL})`;
 }
 
 // ── Main ───────────────────────────────────────────────────────
