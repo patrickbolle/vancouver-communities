@@ -2,11 +2,15 @@
 layout: false
 permalink: /
 ---
+{%- set totalGroups = 0 %}
+{%- for cat in collections.categories %}
+  {%- set totalGroups = totalGroups + cat.data.groupCount %}
+{%- endfor %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   {% include "partials/head.njk" %}
-  <title>Vancouver Community Directory — 260+ Groups, Clubs & Meetups (2026)</title>
+  <title>Vancouver Community Directory — {{ totalGroups }}+ Groups, Clubs & Meetups (2026)</title>
   <meta name="description" content="{{ site.description }}">
   <meta property="og:title" content="Vancouver Community Directory — Find Your People">
   <meta property="og:description" content="{{ site.description }}">
@@ -71,10 +75,6 @@ permalink: /
 {% set currentSlug = "" %}
 {% include "partials/sidebar.njk" %}
 <main class="content content-wide" id="main-content">
-  {%- set totalGroups = 0 %}
-  {%- for cat in collections.categories %}
-    {%- set totalGroups = totalGroups + cat.data.groupCount %}
-  {%- endfor %}
   <div class="homepage-hero">
     <div class="homepage-intro">
       <div class="homepage-intro-text">
@@ -98,13 +98,6 @@ permalink: /
         </div>
       </div>
     </div>
-    <div class="homepage-stats">
-      <span>{{ totalGroups }} groups</span>
-      <span class="homepage-stats-dot">&middot;</span>
-      <span>{{ collections.categories.length }} categories</span>
-      <span class="homepage-stats-dot">&middot;</span>
-      <span>Updated {% buildDateHuman %}</span>
-    </div>
   </div>
   <div class="homepage-groups" id="homepage-groups">
     {%- for group in groups %}
@@ -113,7 +106,7 @@ permalink: /
       <ul class="cat-group-list">
         {%- for cat in collections.categories %}
         {%- if cat.data.group == group.key %}
-        <li><a href="/{{ cat.fileSlug }}/" data-umami-event="click-category" data-umami-event-category="{{ cat.fileSlug }}"><span class="cat-name">{{ cat.data.title }}</span>{% if cat.data.groupCount > 0 %}<span class="cat-count">{{ cat.data.groupCount }}</span>{% endif %}</a></li>
+        <li><a href="/{{ cat.fileSlug }}/" data-umami-event="click-category" data-umami-event-category="{{ cat.fileSlug }}"><span class="cat-name">{{ cat.data.title }}</span>{% if cat.data.groupCount > 0 %}<span class="cat-count">{{ cat.data.groupCount }} group{{ "s" if cat.data.groupCount != 1 }}</span>{% endif %}</a></li>
         {%- endif %}
         {%- endfor %}
       </ul>
