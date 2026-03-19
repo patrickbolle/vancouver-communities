@@ -100,6 +100,14 @@
       <a href="#" onclick="openEditModal('{{ page.fileSlug }}'); return false;" class="cat-action" data-umami-event="click-suggest-edit" data-umami-event-category="{{ page.fileSlug }}">Suggest an edit</a>
       <span id="page-views" class="cat-views"></span>
     </div>
+    <div class="category-newsletter">
+      <form class="newsletter-form" data-umami-event="newsletter-signup">
+        <span class="category-newsletter-label">Get new groups & events in your inbox</span>
+        <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+      <span class="newsletter-status"></span>
+    </div>
   </div>
 {{ content | stripH1 | safe }}
 </main>
