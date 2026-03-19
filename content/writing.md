@@ -55,3 +55,7 @@ order: 4
 ## VPL Writing Resources
 - **What:** Library resources for writers including group listings. Free, accessible, comprehensive
 - **Find it:** [vpl.ca/guide/resources-writers](https://www.vpl.ca/guide/resources-writers/writing-community)
+
+## Vancouver Pen Club
+- **What:** The Vancouver Pen Club was founded in 2006 as a way of sharing our knowledge of & enthusiasm for the fountain pen hobby with others ~ Both modern and vintage writing equipment enthusiasts welcome!
+- **Find it:** [www.vancouverpenclub.com/](https://www.vancouverpenclub.com/)
