@@ -19,6 +19,5 @@ jobs:
 
       - name: Generate newsletter draft
         env:
-          BEEHIIV_API_KEY: ${{ secrets.BEEHIIV_API_KEY }}
-          BEEHIIV_PUB_ID: pub_24114c6e-a7e2-4653-a26e-9411344f36aa
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
         run: node scripts/newsletter.mjs

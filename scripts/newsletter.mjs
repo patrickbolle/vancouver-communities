@@ -1,18 +1,17 @@
 #!/usr/bin/env node
-// Weekly newsletter generator — parses git history, builds HTML, creates Beehiiv draft
+// Weekly newsletter generator — parses git history, builds HTML, creates Buttondown draft
 
 import { execSync } from "node:child_process";
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 
-const BEEHIIV_API = "https://api.beehiiv.com/v2";
-const PUB_ID = process.env.BEEHIIV_PUB_ID || "pub_24114c6e-a7e2-4653-a26e-9411344f36aa";
-const API_KEY = process.env.BEEHIIV_API_KEY;
+const BUTTONDOWN_API = "https://api.buttondown.com/v1";
+const API_KEY = process.env.BUTTONDOWN_API_KEY;
 const SITE_URL = "https://vancouvercommunity.org";
 const CONTENT_DIR = join(process.cwd(), "content");
 
 if (!API_KEY) {
-  console.error("BEEHIIV_API_KEY is required");
+  console.error("BUTTONDOWN_API_KEY is required");
   process.exit(1);
 }
 
@@ -186,36 +185,6 @@ function wrapEmail(sections) {
 </html>`;
 }
 
-// ── Create Beehiiv draft ───────────────────────────────────────
-
-async function createDraft(subject, html) {
-  const res = await fetch(`${BEEHIIV_API}/publications/${PUB_ID}/posts`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${API_KEY}`,
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      title: subject,
-      subtitle: "New groups, community picks, and what's happening around Vancouver",
-      status: "draft",
-      content_html: html,
-    }),
-  });
-
-  if (!res.ok) {
-    const err = await res.text();
-    console.error(`Beehiiv API error (${res.status}):`, err);
-    process.exit(1);
-  }
-
-  const data = await res.json();
-  const post = data.data;
-  console.log(`Draft created: ${post.id}`);
-  if (post.web_url) console.log(`Preview: ${post.web_url}`);
-  return post;
-}
-
 // ── Main ───────────────────────────────────────────────────────
 
 const changes = getRecentChanges();
@@ -233,5 +202,27 @@ if (changes.adds.length > 0) {
 }
 
 const html = buildEmail(changes.adds, spotlight);
-await createDraft(subject, html);
+
+// Create draft in Buttondown
+const res = await fetch(`${BUTTONDOWN_API}/emails`, {
+  method: "POST",
+  headers: {
+    Authorization: `Token ${API_KEY}`,
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({
+    subject,
+    body: html,
+    status: "draft",
+  }),
+});
+
+if (!res.ok) {
+  const err = await res.text();
+  console.error(`Buttondown API error (${res.status}):`, err);
+  process.exit(1);
+}
+
+const draft = await res.json();
+console.log(`Draft created: ${draft.id}`);
 console.log("Done!");
