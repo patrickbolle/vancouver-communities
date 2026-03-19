@@ -99,6 +99,35 @@ function anchorSlug(name) {
     .replace(/\s+/g, "-");
 }
 
+// ── Seasonal openers ───────────────────────────────────────────
+
+const openers = [
+  // Jan
+  "New year, fresh start. If you're looking to try something new this month, here's what's been added to the directory.",
+  // Feb
+  "February in Vancouver — still dark early, but there's a lot going on indoors. Here's what's new on the directory.",
+  // Mar
+  "The cherry blossoms are coming and the city's starting to wake up. A few new groups landed on the directory this week.",
+  // Apr
+  "Spring is here and Vancouver's at its best. Perfect time to get out and try something new. Here's what's been added.",
+  // May
+  "Patios are open, the days are long, and there's more happening around the city than you'd think. Here's what's new.",
+  // Jun
+  "Summer's basically here. If you're looking for people to do things with, a few new groups just got added.",
+  // Jul
+  "Peak Vancouver summer. The city's alive right now. Here's what's new on the directory.",
+  // Aug
+  "Making the most of August? Here are some new groups and a corner of the directory worth exploring.",
+  // Sep
+  "Back to it. September's great for picking up something new. Here's what landed on the directory recently.",
+  // Oct
+  "Cozy season. Rain's back, which means it's the best time to find your people indoors. Here's what's new.",
+  // Nov
+  "Dark and rainy — peak time to find a community that gets you out of the house. Here's what's been added.",
+  // Dec
+  "End of year. If you're thinking about what to do more of next year, here are some new groups to check out.",
+];
+
 // ── Email HTML template ────────────────────────────────────────
 
 function buildEmail(adds, spotlight) {
@@ -118,7 +147,7 @@ function buildEmail(adds, spotlight) {
   // Spotlight (always included)
   if (spotlight && spotlight.groups.length > 0) {
     sections += `## ${spotlight.emoji} ${spotlight.title}\n\n`;
-    sections += `In case you missed it — a few groups worth knowing about.\n\n`;
+    sections += `If you haven't explored this part of the directory yet — here are a few good ones.\n\n`;
     for (const g of spotlight.groups) {
       const url = `${SITE_URL}/${spotlight.slug}#${anchorSlug(g.name)}`;
       sections += `**[${g.name}](${url})**\n${g.description}\n\n`;
@@ -130,7 +159,8 @@ function buildEmail(adds, spotlight) {
 }
 
 function buildBody(sections) {
-  return `The directory got a few updates this week. Here's what's new and something you might not have seen yet.
+  const opener = openers[new Date().getMonth()];
+  return `${opener}
 
 ${sections}
 
