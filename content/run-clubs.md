@@ -71,10 +71,6 @@ order: 1
 - **Where:** Point Grey Park
 - **Find it:** [meetup.com/kits-running-group](https://meetup.com/kits-running-group)
 
-## Vancouver Run, Grub and Chug Club
-- **What:** Social runs followed by food and drinks. Fun-first, social running
-- **Find it:** [meetup.com/vancouver-run-grub-and-chug-club](https://meetup.com/vancouver-run-grub-and-chug-club)
-
 ## One Run Club
 - **What:** Weekly runs with 2,000+ check-ins. Active community, regular Wednesday runs
 - **Find it:** [heylo.com/g/one-run-club](https://www.heylo.com/g/9e4c8397-7474-47f7-a3a5-63617206c5d2)
