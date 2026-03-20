@@ -144,6 +144,20 @@ function formatSubmissionEntry(data) {
   return entry;
 }
 
+function insertEntry(content, entry) {
+  // Find the --- divider that precedes a Venues/Resources section
+  const dividerPattern = /\n---\s*\n+## (?:Venues|Resources|Venues & (?:Resources|Spaces))/;
+  const match = content.match(dividerPattern);
+
+  if (match) {
+    const insertPos = match.index;
+    return content.slice(0, insertPos) + "\n" + entry + content.slice(insertPos);
+  }
+
+  // No divider — append to end
+  return content.trimEnd() + "\n" + entry;
+}
+
 // --- Route handlers ---
 
 // GET /content/:category - Fetch current content for editing
@@ -242,9 +256,9 @@ async function handleSubmit(data, env, rid) {
     body: JSON.stringify({ ref: `refs/heads/${branchName}`, sha: baseSha })
   }, rid);
 
-  // Append new entry
+  // Insert new entry above the --- / Venues divider if one exists
   const newEntry = formatSubmissionEntry(data);
-  const updatedContent = currentContent.trimEnd() + "\n" + newEntry;
+  const updatedContent = insertEntry(currentContent, newEntry);
 
   // Commit file
   await githubApi(`/repos/${GITHUB_REPO}/contents/${fileName}`, env, {
