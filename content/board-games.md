@@ -14,10 +14,6 @@ order: 4
 - **What:** Largest regularly meeting board game group downtown
 - **Find it:** [meetup.com/vancouverbg](https://meetup.com/vancouverbg)
 
-## Board Games Social - WestEnd
-- **What:** Relaxed social gaming
-- **Find it:** [meetup.com/board-games-social-westend-vancouver](https://meetup.com/board-games-social-westend-vancouver)
-
 ## Good Game - North Vancouver
 - **What:** Board gaming meetup with modern games provided. Inclusive, fun
 - **Find it:** [meetup.com/good-game-north-vancouver](https://meetup.com/good-game-north-vancouver)
