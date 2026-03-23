@@ -321,6 +321,7 @@ h1.homepage-lede,
   align-items: center;
   gap: 16px;
   margin-bottom: 4px;
+  flex-wrap: wrap;
 }
 .homepage-action-primary {
   font-size: 0.88em;
@@ -570,6 +571,16 @@ h1.homepage-lede,
 }
 .homepage-footer a { color: var(--text-secondary); }
 .homepage-footer a:hover { color: var(--accent); }
+
+.category-footer {
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 0.82em;
+  color: var(--text-muted);
+}
+.category-footer a { color: var(--text-secondary); text-decoration: none; }
+.category-footer a:hover { color: var(--accent); }
 
 /* ========================================
    CATEGORY PAGE
@@ -1278,6 +1289,12 @@ textarea.form-input { resize: vertical; }
   .builder-card { padding: 14px 16px; }
   .builder-bio { display: none; }
   .category-title { font-size: 1.6em; }
+
+  /* Category actions: views on its own row */
+  .cat-views { width: 100%; margin-left: 0; margin-top: 2px; }
+
+  /* Homepage actions: prevent "Know a group? Add it" from wrapping */
+  .homepage-action-primary { white-space: nowrap; }
 
   /* Larger touch targets for sidebar links on mobile */
   .sidebar li a { padding: 11px 22px; min-height: 44px; }

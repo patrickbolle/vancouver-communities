@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Prefetch into cache on hover
   document.addEventListener('pointerenter', function(e) {
+    if (!e.target || !e.target.closest) return;
     var link = e.target.closest('a[href^="/"]');
     if (!link || link.onclick || link.closest('form')) return;
     var href = link.getAttribute('href');
