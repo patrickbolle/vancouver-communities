@@ -101,21 +101,27 @@
 {% include "partials/sidebar.njk" %}
 <main class="content" id="main-content">
   <div class="category-hero">
-    <h1 class="category-title">{{ title }} in Vancouver</h1>
-    <p class="category-desc">{{ description }}</p>
-    <div class="category-actions">
-      <a href="/submit/" class="cat-action" data-umami-event="click-submit-cta" data-umami-event-source="{{ page.fileSlug }}">Know a group? Add it</a>
-      <button type="button" onclick="openEditModal('{{ page.fileSlug }}')" class="cat-action" data-umami-event="click-suggest-edit" data-umami-event-category="{{ page.fileSlug }}">Suggest an edit</button>
-      <button type="button" onclick="sharePage('{{ page.fileSlug }}', this)" class="cat-action" data-umami-event="click-share" data-umami-event-source="{{ page.fileSlug }}">Tell a friend</button>
-      <span id="page-views" class="cat-views"></span>
-    </div>
-    <div class="category-newsletter">
-      <form class="newsletter-form" data-umami-event="newsletter-signup">
-        <span class="category-newsletter-label">Get new groups & events in your inbox</span>
-        <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address">
-        <button type="submit" class="newsletter-btn">Subscribe</button>
-      </form>
-      <span class="newsletter-status"></span>
+    <div class="homepage-hero-layout">
+      <div class="homepage-hero-left">
+        <h1 class="category-title">{{ title }} in Vancouver</h1>
+        <p class="category-desc">{{ description }}</p>
+        <div class="homepage-hero-actions">
+          <a href="/submit/" data-umami-event="click-submit-cta" data-umami-event-source="{{ page.fileSlug }}">Add a group</a>
+          <span class="homepage-sep">&middot;</span>
+          <button type="button" onclick="openEditModal('{{ page.fileSlug }}')" data-umami-event="click-suggest-edit" data-umami-event-category="{{ page.fileSlug }}">Suggest an edit</button>
+          <span class="homepage-sep">&middot;</span>
+          <button type="button" onclick="sharePage('{{ page.fileSlug }}', this)" data-umami-event="click-share" data-umami-event-source="{{ page.fileSlug }}">Tell a friend</button>
+          <span id="page-views" class="cat-views"></span>
+        </div>
+      </div>
+      <div class="homepage-hero-newsletter-card">
+        <p class="homepage-newsletter-heading">Get the roundup</p>
+        <form class="newsletter-form" data-umami-event="newsletter-signup">
+          <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+        <span class="newsletter-status"></span>
+      </div>
     </div>
   </div>
 {{ content | stripH1 | safe }}
