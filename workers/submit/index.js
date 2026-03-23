@@ -135,7 +135,8 @@ function formatSubmissionEntry(data) {
     entry += `- **Where:** ${data.location}\n`;
   }
   if (data.link) {
-    entry += `- **Find it:** [${data.link.replace(/^https?:\/\//, '')}](${data.link})\n`;
+    const displayUrl = data.link.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
+    entry += `- **Find it:** [${displayUrl}](${data.link})\n`;
   }
   if (data.additional) {
     entry += `- **Notes:** ${data.additional}\n`;
