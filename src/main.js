@@ -153,6 +153,9 @@ document.addEventListener('DOMContentLoaded', function() {
             h2.addEventListener('click', function(e) {
               if (e.target.tagName === 'A') return; // let anchor links work normally
               window.open(extLink.href, '_blank', 'noopener');
+              var category = window.location.pathname.replace(/^\/|\/$/g, '');
+              var groupName = h2.textContent.replace(/\s*#\s*$/, '').trim();
+              setTimeout(function() { showVerifyToast(groupName, extLink.href, category); }, 600);
             });
             break;
           }
