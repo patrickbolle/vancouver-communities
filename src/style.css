@@ -317,6 +317,13 @@ h1.homepage-lede,
   margin-bottom: 14px;
   max-width: 580px;
 }
+.homepage-desc-secondary {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+  max-width: 540px;
+}
 .homepage-hero-layout {
   display: flex;
   gap: 32px;
@@ -409,6 +416,8 @@ h1.homepage-lede,
   text-decoration: none;
   transition: border-color 0.12s, box-shadow 0.15s;
 }
+.recent-group:visited .recent-group-name { color: var(--text); }
+.recent-group:visited .recent-group-desc { color: var(--text-secondary); }
 .recent-group:hover {
   border-color: var(--accent);
   box-shadow: 0 1px 4px rgba(168,90,70,0.08);
@@ -464,12 +473,9 @@ h1.homepage-lede,
   font-size: 0.78em;
   font-weight: 400;
   color: var(--text-muted);
+  transition: color 0.12s;
 }
-.homepage-browse-all a {
-  color: var(--accent);
-  text-decoration: none;
-}
-.homepage-browse-all a:hover { text-decoration: underline; }
+.popular-cat:hover span { color: var(--accent); }
 
 /* Bottom section */
 .homepage-bottom {
