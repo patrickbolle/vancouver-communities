@@ -18,10 +18,6 @@ order: 2
 - **What:** Street photography community with photowalks and exhibits
 - **Find it:** [van-spc.com](https://van-spc.com/)
 
-## Vancouver Photography Club
-- **What:** Connect with photographers over photo-walks or coffee
-- **Find it:** [meetup.com/vancouver-photography-club](https://meetup.com/vancouver-photography-club)
-
 ## Vancouver Photography Group
 - **What:** 2-hour photography sessions based on themes/techniques
 - **Find it:** [vancouverphotography.group](https://vancouverphotography.group/)
