@@ -10,19 +10,17 @@ permalink: /submit/
   <meta name="description" content="Submit a community group, club, or meetup to be added to the Vancouver Community Directory.">
   <link rel="canonical" href="{{ site.url }}/submit/">
 </head>
-<body>
+<body class="category-page">
 <a href="#main-content" class="skip-link">Skip to content</a>
-<header class="site-header">
-  <a href="/" class="logo">Vancouver Community</a>
-  <h1 class="page-title">Submit a Group</h1>
-  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
-</header>
-<div class="main-container">
-{% set currentSlug = "submit" %}
-{% include "partials/sidebar.njk" %}
-<main class="content" id="main-content">
-  <h1 class="category-title">Submit a Group</h1>
-  <p class="category-desc">Know a community, club, or meetup in Vancouver that should be listed here? This directory is community-built — your suggestion helps everyone.</p>
+{% include "partials/topbar.njk" %}
+<main id="main-content">
+  <div class="cat-hero">
+    <div class="prose-hero-wrap">
+      <h1 class="cat-title">Submit a Group</h1>
+      <p class="cat-desc">Know a community, club, or meetup in Vancouver that should be listed here? This directory is community-built — your suggestion helps everyone.</p>
+    </div>
+  </div>
+  <div class="page-content">
 
   <form id="submit-form" class="form">
     <div class="form-field">
@@ -100,8 +98,8 @@ permalink: /submit/
     btn.textContent = 'Submit';
   });
   </script>
+  </div>
 </main>
-</div>
 {% include "partials/scripts.njk" %}
 </body>
 </html>

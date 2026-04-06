@@ -1,0 +1,68 @@
+---
+layout: false
+permalink: /about/
+---
+{%- set totalGroups = 0 %}
+{%- for cat in collections.categories %}
+  {%- set totalGroups = totalGroups + cat.data.groupCount %}
+{%- endfor %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include "partials/head.njk" %}
+  <title>About | {{ site.title }}</title>
+  <meta name="description" content="Vancouver Community is a free, community-built directory of {{ totalGroups }}+ clubs, meetups, and groups in Vancouver.">
+  <meta property="og:title" content="About Vancouver Community">
+  <meta property="og:description" content="A free, community-built directory of {{ totalGroups }}+ clubs, meetups, and groups in Vancouver.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ site.url }}/about/">
+  <meta property="og:image" content="{{ site.url }}/og-image.png">
+  <link rel="canonical" href="{{ site.url }}/about/">
+</head>
+<body class="category-page">
+<a href="#main-content" class="skip-link">Skip to content</a>
+{% include "partials/topbar.njk" %}
+<main id="main-content">
+  <div class="cat-hero">
+    <div class="prose-hero-wrap">
+      <h1 class="cat-title">About Vancouver Community</h1>
+      <p class="cat-desc">A free, community-built directory of {{ totalGroups }}+ clubs, meetups, and groups in Vancouver.</p>
+    </div>
+  </div>
+
+  <div class="about-content page-content">
+    <section class="about-section">
+      <h2>Why this exists</h2>
+      <p>Vancouver consistently ranks as one of the hardest cities to make friends. This directory exists to make it a little easier. If you're new to the city, shy, or just looking for your people — start browsing.</p>
+    </section>
+
+    <section class="about-section">
+      <h2>How it works</h2>
+      <ul>
+        <li>Anyone can submit a group via the <a href="/submit/">submit form</a>.</li>
+        <li>Submissions are reviewed and added weekly.</li>
+        <li>The directory is maintained by <a href="https://bollenbach.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer">Patrick Bollenbach</a>, a software developer in Vancouver who also built <a href="https://runclubs.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer">runclubs.ca</a>.</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>Press</h2>
+      <ul>
+        <li>CBC — April 6, 2026</li>
+      </ul>
+    </section>
+
+    <section class="about-section">
+      <h2>Get in touch</h2>
+      <p>Email: <a href="mailto:vancouver@bolle.co">vancouver@bolle.co</a></p>
+      <p>Have a group to add? <a href="/submit/">Submit it here</a>.</p>
+    </section>
+  </div>
+
+  <div class="cat-footer page-footer">
+    Made by <a href="https://bollenbach.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer">Patrick Bollenbach</a> in Vancouver. <span id="total-views"></span>
+  </div>
+</main>
+{% include "partials/scripts.njk" %}
+</body>
+</html>

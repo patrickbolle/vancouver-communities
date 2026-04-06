@@ -92,45 +92,46 @@
 </head>
 <body class="category-page">
 <a href="#main-content" class="skip-link">Skip to content</a>
-<header class="site-header">
-  <a href="/" class="logo">Vancouver Community</a>
-  <button class="sidebar-toggle" aria-expanded="false" aria-controls="sidebar">Browse</button>
-</header>
-<div class="main-container">
-{% set currentSlug = page.fileSlug %}
-{% include "partials/sidebar.njk" %}
-<main class="content" id="main-content">
-  <div class="category-hero">
-    <div class="homepage-hero-layout">
-      <div class="homepage-hero-left">
-        <h1 class="category-title">{{ title }} in Vancouver</h1>
-        <p class="category-desc">{{ description }}</p>
-        <div class="homepage-hero-actions">
-          <a href="/submit/" data-umami-event="click-submit-cta" data-umami-event-source="{{ page.fileSlug }}">Add a group</a>
-          <span class="homepage-sep">&middot;</span>
-          <button type="button" onclick="openEditModal('{{ page.fileSlug }}')" data-umami-event="click-suggest-edit" data-umami-event-category="{{ page.fileSlug }}">Suggest an edit</button>
-          <span class="homepage-sep">&middot;</span>
-          <button type="button" onclick="sharePage('{{ page.fileSlug }}', this)" data-umami-event="click-share" data-umami-event-source="{{ page.fileSlug }}">Tell a friend</button>
-          <span id="page-views" class="cat-views"></span>
-        </div>
-      </div>
-      <div class="homepage-hero-newsletter-card">
-        <p class="homepage-newsletter-heading">Get the roundup</p>
-        <p class="homepage-newsletter-desc">New groups and community picks, weekly.</p>
-        <form class="newsletter-form" data-umami-event="newsletter-signup">
-          <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address">
-          <button type="submit" class="newsletter-btn">Subscribe</button>
-        </form>
-        <span class="newsletter-status"></span>
+{% include "partials/topbar.njk" %}
+
+<main id="main-content">
+  {%- set groupLabel = "" %}
+  {%- for g in groups %}
+    {%- for cat in collections.categories %}
+      {%- if cat.data.group == g.key and cat.fileSlug == page.fileSlug %}
+        {%- set groupLabel = g.label %}
+      {%- endif %}
+    {%- endfor %}
+  {%- endfor %}
+  <div class="breadcrumbs">
+    <a href="/">Home</a> <span>&rsaquo;</span>
+    {% if groupLabel %}<span>{{ groupLabel }}</span> <span>&rsaquo;</span>{% endif %}
+    <span class="breadcrumb-current">{{ title }}</span>
+  </div>
+
+  <div class="cat-hero">
+    <div class="cat-hero-wrap">
+      <h1 class="cat-title">{{ title }} in Vancouver</h1>
+      <p class="cat-desc">{{ description }}</p>
+      <div class="cat-actions">
+        <a href="/submit/" data-umami-event="click-submit-cta" data-umami-event-source="{{ page.fileSlug }}">Add a group</a>
+        <span class="hp-sep">&middot;</span>
+        <button type="button" onclick="openEditModal('{{ page.fileSlug }}')" data-umami-event="click-suggest-edit" data-umami-event-category="{{ page.fileSlug }}">Suggest an edit</button>
+        <span class="hp-sep">&middot;</span>
+        <button type="button" onclick="sharePage('{{ page.fileSlug }}', this)" data-umami-event="click-share" data-umami-event-source="{{ page.fileSlug }}">Tell a friend</button>
+        <span id="page-views" class="cat-views"></span>
       </div>
     </div>
   </div>
-{{ content | stripH1 | safe }}
-<div class="category-footer">
-  Made by <a href="https://bollenbach.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer" data-umami-event="click-bollenbach" data-umami-event-source="category-footer">Patrick Bollenbach</a> in Vancouver. <span id="total-views"></span>
-</div>
+
+  <div class="category-entries">
+    {{ content | stripH1 | cardify | safe }}
+  </div>
+
+  <div class="cat-footer">
+    Made by <a href="https://bollenbach.ca?ref=vancouvercommunity" target="_blank" rel="noopener noreferrer" data-umami-event="click-bollenbach" data-umami-event-source="category-footer">Patrick Bollenbach</a> in Vancouver. <span id="total-views"></span>
+  </div>
 </main>
-</div>
 
 <!-- Suggest Edit Modal -->
 <div id="edit-modal" class="edit-modal" role="dialog" aria-modal="true" aria-labelledby="edit-modal-title">
