@@ -27,6 +27,11 @@ order: 7
 - **What:** Annual multi-day stargazing event organized by RASC Vancouver. Dark sky site, camping, community astronomy
 - **Find it:** [rasc-vancouver.com](https://rasc-vancouver.com/)
 
+
+## Starry Nights Star Parties
+- **What:** Free, all-ages star parties at SFU Burnaby's Trottier Observatory every Friday night (weather permitting). Check their social feeds before heading out — the last Friday of each month is online only.
+- **Find it:** [sfu.ca/science/community/trottier-observatory---courtyard/starry-nights.html](https://www.sfu.ca/science/community/trottier-observatory---courtyard/starry-nights.html)
+
 ---
 
 ## Venues & Spaces
