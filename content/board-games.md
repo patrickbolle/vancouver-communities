@@ -22,6 +22,10 @@ order: 4
 - **What:** Mafia-style games and more
 - **Find it:** [meetup.com/vancouver-mafia-werewolf-group](https://meetup.com/vancouver-mafia-werewolf-group)
 
+## Vancouver Gaymers
+- **What:** Our mission is to create and enable the creation of safer spaces for 2SLGBTQIA+ people and their allies in the Greater Vancouver Area to meet and socialize. We aim to enable the creation of and to provide virtual and physical spaces for events for players and participants to meet and play games, and to facilitate social events for the benefit of our members.
+- **Find it:** [www.vancouvergaymers.com/](https://www.vancouvergaymers.com/)
+
 ---
 
 ## Venues & Spaces
@@ -46,7 +50,3 @@ order: 4
 - **Where:** Abbotsford, ~1 hour from Vancouver
 - **Find it:** [abbyboardwalk.com](https://abbyboardwalk.com/)
 
-## Vancouver Gaymers
-- **What:** Our mission is to create and enable the creation of safer spaces for 2SLGBTQIA+ people and their allies in the Greater Vancouver Area to meet and socialize.
-We aim to enable the creation of and to provide virtual and physical spaces for events for players and participants to meet and play games, and to facilitate social events for the benefit of our members.
-- **Find it:** [www.vancouvergaymers.com/](https://www.vancouvergaymers.com/)
