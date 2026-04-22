@@ -23,6 +23,11 @@ order: 3
 - **What:** Canada's longest-running Asian film festival. Year-round programs, November festival
 - **Find it:** [vaff.org](https://vaff.org/)
 
+
+## Vancouver Literature and Film
+- **What:** A group for serious literature, classic texts, Shakespeare, cinema-as-art, poetry, and grown-up rewatches. The point is to treat great books and films as alive — not museum homework. Events meet several times a month and include Shakespeare nights (not classroom voice — the plays as modern pressure cookers), classic literature discussions (The Odyssey, Hemingway, Tolstoy, Franklin), film discussion nights (Dr. Strangelove, Children of Men, Eternal Sunshine), cinema outings to The Cinematheque, poetry nights, and silent reading parties. For people who want literature and film to feel alive again — works that still have something to accuse us of. Free to join, open to all.
+- **Find it:** [meetup.com/vancouver-literature-and-film](https://www.meetup.com/vancouver-literature-and-film/)
+
 ---
 
 ## Venues & Spaces
