@@ -47,3 +47,6 @@ order: 1
 - **What:** Off-the-beaten-path book selections. Literary, iconoclastic reads
 - **Find it:** [meetup.com/vanunconventionalbooks](https://meetup.com/vanunconventionalbooks)
 
+## Vancouver Fantasy & Sci-Fi Group
+- **What:** This group is for people who love sci-fi, fantasy, anime, and speculative stories, but want to talk about them like adults. We discuss books, films, anime, TV, and short fiction through the big human questions underneath: freedom, technology, power, loneliness, identity, memory, fear, home, and what people become under pressure. No trivia sludge, no lore-flexing, no fandom gatekeeping. Story as a machine for ideas.
+- **Find it:** [meetup.com/vancouver-fantasy-scifi-meetup-group](https://www.meetup.com/vancouver-fantasy-scifi-meetup-group/)
